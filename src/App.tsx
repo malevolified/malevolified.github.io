@@ -1,7 +1,8 @@
 import React from "react";
+import GuarianRef from "./Pages/Guarians/GuarianRef";
 
 function App() {
-  return <div>Hello world</div>;
+  return <GuarianRef />;
 }
 
 export default App;
