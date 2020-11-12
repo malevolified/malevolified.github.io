@@ -6,7 +6,7 @@
 .guarian-ref {
   background-color: rgb(31, 29, 44);
   color: #fffcef;
-  padding: 100px 300px;
+  padding: 5vh 4vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,6 +23,33 @@
 .guarian-ref .title {
   font-family: "Title";
   text-align: center;
-  font-size: 100px;
+  font-size: 3em;
   margin-top: 30px;
+}
+
+.guarian-ref .wrappable-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.guarian-ref .column {
+  flex: 1;
+  min-width: 300px;
+  margin-top: 20px;
+}
+
+.guarian-ref .big-text {
+  font-family: "Title";
+  text-align: center;
+  font-size: 2em;
+}
+
+@media (min-width: 1200px) {
+  .guarian-ref .title {
+    font-size: 6em;
+  }
+
+  .guarian-ref .big-text {
+    font-size: 3em;
+  }
 }

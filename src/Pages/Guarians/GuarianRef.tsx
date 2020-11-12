@@ -9,22 +9,14 @@ export const GuarianRef: React.FC<IProps> = ({}) => {
     <div className="guarian-ref">
       <div className="content">
         <h1 className="title">The Guarians</h1>
-        <div style={{ display: "flex", paddingTop: 50 }}>
-          <div
-            style={{
-              flex: 1,
-              fontFamily: "Title",
-              textAlign: "center",
-              fontSize: 40,
-              marginTop: 40
-            }}
-          >
+        <div className="wrappable-row">
+          <div className="column big-text" style={{ marginBottom: 20 }}>
             UNDER
             <br />
             CONSTRUCTION
           </div>
-          <div style={{ flex: 1, textAlign: "center" }}>
-            <img width={700} src={reguarWump} />
+          <div className="column" style={{ textAlign: "center" }}>
+            <img src={reguarWump} style={{ width: "100%", maxWidth: 700 }} />
           </div>
         </div>
       </div>
