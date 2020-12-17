@@ -3,6 +3,14 @@
   src: url(./fonts/OptimusPrinceps.ttf);
 }
 
+/*~*~*~*~*~*~*~*~*~*~*~*~*
+  COMMON
+~*~*~*~*~*~*~*~*~*~*~*~*~*/
+
+h1 {
+  font-family: "Title";
+}
+
 .guarian-ref {
   background-color: rgb(31, 29, 44);
   color: #fffcef;
