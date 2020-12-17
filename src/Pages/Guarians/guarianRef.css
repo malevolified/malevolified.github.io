@@ -12,7 +12,78 @@
   flex-direction: column;
 }
 
+/*~*~*~*~*~*~*~*~*~*~*~*~*
+  Menu ref
+~*~*~*~*~*~*~*~*~*~*~*~*~*/
+
 .guarian-ref .content {
+  display: block;
+  border: 1px solid #fffcef;
+  border-radius: 10px;
+  background-color: rgb(51, 48, 73);
+  flex: 1;
+  padding: 20px;
+}
+
+.menu-opener {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.menu-clickable {
+  padding: 10px;
+  background-color: rgb(51, 48, 73);
+  cursor: pointer;
+  user-select: none;
+}
+
+.menu-clickable:hover {
+  background-color: rgb(60, 57, 85);
+}
+
+.menu-clickable:hover:active {
+  background-color: rgb(39, 37, 56);
+}
+
+.overlay-menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 0px;
+  overflow-y: hidden;
+  background-color: rgb(51, 48, 73);
+  border-right: 3px solid #eee;
+  transition: 0.3s;
+}
+
+.overlay-menu .option {
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.overlay-menu .option:hover {
+  background-color: rgb(67, 64, 94);
+}
+
+.overlay-menu .option:hover:active {
+  background-color: rgb(43, 42, 61);
+}
+
+.overlay-menu .option.selected {
+  background-color: rgb(203, 200, 233);
+  color: rgb(51, 48, 73);
+  font-weight: bold;
+}
+
+.overlay-menu .option.selected:hover {
+  background-color: rgb(216, 214, 245);
+}
+
+.overlay-menu .option.selected:hover:active {
+  background-color: rgb(190, 188, 221);
 }
 
 .guarian-ref .title {
@@ -37,16 +108,6 @@
   font-family: "Title";
   text-align: center;
   font-size: 2em;
-}
-
-@media (min-width: 1200px) {
-  .guarian-ref .title {
-    font-size: 6em;
-  }
-
-  .guarian-ref .big-text {
-    font-size: 3em;
-  }
 }
 
 /*~*~*~*~*~*~*~*~*~*~*~*~*
@@ -125,5 +186,5 @@
   border-bottom-right-radius: 10px;
   background-color: rgb(51, 48, 73);
   flex: 1;
-  padding: 0px 20px;
+  padding: 20px;
 }
