@@ -8,8 +8,8 @@ export interface RefSection {
 }
 
 const refSections: RefSection[] = [
-  { title: "Overview", content: <Powers /> },
-  { title: "Powers", content: <Placeholder /> },
+  { title: "Overview", content: <Placeholder /> },
+  { title: "Powers", content: <Powers /> },
   { title: "Adornment", content: <Placeholder /> },
   { title: "Perception", content: <Placeholder /> },
   { title: "Known Guarians", content: <Placeholder /> },

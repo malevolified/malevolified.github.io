@@ -5,11 +5,16 @@ import refSections, { RefSection } from "./refSections";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
-interface IProps {}
+interface IProps {
+  selectedIndex: number;
+  onSelect(index: number): void;
+}
 
-export const GuarianMenuRef: React.FC<IProps> = ({}) => {
+export const GuarianMenuRef: React.FC<IProps> = ({
+  selectedIndex,
+  onSelect,
+}) => {
   const [isMenuVisible, setMenuVisible] = useState(false);
-  const [visibleIndex, setVisibleIndex] = useState(0);
 
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -28,9 +33,9 @@ export const GuarianMenuRef: React.FC<IProps> = ({}) => {
     return (
       <div
         key={index}
-        className={"option" + (index == visibleIndex ? " selected" : "")}
+        className={"option" + (index == selectedIndex ? " selected" : "")}
         onClick={() => {
-          setVisibleIndex(index);
+          onSelect(index);
           setMenuVisible(false);
         }}
       >
@@ -63,7 +68,7 @@ export const GuarianMenuRef: React.FC<IProps> = ({}) => {
         </div>
         {refSections.map(renderOption)}
       </div>
-      <div className="content">{refSections[visibleIndex].content}</div>
+      <div className="content">{refSections[selectedIndex].content}</div>
     </div>
   );
 };
