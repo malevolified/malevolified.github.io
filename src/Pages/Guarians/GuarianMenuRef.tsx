@@ -55,9 +55,18 @@ export const GuarianMenuRef: React.FC<IProps> = ({
       <div
         ref={menuRef}
         className="overlay-menu"
-        style={{ width: isMenuVisible ? 200 : 0 }}
+        style={
+          isMenuVisible
+            ? { width: 200, borderRight: "3px solid #eee" }
+            : { width: 0 }
+        }
       >
-        <div style={{ display: "flex", justifyContent: "flex-end" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "flex-end",
+          }}
+        >
           <div
             className="menu-clickable"
             style={{ marginBottom: 20 }}
