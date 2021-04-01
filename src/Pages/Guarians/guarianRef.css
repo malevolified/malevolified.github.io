@@ -20,18 +20,14 @@ h1 {
   flex-direction: column;
 }
 
+a {
+  color: #fffcef;
+  text-decoration: none;
+}
+
 /*~*~*~*~*~*~*~*~*~*~*~*~*
   Menu ref
 ~*~*~*~*~*~*~*~*~*~*~*~*~*/
-
-.guarian-ref .content {
-  display: block;
-  border: 1px solid #fffcef;
-  border-radius: 10px;
-  background-color: rgb(51, 48, 73);
-  flex: 1;
-  padding: 20px;
-}
 
 .menu-opener {
   position: fixed;
@@ -93,6 +89,60 @@ h1 {
   background-color: rgb(190, 188, 221);
 }
 
+/*~*~*~*~*~*~*~*~*~*~*~*~*
+  Tab ref
+~*~*~*~*~*~*~*~*~*~*~*~*~*/
+
+.guarian-ref .content.flat-top {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.guarian-ref .tab-wrapper {
+  display: flex;
+  z-index: 1;
+  margin-bottom: -1px;
+}
+
+.guarian-ref .tab-wrapper .tab {
+  padding: 10px;
+  background-color: rgb(51, 48, 73);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid #fffcef;
+}
+
+.guarian-ref .tab-wrapper .tab.selected {
+  padding-bottom: 11px;
+  border-bottom: none;
+}
+
+.guarian-ref .tab-wrapper .tab:hover {
+  background-color: rgb(67, 64, 94);
+}
+
+.guarian-ref .tab-wrapper .tab:hover:active {
+  background-color: rgb(43, 42, 61);
+}
+
+.guarian-ref .tab-wrapper .tab.selected:hover,
+.guarian-ref .tab-wrapper .tab.selected:hover:active {
+  background-color: rgb(51, 48, 73);
+}
+
+/*~*~*~*~*~*~*~*~*~*~*~*~*
+  Content
+~*~*~*~*~*~*~*~*~*~*~*~*~*/
+
+.guarian-ref .content {
+  display: block;
+  border: 1px solid #fffcef;
+  border-radius: 10px;
+  background-color: rgb(51, 48, 73);
+  flex: 1;
+  padding: 20px;
+}
+
 .guarian-ref .title {
   font-family: "Title";
   text-align: center;
@@ -115,83 +165,4 @@ h1 {
   font-family: "Title";
   text-align: center;
   font-size: 2em;
-}
-
-/*~*~*~*~*~*~*~*~*~*~*~*~*
-  react-tabs
-~*~*~*~*~*~*~*~*~*~*~*~*~*/
-
-.react-tabs {
-  -webkit-tap-highlight-color: transparent;
-}
-
-.react-tabs__tab-list {
-  border-bottom: 1px solid #fffcef;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.react-tabs__tab {
-  display: inline-block;
-  border: 1px solid #fffcef;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom: none;
-  bottom: -1px;
-  position: relative;
-  list-style: none;
-  padding: 6px 12px;
-  cursor: pointer;
-}
-
-.react-tabs__tab:hover {
-  bottom: 0;
-  margin-top: 1px;
-  padding: 6px 12px 5px;
-  background-color: rgb(41, 39, 59);
-}
-
-.react-tabs__tab--selected,
-.react-tabs__tab--selected:hover {
-  bottom: -1px;
-  margin-top: 0;
-  padding: 6px 12px;
-  background-color: rgb(51, 48, 73);
-}
-
-.react-tabs__tab--disabled {
-  color: GrayText;
-  cursor: default;
-}
-
-.react-tabs__tab:focus {
-  box-shadow: 0 0 5px hsl(208, 99%, 50%);
-  border-color: hsl(208, 99%, 50%);
-  outline: none;
-}
-
-.react-tabs__tab:focus:after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  left: -4px;
-  right: -4px;
-  bottom: -5px;
-  background: #fff;
-}
-
-.react-tabs__tab-panel {
-  display: none;
-}
-
-.react-tabs__tab-panel--selected {
-  display: block;
-  border: 1px solid #fffcef;
-  border-top: 0;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background-color: rgb(51, 48, 73);
-  flex: 1;
-  padding: 20px;
 }

@@ -1,28 +1,30 @@
 import React from "react";
-import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
+import { Link, matchPath, useLocation } from "react-router-dom";
+import { GuarianRoutes } from "./GuarianRoutes";
 import refSections from "./refSections";
 import Placeholder from "./Tabs/Placeholder";
 
-interface IProps {
-  selectedIndex: number;
-  onSelect(index: number): void;
-}
+interface IProps {}
 
-export const GuarianTabRef: React.FC<IProps> = ({
-  selectedIndex,
-  onSelect,
-}) => {
+export const GuarianTabRef: React.FC<IProps> = ({}) => {
+  const { pathname } = useLocation();
+
   return (
-    <Tabs selectedIndex={selectedIndex} onSelect={onSelect}>
-      <TabList>
-        {refSections.map((s, index) => (
-          <Tab key={index}>{s.title}</Tab>
+    <div>
+      <div className="tab-wrapper">
+        {refSections.map((s) => (
+          <Link
+            className={"tab" + (matchPath(pathname, { path: s.route }) != null ? " selected" : "")}
+            to={s.route}
+          >
+            {s.title}
+          </Link>
         ))}
-      </TabList>
-      {refSections.map((s, index) => (
-        <TabPanel key={index}>{s.content}</TabPanel>
-      ))}
-    </Tabs>
+      </div>
+      <div className="content flat-top">
+        <GuarianRoutes />
+      </div>
+    </div>
   );
 };
 
