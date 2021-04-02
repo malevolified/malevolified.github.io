@@ -1,1 +1,0 @@
-export { Powers } from "./Powers";

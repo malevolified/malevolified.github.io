@@ -5,7 +5,7 @@ import refSections, { RefSection } from "./refSections";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { GuarianRoutes } from "./GuarianRoutes";
-import { Link, matchPath, useLocation } from "react-router-dom";
+import { generatePath, NavLink } from "react-router-dom";
 
 interface IProps {}
 
@@ -13,7 +13,6 @@ export const GuarianMenuRef: React.FC<IProps> = ({}) => {
   const [isMenuVisible, setMenuVisible] = useState(false);
 
   const menuRef = useRef<HTMLDivElement>(null);
-  const { pathname } = useLocation();
 
   useEffect(() => {
     var listener = (e: MouseEvent) => {
@@ -28,14 +27,9 @@ export const GuarianMenuRef: React.FC<IProps> = ({}) => {
 
   function renderOption(s: RefSection, index: number) {
     return (
-      <Link to={s.route}>
-        <div
-          key={index}
-          className={"option" + (matchPath(pathname, { path: s.route }) != null ? " selected" : "")}
-        >
-          {s.title}
-        </div>
-      </Link>
+      <NavLink to={generatePath(s.route)} className="option" activeClassName="selected">
+        {s.title}
+      </NavLink>
     );
   }
 
