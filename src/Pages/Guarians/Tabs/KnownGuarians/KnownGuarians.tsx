@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, Redirect, useParams } from "react-router-dom";
-import { GuarianInfoLink } from "./GuarianInfoLink";
+import { GuarianReferenceLink } from "./GuarianReferenceLink";
 import { guarians } from "./guarians";
-import { SpecificGuarianInfo } from "./SpecificGuarianInfo";
+import { GuarianCharacterReference } from "./GuarianCharacterReference";
 
 interface IProps {}
 
@@ -21,12 +21,16 @@ const KnownGuarians: React.FC<IProps> = ({}) => {
 
   return (
     <div style={{ display: "flex" }}>
-      <div style={{ flex: 1 }}>
-        {guarian ? <SpecificGuarianInfo guarian={guarian} /> : <div>Please select a guarian</div>}
+      <div style={{ flex: 1, marginRight: 10 }}>
+        {guarian ? (
+          <GuarianCharacterReference guarian={guarian} />
+        ) : (
+          <div>Please select a guarian</div>
+        )}
       </div>
       <div style={{ width: 300, overflowY: "auto" }}>
         {availableGuarians.map((g) => (
-          <GuarianInfoLink guarian={g} />
+          <GuarianReferenceLink guarian={g} />
         ))}
       </div>
     </div>

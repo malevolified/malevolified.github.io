@@ -8,11 +8,11 @@ const GuarianRoutes: React.FC<IProps> = ({}) => {
   return (
     <Switch>
       {refSections.map((s) => (
-        <Route key={s.route} path={s.route}>
+        <Route exact key={s.route} path={s.route}>
           {s.content}
         </Route>
       ))}
-      <Redirect to={"/guarians/overview"} />
+      <Redirect to={"/guarians"} />
     </Switch>
   );
 };

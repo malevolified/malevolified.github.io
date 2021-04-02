@@ -10,7 +10,7 @@ export interface RefSection {
 }
 
 const refSections: RefSection[] = [
-  { title: "Overview", content: <Placeholder />, route: "/guarians/overview" },
+  { title: "Overview", content: <Placeholder />, route: "/guarians" },
   { title: "Abilities", content: <Abilities />, route: "/guarians/abilities" },
   { title: "Adornment", content: <Placeholder />, route: "/guarians/adornments" },
   { title: "Perception", content: <Placeholder />, route: "/guarians/perception" },

@@ -6,7 +6,7 @@ interface IProps {
   guarian: GuarianInfo;
 }
 
-const GuarianInfoLink: React.FC<IProps> = ({ guarian }) => {
+const GuarianReferenceLink: React.FC<IProps> = ({ guarian }) => {
   return (
     <div>
       <NavLink
@@ -22,5 +22,5 @@ const GuarianInfoLink: React.FC<IProps> = ({ guarian }) => {
   );
 };
 
-GuarianInfoLink.displayName = "GuarianInfoLink";
-export { GuarianInfoLink };
+GuarianReferenceLink.displayName = "GuarianReferenceLink";
+export { GuarianReferenceLink };

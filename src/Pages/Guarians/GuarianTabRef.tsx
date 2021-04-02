@@ -2,7 +2,6 @@ import React from "react";
 import { generatePath, NavLink } from "react-router-dom";
 import { GuarianRoutes } from "./GuarianRoutes";
 import refSections from "./refSections";
-import Placeholder from "./Tabs/Placeholder";
 
 interface IProps {}
 
