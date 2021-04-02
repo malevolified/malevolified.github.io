@@ -2,7 +2,22 @@
 Character reference
 ~*~*~*~*~*~*~*/
 
+.character-ref {
+  border: 3px solid #fffcef;
+  border-radius: 10px;
+}
+
+.character-ref:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .character-ref .header {
   border-bottom: 1px solid #fffcef;
   margin-right: 240px;
+  font-size: 72px;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
