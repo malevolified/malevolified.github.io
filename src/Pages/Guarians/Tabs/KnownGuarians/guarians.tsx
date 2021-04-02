@@ -24,6 +24,7 @@ const guarians: GuarianInfo[] = [
   { name: "Owluar" },
   { name: "Serguar" },
   { name: "Wereguar" },
+  { name: "Panthuar" },
   { name: "Septuar", secret: true },
   { name: "Enduar", secret: true },
 ];
