@@ -1,11 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
-import Placeholder from "./Tabs/Placeholder";
-import "./guarianRef.css";
-import refSections, { RefSection } from "./refSections";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { GuarianRoutes } from "./GuarianRoutes";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useEffect, useRef, useState } from "react";
 import { generatePath, NavLink } from "react-router-dom";
+import "./guarianRef.css";
+import { GuarianRoutes } from "./GuarianRoutes";
+import refSections, { RefSection } from "./refSections";
 
 interface IProps {}
 
@@ -27,7 +26,13 @@ export const GuarianMenuRef: React.FC<IProps> = ({}) => {
 
   function renderOption(s: RefSection, index: number) {
     return (
-      <NavLink to={generatePath(s.route)} className="option" activeClassName="selected">
+      <NavLink
+        exact={s.exact}
+        to={generatePath(s.route)}
+        className="option"
+        activeClassName="selected"
+        onClick={() => setMenuVisible(false)}
+      >
         {s.title}
       </NavLink>
     );

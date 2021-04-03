@@ -10,7 +10,12 @@ export const GuarianTabRef: React.FC<IProps> = ({}) => {
     <div>
       <div className="tab-wrapper">
         {refSections.map((s) => (
-          <NavLink className="tab" activeClassName="selected" to={generatePath(s.route)}>
+          <NavLink
+            exact={s.exact}
+            className="tab"
+            activeClassName="selected"
+            to={generatePath(s.route)}
+          >
             {s.title}
           </NavLink>
         ))}

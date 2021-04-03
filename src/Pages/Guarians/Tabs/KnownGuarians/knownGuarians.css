@@ -40,3 +40,8 @@ Character reference
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.character-ref .narrow-screen .header {
+  margin-right: 0px;
+  text-align: center;
+}

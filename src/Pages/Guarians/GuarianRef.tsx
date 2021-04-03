@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { NarrowScreen, WideScreen } from "../../Components/ScreenDetector";
 import GuarianMenuRef from "./GuarianMenuRef";
 import "./guarianRef.css";
 import GuarianTabRef from "./GuarianTabRef";
-import Placeholder from "./Tabs/Placeholder";
 
 interface IProps {}
 
