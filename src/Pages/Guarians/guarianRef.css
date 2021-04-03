@@ -71,6 +71,7 @@ a {
   cursor: pointer;
   user-select: none;
   display: block;
+  white-space: nowrap;
 }
 
 .overlay-menu .option:hover {

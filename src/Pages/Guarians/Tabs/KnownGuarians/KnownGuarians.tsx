@@ -20,9 +20,9 @@ const KnownGuarians: React.FC<IProps> = ({}) => {
     return <Redirect to="/guarians/list" />;
   }
 
-  function renderRef() {
+  function renderRef(includeMargin: boolean) {
     return (
-      <div style={{ flex: 1, marginRight: 10 }}>
+      <div style={{ flex: 1, marginRight: includeMargin ? 10 : 0 }}>
         {guarian ? (
           <GuarianCharacterReference guarian={guarian} />
         ) : (
@@ -46,11 +46,11 @@ const KnownGuarians: React.FC<IProps> = ({}) => {
     <>
       <WideScreen>
         <div style={{ display: "flex" }}>
-          {renderRef()}
+          {renderRef(true)}
           {renderLinks()}
         </div>
       </WideScreen>
-      <NarrowScreen>{guarian ? renderRef() : renderLinks()}</NarrowScreen>
+      <NarrowScreen>{guarian ? renderRef(false) : renderLinks()}</NarrowScreen>
     </>
   );
 };
