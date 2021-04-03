@@ -1,7 +1,7 @@
 import React from "react";
 import Placeholder from "./Tabs/Placeholder";
-import { Abilities } from "./Tabs/Abilities";
 import { KnownGuarians } from "./Tabs/KnownGuarians";
+import { Lore } from "./Tabs/Lore/Lore";
 
 export interface RefSection {
   title: string;
@@ -11,9 +11,7 @@ export interface RefSection {
 
 const refSections: RefSection[] = [
   { title: "Overview", content: <Placeholder />, route: "/guarians" },
-  { title: "Abilities", content: <Abilities />, route: "/guarians/abilities" },
-  { title: "Adornment", content: <Placeholder />, route: "/guarians/adornments" },
-  { title: "Perception", content: <Placeholder />, route: "/guarians/perception" },
+  { title: "Lore", content: <Lore />, route: "/guarians/lore" },
   { title: "Known Guarians", content: <KnownGuarians />, route: "/guarians/list/:guarian?" },
   { title: "A Guarian of Your Own", content: <Placeholder />, route: "/guarians/custom" },
 ];

@@ -9,7 +9,7 @@ interface IProps {
 const GuarianCharacterReference: React.FC<IProps> = ({ guarian }) => {
   return (
     <div className="character-ref">
-      <img src={guarian.emblem} style={{ float: "right", borderTopRightRadius: 9 }} />
+      <img src={guarian.emblem} style={{ float: "right", margin: 20 }} />
       <h1 className="header">{guarian.name}</h1>
       <img
         src={guarian.refImage}

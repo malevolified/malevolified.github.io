@@ -2,7 +2,7 @@ import React from "react";
 
 interface IProps {}
 
-export const Abilities: React.FC<IProps> = ({}) => {
+const Lore: React.FC<IProps> = ({}) => {
   return (
     <div>
       <p>
@@ -38,5 +38,5 @@ export const Abilities: React.FC<IProps> = ({}) => {
   );
 };
 
-Abilities.displayName = "Abilities";
-export default Abilities;
+Lore.displayName = "Lore";
+export { Lore };

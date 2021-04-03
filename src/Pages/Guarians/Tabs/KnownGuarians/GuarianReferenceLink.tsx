@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { GuarianInfo } from "./guarians";
+import "./knownGuarians.css";
 
 interface IProps {
   guarian: GuarianInfo;
@@ -15,6 +16,7 @@ const GuarianReferenceLink: React.FC<IProps> = ({ guarian }) => {
           backgroundColor: "rgb(203, 200, 233)",
           color: "rgb(51, 48, 73)",
         }}
+        className="character-link"
       >
         {guarian.name}
       </NavLink>

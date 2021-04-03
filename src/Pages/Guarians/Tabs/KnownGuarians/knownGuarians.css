@@ -1,4 +1,23 @@
 /*~*~*~*~*~*~*~
+Character links
+~*~*~*~*~*~*~*/
+
+.character-link {
+  padding: 10px;
+  font-size: 15px;
+  display: block;
+  text-align: center;
+}
+
+.character-link:hover {
+  background-color: rgb(60, 57, 85);
+}
+
+.character-link:hover:active {
+  background-color: rgb(77, 73, 110);
+}
+
+/*~*~*~*~*~*~*~
 Character reference
 ~*~*~*~*~*~*~*/
 
@@ -15,7 +34,7 @@ Character reference
 
 .character-ref .header {
   border-bottom: 1px solid #fffcef;
-  margin-right: 240px;
+  margin-right: 260px;
   font-size: 72px;
   padding-left: 20px;
   margin-top: 10px;
