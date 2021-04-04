@@ -4,13 +4,17 @@ import { GuarianReferenceLink } from "./GuarianReferenceLink";
 import { guarians } from "./guarians";
 import { GuarianCharacterReference } from "./GuarianCharacterReference";
 import { NarrowScreen, WideScreen } from "../../../../Components/ScreenDetector";
+import { useLocalStorage } from "../../../../Hooks/useLocalStorage";
+import { SHOW_SECRET_GUARIANS } from "../FAQ/FAQ";
 
 interface IProps {}
 
 const KnownGuarians: React.FC<IProps> = ({}) => {
+  const [showSecret] = useLocalStorage(SHOW_SECRET_GUARIANS, false);
+
   const { guarian: selectedGuarianName } = useParams<{ guarian?: string }>();
 
-  const availableGuarians = guarians.filter((g) => !g.secret);
+  const availableGuarians = guarians.filter((g) => !g.secret || showSecret);
 
   const guarian = availableGuarians.find(
     (g) => g.name.toLowerCase() == selectedGuarianName?.toLowerCase()

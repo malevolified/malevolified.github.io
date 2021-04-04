@@ -1,0 +1,14 @@
+.faq .question {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.faq .answer {
+  margin-left: 20px;
+}
+
+.faq .answer.secret {
+  text-decoration: underline dotted;
+  text-decoration-thickness: 1px;
+  cursor: pointer;
+}
