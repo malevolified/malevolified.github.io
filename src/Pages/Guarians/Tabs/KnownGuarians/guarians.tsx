@@ -5,8 +5,11 @@ import { reguarPack } from "./images/reguar";
 
 export interface GuarianInfo {
   name: string;
+  subTitle: string;
 
+  notes: React.ReactNode;
   description: React.ReactNode;
+
   images: GuarianImagePack;
   secret?: boolean;
 }
@@ -14,35 +17,120 @@ export interface GuarianInfo {
 const guarians: GuarianInfo[] = [
   {
     name: "Reguar",
+    subTitle: "The Beginning",
+    notes: (
+      <ul className="big-list">
+        <li>PLACEHOLDER</li>
+      </ul>
+    ),
     description: (
-      <>
-        <p>
-          A quiet, lumbering fellow, Reguar could be considered a guarian in its purest, most
-          refined form; the average of pretty much any and every guarian combined into one single
-          entity. While they may not be as remarkable or interesting as the other guarians, they
-          still care for you just as much and will happily be at your side whenever you need them.
-        </p>
-        <p>
-          Being visited by your guarian is often a memorable thing, every guarian having their own
-          special presence, every meeting, a clandestine encounter. A visit from Reguar, however, is
-          far more informal and is more akin to being greeted by an extremely large dog. With very
-          little pomp and circumstance, lacking grace, they typically flop next to you and tilt
-          their head your way, awaiting to be either petted or laid upon. Regardless of what you
-          choose, they will not mind in the end. They merely wish to keep you company whenever they
-          can; a quiet companion to press against
-        </p>
-      </>
+      <p>
+        Perhaps the most average guarian that could possibly be surmised, while Reguar may not be as
+        exciting as the other guarians, they still care for you just as much.
+      </p>
     ),
     images: reguarPack,
   },
-  { name: "Lavuar", description: <p>PLACEHOLDER</p>, images: placeholderPack },
-  { name: "Malvuar", description: <p>PLACEHOLDER</p>, images: placeholderPack },
-  { name: "Owluar", description: <p>PLACEHOLDER</p>, images: placeholderPack },
-  { name: "Serguar", description: <p>PLACEHOLDER</p>, images: placeholderPack },
-  { name: "Wereguar", description: <p>PLACEHOLDER</p>, images: placeholderPack },
-  { name: "Panthuar", description: <p>PLACEHOLDER</p>, images: placeholderPack },
-  { name: "Septuar", description: <p>PLACEHOLDER</p>, secret: true, images: placeholderPack },
-  { name: "Enduar", description: <p>PLACEHOLDER</p>, secret: true, images: placeholderPack },
+  {
+    name: "Lavuar",
+    subTitle: "PLACEHOLDER",
+    notes: (
+      <ul className="big-list">
+        <li>Bouncy and energetic</li>
+        <li>
+          Possesses such high perception for a guarian that she can be safely ridden without
+          guidance
+        </li>
+      </ul>
+    ),
+    description: (
+      <p>
+        Given their typical lack of perception, the guarians are often masters of the silent and
+        subtle hello. Lavuar, on the other hand, has such confindence in her movement that she's one
+        of the only guarians you'll find practically bouncing circles around you.
+      </p>
+    ),
+    images: placeholderPack,
+  },
+  {
+    name: "Malvuar",
+    subTitle: "PLACEHOLDER",
+    notes: (
+      <ul className="big-list">
+        <li>PLACEHOLDER</li>
+      </ul>
+    ),
+    description: <p>PLACEHOLDER</p>,
+    images: placeholderPack,
+  },
+  {
+    name: "Owluar",
+    subTitle: "PLACEHOLDER",
+    notes: (
+      <ul className="big-list">
+        <li>PLACEHOLDER</li>
+      </ul>
+    ),
+    description: <p>PLACEHOLDER</p>,
+    images: placeholderPack,
+  },
+  {
+    name: "Serguar",
+    subTitle: "PLACEHOLDER",
+    notes: (
+      <ul className="big-list">
+        <li>PLACEHOLDER</li>
+      </ul>
+    ),
+    description: <p>PLACEHOLDER</p>,
+    images: placeholderPack,
+  },
+  {
+    name: "Wereguar",
+    subTitle: "PLACEHOLDER",
+    notes: (
+      <ul className="big-list">
+        <li>PLACEHOLDER</li>
+      </ul>
+    ),
+    description: <p>PLACEHOLDER</p>,
+    images: placeholderPack,
+  },
+  {
+    name: "Panthuar",
+    subTitle: "PLACEHOLDER",
+    notes: (
+      <ul className="big-list">
+        <li>PLACEHOLDER</li>
+      </ul>
+    ),
+    description: <p>PLACEHOLDER</p>,
+    images: placeholderPack,
+  },
+  {
+    name: "Septuar",
+    subTitle: "PLACEHOLDER",
+    notes: (
+      <ul className="big-list">
+        <li>PLACEHOLDER</li>
+      </ul>
+    ),
+    description: <p>PLACEHOLDER</p>,
+    secret: true,
+    images: placeholderPack,
+  },
+  {
+    name: "Enduar",
+    subTitle: "PLACEHOLDER",
+    notes: (
+      <ul className="big-list">
+        <li>PLACEHOLDER</li>
+      </ul>
+    ),
+    description: <p>PLACEHOLDER</p>,
+    secret: true,
+    images: placeholderPack,
+  },
 ];
 
 export { guarians };

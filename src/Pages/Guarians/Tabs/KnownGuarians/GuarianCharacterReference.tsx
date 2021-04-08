@@ -12,25 +12,34 @@ const GuarianCharacterReference: React.FC<IProps> = ({ guarian }) => {
     <div className="character-ref">
       <WideScreen>
         <img src={guarian.images.emblem} style={{ float: "right", margin: 20 }} />
-        <h1 className="header">{guarian.name}</h1>
+        <h1 className="header">
+          {guarian.name}
+          <span className="sub-title">{guarian.subTitle}</span>
+        </h1>
         <img
           src={guarian.images.ref}
           style={{ float: "left", height: "calc(100vh - 360px)", maxHeight: 900 }}
         />
+        <div style={{ height: 441 }}>{guarian.notes}</div>
         <p>{guarian.description}</p>
       </WideScreen>
       <NarrowScreen>
         <div
           style={{
             backgroundImage: "url(" + guarian.images.emblem + ")",
+            backgroundRepeat: "no-repeat",
             backgroundSize: "100%",
             width: "100%",
             boxShadow: "0px 0px 50px 25px rgb(51, 48, 73) inset",
           }}
         >
           <div style={{ backgroundColor: "rgb(51, 48, 73, 0.9)" }}>
-            <h1 className="header">{guarian.name}</h1>
+            <h1 className="header">
+              {guarian.name}
+              <span className="sub-title">{guarian.subTitle}</span>
+            </h1>
             <img src={guarian.images.ref} style={{ width: "100%" }} />
+            <p style={{ margin: 10 }}>{guarian.notes}</p>
             <p style={{ margin: 10 }}>{guarian.description}</p>
           </div>
         </div>

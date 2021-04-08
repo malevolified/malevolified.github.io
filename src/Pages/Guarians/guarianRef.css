@@ -3,6 +3,11 @@
   src: url(./Fonts/OptimusPrinceps.ttf);
 }
 
+@font-face {
+  font-family: "Subtitle";
+  src: url(./Fonts/OptimusPrincepsSemiBold.ttf);
+}
+
 /*~*~*~*~*~*~*~*~*~*~*~*~*
   COMMON
 ~*~*~*~*~*~*~*~*~*~*~*~*~*/
@@ -18,7 +23,7 @@ h6 {
 
 .guarian-ref {
   background-color: rgb(31, 29, 44);
-  color: #fffcef;
+  color: #fffae4;
   padding: 5vh 4vw;
   min-height: 100vh;
   display: flex;
@@ -26,8 +31,17 @@ h6 {
 }
 
 a {
-  color: #fffcef;
+  color: #fffae4;
   text-decoration: none;
+}
+
+.guarian-ref .big-list {
+  list-style-image: url("./Images/ulArrow.png");
+  font-size: 20px;
+}
+
+.guarian-ref .big-list li {
+  margin-bottom: 20px;
 }
 
 /*~*~*~*~*~*~*~*~*~*~*~*~*
