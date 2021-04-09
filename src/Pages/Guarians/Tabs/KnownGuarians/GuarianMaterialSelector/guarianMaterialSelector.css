@@ -1,0 +1,13 @@
+.material-selector-list {
+  display: flex;
+}
+
+.material-selector-list .material-selector {
+  background-color: rgb(21, 35, 100);
+  cursor: pointer;
+}
+
+.material-selector-list .material-selector.selected {
+  background-color: rgb(108, 127, 212);
+  color: black;
+}

@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NarrowScreen, WideScreen } from "../../../../Components/ScreenDetector";
+import { GuarianMaterialSelector } from "./GuarianMaterialSelector/GuarianMaterialSelector";
 import { GuarianInfo } from "./guarians";
+import { GuarianMaterial } from "./images/guarianImagePack";
 import "./knownGuarians.css";
 
 interface IProps {
@@ -8,6 +10,14 @@ interface IProps {
 }
 
 const GuarianCharacterReference: React.FC<IProps> = ({ guarian }) => {
+  const [selectedMaterial, setSelectedMaterial] = useState(GuarianMaterial.Fluffy);
+
+  const ref = guarian.images.refs.find((r) => r.material == selectedMaterial)?.ref;
+
+  useEffect(() => {
+    setSelectedMaterial(guarian.images.refs[0].material);
+  }, [guarian]);
+
   return (
     <div className="character-ref">
       <WideScreen style={{ position: "relative" }}>
@@ -19,9 +29,16 @@ const GuarianCharacterReference: React.FC<IProps> = ({ guarian }) => {
           <span className="sub-title">{guarian.subTitle}</span>
         </h1>
         <div style={{ display: "flex" }}>
-          <img src={guarian.images.ref} style={{ height: "min(900px, 100vh - 360px)" }} />
           <div>
-            <div style={{ height: 441, marginRight: 260 }}>{guarian.notes}</div>
+            <GuarianMaterialSelector
+              materials={guarian.images.refs.map((r) => r.material)}
+              selected={selectedMaterial}
+              onSelect={setSelectedMaterial}
+            />
+            <img src={ref} style={{ height: "min(900px, 100vh - 360px)" }} />
+          </div>
+          <div>
+            <div style={{ height: 441, marginRight: 270 }}>{guarian.notes}</div>
             <div className="description">{guarian.description}</div>
           </div>
         </div>
@@ -41,7 +58,12 @@ const GuarianCharacterReference: React.FC<IProps> = ({ guarian }) => {
               {guarian.name}
               <span className="sub-title">{guarian.subTitle}</span>
             </h1>
-            <img src={guarian.images.ref} style={{ width: "100%" }} />
+            <GuarianMaterialSelector
+              materials={guarian.images.refs.map((r) => r.material)}
+              selected={selectedMaterial}
+              onSelect={setSelectedMaterial}
+            />
+            <img src={ref} style={{ width: "100%" }} />
             <p style={{ margin: 10 }}>{guarian.notes}</p>
             <p style={{ margin: 10 }}>{guarian.description}</p>
           </div>
