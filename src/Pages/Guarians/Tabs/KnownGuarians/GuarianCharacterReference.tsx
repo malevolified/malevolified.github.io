@@ -35,7 +35,10 @@ const GuarianCharacterReference: React.FC<IProps> = ({ guarian }) => {
               selected={selectedMaterial}
               onSelect={setSelectedMaterial}
             />
-            <img src={ref} style={{ height: "min(900px, 100vh - 360px)" }} />
+            <img
+              src={ref}
+              style={{ width: "calc(100vw - 1300px)", maxWidth: 900, minWidth: 400 }}
+            />
           </div>
           <div>
             <div style={{ height: 441, marginRight: 270 }}>{guarian.notes}</div>

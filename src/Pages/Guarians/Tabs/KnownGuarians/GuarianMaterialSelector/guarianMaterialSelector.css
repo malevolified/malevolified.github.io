@@ -6,9 +6,10 @@
 .material-selector-list .material-selector {
   background-color: rgb(31, 29, 44);
   cursor: pointer;
-  padding: 4px 6px 1px;
+  padding: 4px 6px 0px;
   border-radius: 50px;
   margin-right: 10px;
+  user-select: none;
 }
 
 .material-selector-list .material-selector:hover {
