@@ -24,6 +24,7 @@ h4,
 h5,
 h6 {
   font-family: "Title";
+  border-bottom: 1px solid #fffae4;
 }
 
 .guarian-ref {
@@ -34,7 +35,8 @@ h6 {
   display: flex;
   flex-direction: column;
   font-family: "Body";
-  font-size: 17px;
+  font-size: 1.2em;
+  line-height: 1.2;
 }
 
 a {
@@ -44,11 +46,16 @@ a {
 
 .guarian-ref .big-list {
   list-style-image: url("./Images/ulArrow.png");
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .guarian-ref .big-list li {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.guarian-ref .big-list li > ul > li:first-child {
+  margin-top: 20px;
+  font-size: 20px;
 }
 
 /*~*~*~*~*~*~*~*~*~*~*~*~*
@@ -174,8 +181,9 @@ a {
 .guarian-ref .title {
   font-family: "Title";
   text-align: center;
-  font-size: 3em;
+  font-size: 2.5em;
   margin-top: 30px;
+  border-bottom: none;
 }
 
 .guarian-ref .wrappable-row {

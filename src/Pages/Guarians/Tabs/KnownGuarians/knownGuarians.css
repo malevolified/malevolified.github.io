@@ -4,9 +4,10 @@ Character links
 
 .character-link {
   padding: 10px;
-  font-size: 15px;
+  font-size: 19px;
   display: block;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .character-link:hover {
@@ -57,10 +58,20 @@ Character reference
   flex-direction: column;
   padding-left: 0px;
   align-items: center;
+  font-size: 54px;
 }
 
 .character-ref .narrow-screen .sub-title {
   margin-top: -5px;
   margin-left: 0px;
   margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.character-ref .description {
+  margin: 0px 10px;
+}
+
+.character-ref .description p:first-child {
+  margin-top: 0px;
 }

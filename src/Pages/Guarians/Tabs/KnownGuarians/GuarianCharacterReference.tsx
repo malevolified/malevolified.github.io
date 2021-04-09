@@ -10,18 +10,21 @@ interface IProps {
 const GuarianCharacterReference: React.FC<IProps> = ({ guarian }) => {
   return (
     <div className="character-ref">
-      <WideScreen>
-        <img src={guarian.images.emblem} style={{ float: "right", margin: 20 }} />
+      <WideScreen style={{ position: "relative" }}>
+        <div style={{ position: "absolute", top: 0, right: 0 }}>
+          <img src={guarian.images.emblem} style={{ margin: 20 }} />
+        </div>
         <h1 className="header">
           {guarian.name}
           <span className="sub-title">{guarian.subTitle}</span>
         </h1>
-        <img
-          src={guarian.images.ref}
-          style={{ float: "left", height: "calc(100vh - 360px)", maxHeight: 900 }}
-        />
-        <div style={{ height: 441 }}>{guarian.notes}</div>
-        <p>{guarian.description}</p>
+        <div style={{ display: "flex" }}>
+          <img src={guarian.images.ref} style={{ height: "min(900px, 100vh - 360px)" }} />
+          <div>
+            <div style={{ height: 441, marginRight: 260 }}>{guarian.notes}</div>
+            <div className="description">{guarian.description}</div>
+          </div>
+        </div>
       </WideScreen>
       <NarrowScreen>
         <div

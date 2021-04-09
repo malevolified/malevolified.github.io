@@ -20,13 +20,29 @@ const guarians: GuarianInfo[] = [
     subTitle: "The Beginning",
     notes: (
       <ul className="big-list">
-        <li>PLACEHOLDER</li>
+        <li>The average of every guarian combined into one entity</li>
+        <li>Extremely lazy but happy to nap with you whenever</li>
+        <li>
+          They may not be as exciting as the other guarians, but they still care for you just as
+          much
+        </li>
+        <li>
+          Very low perception (even for a guarian)
+          <ul>
+            <li>
+              You might hear the sound of them gently bumping into a wall every so often, but don't
+              worry, they'll be alright
+            </li>
+          </ul>
+        </li>
       </ul>
     ),
     description: (
       <p>
-        Perhaps the most average guarian that could possibly be surmised, while Reguar may not be as
-        exciting as the other guarians, they still care for you just as much.
+        Depending on who you meet, a visit from a guarian can be an ethereal experience. A visit
+        from Reguar, on the other hand, is more akin to being visited by an especially oversized
+        lazy dog. After a long day, they lumber up next to you and clumsily flop onto their side,
+        waiting to either be petted or laid upon.
       </p>
     ),
     images: reguarPack,
@@ -38,8 +54,10 @@ const guarians: GuarianInfo[] = [
       <ul className="big-list">
         <li>Bouncy and energetic</li>
         <li>
-          Possesses such high perception for a guarian that she can be safely ridden without
-          guidance
+          Possesses really high perception
+          <ul>
+            <li>So high that she can actually be safely ridden without needing guidance!</li>
+          </ul>
         </li>
       </ul>
     ),
@@ -57,10 +75,30 @@ const guarians: GuarianInfo[] = [
     subTitle: "PLACEHOLDER",
     notes: (
       <ul className="big-list">
-        <li>PLACEHOLDER</li>
+        <li>Uncharacteristically obnoxious for a guarian</li>
+        <li>Often shoves himself between you and whatever you're doing</li>
+        <li>
+          Will actively follow you around wherever you go
+          <ul>
+            <li>Even in public</li>
+          </ul>
+        </li>
+        <li>Despite being completely visible, nobody seems to mind their presence except you</li>
       </ul>
     ),
-    description: <p>PLACEHOLDER</p>,
+    description: (
+      <>
+        <p>
+          Out in the open, where everyone can see, you roam around, Malvuar following so closely
+          that he's practically on top of you. You desperately try to convince onlookers that this
+          bizarre, boisterous beast won't leave you alone, but no one seems to care and you can't
+          figure out why. He's not invisible, everyone can see him loud and clear for what he really
+          is, but no matter who you ask, everyone seems to think that this is just the way it's
+          always been, the way it's meant to be.
+        </p>
+        <p>Something really does not feel right about this guarian.</p>
+      </>
+    ),
     images: placeholderPack,
   },
   {
@@ -68,7 +106,12 @@ const guarians: GuarianInfo[] = [
     subTitle: "PLACEHOLDER",
     notes: (
       <ul className="big-list">
-        <li>PLACEHOLDER</li>
+        <li>Quiet, but incredibly caring</li>
+        <li>
+          Even though they don't really understand you, they will happily listen to whatever's on
+          your mind
+        </li>
+        <li>Possesses an incredible stillness, even for a guarian</li>
       </ul>
     ),
     description: <p>PLACEHOLDER</p>,
