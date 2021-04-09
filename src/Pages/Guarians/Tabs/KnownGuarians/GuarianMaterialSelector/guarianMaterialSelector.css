@@ -1,13 +1,25 @@
 .material-selector-list {
   display: flex;
+  justify-content: center;
 }
 
 .material-selector-list .material-selector {
-  background-color: rgb(21, 35, 100);
+  background-color: rgb(31, 29, 44);
   cursor: pointer;
+  padding: 4px 6px 1px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.material-selector-list .material-selector:hover {
+  background-color: rgb(25, 23, 36);
+}
+
+.material-selector-list .material-selector:hover:active {
+  background-color: rgb(67, 63, 95);
 }
 
 .material-selector-list .material-selector.selected {
-  background-color: rgb(108, 127, 212);
+  background-color: rgb(203, 200, 233);
   color: black;
 }
