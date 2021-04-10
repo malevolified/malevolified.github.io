@@ -9,16 +9,19 @@ interface IProps {
 
 const GuarianReferenceLink: React.FC<IProps> = ({ guarian }) => {
   return (
-    <div>
+    <div
+      className="character-link"
+      style={{
+        background: "url(" + guarian.images.emblems.list + ")",
+        backgroundSize: "contain",
+      }}
+    >
       <NavLink
         to={"/guarians/list/" + guarian.name.toLowerCase()}
-        activeStyle={{
-          backgroundColor: "rgb(203, 200, 233)",
-          color: "rgb(51, 48, 73)",
-        }}
-        className="character-link"
+        className="nav-wrapper"
+        activeClassName="selected-guarian"
       >
-        {guarian.name}
+        <div>{guarian.name}</div>
       </NavLink>
     </div>
   );

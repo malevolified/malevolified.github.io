@@ -9,7 +9,13 @@ export interface GuarianMaterialRef {
   material: GuarianMaterial;
 }
 
+export interface GuarianEmblems {
+  full: string;
+  list: string;
+  icon: string;
+}
+
 export interface GuarianImagePack {
-  emblem: string;
+  emblems: GuarianEmblems;
   refs: GuarianMaterialRef[];
 }

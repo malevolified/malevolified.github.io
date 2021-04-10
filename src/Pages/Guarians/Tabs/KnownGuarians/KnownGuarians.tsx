@@ -52,7 +52,7 @@ const KnownGuarians: React.FC<IProps> = ({}) => {
 
   function renderLinks() {
     return (
-      <div className="character-ref" style={{ width: 300, overflowY: "auto" }}>
+      <div className="bordered-item character-link-wrapper">
         {availableGuarians.map((g) => (
           <GuarianReferenceLink guarian={g} />
         ))}

@@ -1,31 +1,51 @@
 /*~*~*~*~*~*~*~
+Common
+~*~*~*~*~*~*~*/
+
+.bordered-item {
+  border: 3px solid #fffcef;
+  border-radius: 10px;
+}
+
+/*~*~*~*~*~*~*~
 Character links
 ~*~*~*~*~*~*~*/
 
+.character-link-wrapper {
+  width: 300px;
+  overflow-y: scroll;
+  scrollbar-color: rgb(51, 48, 73) rgb(31, 29, 44);
+}
+
 .character-link {
-  padding: 10px;
-  font-size: 19px;
-  display: block;
-  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
   text-transform: uppercase;
+  height: 111px;
 }
 
-.character-link:hover {
-  background-color: rgb(60, 57, 85);
+.character-link .nav-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 48, 73, 0.733);
+  transition: 0.2s;
 }
 
-.character-link:hover:active {
-  background-color: rgb(77, 73, 110);
+.character-link .nav-wrapper.selected-guarian {
+  background-color: #ffffff00;
+}
+
+.character-link .nav-wrapper div {
+  padding-right: 10px;
+  padding-bottom: 5px;
 }
 
 /*~*~*~*~*~*~*~
 Character reference
 ~*~*~*~*~*~*~*/
-
-.character-ref {
-  border: 3px solid #fffcef;
-  border-radius: 10px;
-}
 
 .character-ref:after {
   content: "";

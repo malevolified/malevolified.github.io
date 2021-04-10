@@ -9,6 +9,11 @@ interface IProps {
   guarian: GuarianInfo;
 }
 
+//TODO
+//Listen for window width changes and shrink the guarian link list if too narrow
+//If the window is even more narrow, move dot notes out of guarian pictures and put it below
+//    while also making the material picker vertical next to the guarian pic instead
+
 const GuarianCharacterReference: React.FC<IProps> = ({ guarian }) => {
   const [selectedMaterial, setSelectedMaterial] = useState(GuarianMaterial.Fluffy);
 
@@ -19,10 +24,10 @@ const GuarianCharacterReference: React.FC<IProps> = ({ guarian }) => {
   }, [guarian]);
 
   return (
-    <div className="character-ref">
+    <div className="character-ref bordered-item">
       <WideScreen style={{ position: "relative" }}>
         <div style={{ position: "absolute", top: 0, right: 0 }}>
-          <img src={guarian.images.emblem} style={{ margin: 20 }} />
+          <img src={guarian.images.emblems.full} style={{ margin: 20 }} />
         </div>
         <h1 className="header">
           {guarian.name}
@@ -41,7 +46,7 @@ const GuarianCharacterReference: React.FC<IProps> = ({ guarian }) => {
             />
           </div>
           <div>
-            <div style={{ height: 441, marginRight: 270 }}>{guarian.notes}</div>
+            <div style={{ minHeight: 441, marginRight: 270 }}>{guarian.notes}</div>
             <div className="description">{guarian.description}</div>
           </div>
         </div>
@@ -49,7 +54,7 @@ const GuarianCharacterReference: React.FC<IProps> = ({ guarian }) => {
       <NarrowScreen>
         <div
           style={{
-            backgroundImage: "url(" + guarian.images.emblem + ")",
+            backgroundImage: "url(" + guarian.images.emblems.full + ")",
             backgroundRepeat: "no-repeat",
             backgroundSize: "100%",
             width: "100%",
