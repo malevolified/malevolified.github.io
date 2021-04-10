@@ -2,6 +2,7 @@
   display: inline-block;
   overflow-y: auto;
   scrollbar-color: rgb(51, 48, 73) rgb(31, 29, 44);
+  max-height: 100%;
 }
 
 .character-link {

@@ -6,9 +6,11 @@ import { GuarianMaterial } from "../images/guarianImagePack";
 import "./guarianCharacterReference.css";
 import { NarrowGuarianReference } from "./NarrowGuarianReference";
 import { WideGuarianReference } from "./WideGuarianReference";
+import { useResizeDetector } from "react-resize-detector";
 
 interface IProps {
   guarian: GuarianInfo;
+  ref?: React.MutableRefObject<null>;
 }
 
 //TODO
@@ -16,17 +18,15 @@ interface IProps {
 //If the window is even more narrow, move dot notes out of guarian pictures and put it below
 //    while also making the material picker vertical next to the guarian pic instead
 
-const GuarianCharacterReference: React.FC<IProps> = ({ guarian }) => {
+const GuarianCharacterReference: React.FC<IProps> = ({ guarian, ref }) => {
   const [selectedMaterial, setSelectedMaterial] = useState(GuarianMaterial.Fluffy);
-
-  const ref = guarian.images.refs.find((r) => r.material == selectedMaterial)?.ref;
 
   useEffect(() => {
     setSelectedMaterial(guarian.images.refs[0].material);
   }, [guarian]);
 
   return (
-    <div className="character-ref bordered-item">
+    <div ref={ref} className="character-ref bordered-item">
       <WideScreen style={{ position: "relative" }}>
         <WideGuarianReference
           guarian={guarian}

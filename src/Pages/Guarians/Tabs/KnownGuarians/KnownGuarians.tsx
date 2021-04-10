@@ -9,6 +9,8 @@ import { GuarianCharacterReference } from "./GuarianCharacterReference";
 import { GuarianLinks } from "./GuarianLinks.tsx";
 import "./knownGuarians.css";
 import { useScreenWidthGreaterThan } from "../../../../Hooks/useScreenWidthGreaterThan";
+import { useResizeDetector } from "react-resize-detector";
+import { WideKnownGuarians } from "./WideKnownGuarians";
 
 interface IProps {}
 
@@ -19,10 +21,6 @@ const KnownGuarians: React.FC<IProps> = ({}) => {
   const availableGuarians = guarians.filter((g) => !g.secret || showSecret);
   const guarian = availableGuarians.find(
     (g) => g.name.toLowerCase() == selectedGuarianName?.toLowerCase()
-  );
-
-  const shouldExpandList = useScreenWidthGreaterThan(
-    (guarian?.images.maxRefWidth ?? 900) + COLLAPSE_LINKS_ROOM
   );
 
   function renderRef(includeMargin: boolean) {
@@ -58,10 +56,7 @@ const KnownGuarians: React.FC<IProps> = ({}) => {
   return (
     <>
       <WideScreen>
-        <div style={{ display: "flex" }}>
-          {renderRef(true)}
-          <GuarianLinks guarians={availableGuarians} collapsed={!shouldExpandList} />
-        </div>
+        <WideKnownGuarians guarians={availableGuarians} selected={guarian} />
       </WideScreen>
       <NarrowScreen>
         {guarian ? (
