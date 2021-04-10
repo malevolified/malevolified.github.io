@@ -11,6 +11,7 @@ import "./knownGuarians.css";
 import { useScreenWidthGreaterThan } from "../../../../Hooks/useScreenWidthGreaterThan";
 import { useResizeDetector } from "react-resize-detector";
 import { WideKnownGuarians } from "./WideKnownGuarians";
+import { KnownGuarianBody } from "./KnownGuarianBody";
 
 interface IProps {}
 
@@ -26,25 +27,7 @@ const KnownGuarians: React.FC<IProps> = ({}) => {
   function renderRef(includeMargin: boolean) {
     return (
       <div style={{ flex: 1, marginRight: includeMargin ? 10 : 0 }}>
-        {guarian ? (
-          <GuarianCharacterReference guarian={guarian} />
-        ) : (
-          <div>
-            <h1>Known Guarians</h1>
-            <p>
-              Listed here are all of the known (or at least well documented) guarians. The actual
-              amount of guarians out there is truly unknown and possibly ever changing, and this
-              list may be extended as more are discovered.
-            </p>
-            <p>
-              As the guarians are often a highly dynamic race, the information provided for each is
-              purely subjective and written from the perspective of the author of these notes. In
-              reality, the guarians often adapt to those of who they are bound to and as such, one
-              guarian may appear or behave completely differently from one person to the next, only
-              keeping with them the very core of who they are.
-            </p>
-          </div>
-        )}
+        {guarian ? <GuarianCharacterReference guarian={guarian} /> : <KnownGuarianBody />}
       </div>
     );
   }
@@ -62,7 +45,9 @@ const KnownGuarians: React.FC<IProps> = ({}) => {
         {guarian ? (
           renderRef(false)
         ) : (
-          <GuarianLinks guarians={availableGuarians} collapsed={false} />
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <GuarianLinks guarians={availableGuarians} collapsed={false} />
+          </div>
         )}
       </NarrowScreen>
     </>

@@ -6,12 +6,11 @@ import "./guarianLinks.css";
 interface IProps {
   guarians: GuarianInfo[];
   collapsed: boolean;
-  style?: React.CSSProperties;
 }
 
-const GuarianLinks: React.FC<IProps> = ({ guarians, collapsed, style }) => {
+const GuarianLinks: React.FC<IProps> = ({ guarians, collapsed }) => {
   return (
-    <div className="bordered-item character-link-wrapper" style={style}>
+    <div className="bordered-item character-link-wrapper">
       {guarians.map((g) => (
         <GuarianReferenceLink guarian={g} collapsed={collapsed} />
       ))}

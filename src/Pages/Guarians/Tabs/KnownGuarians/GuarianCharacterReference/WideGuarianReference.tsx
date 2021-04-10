@@ -18,6 +18,11 @@ const WideGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, onS
     (guarian?.images.maxRefWidth ?? 900) + COLLAPSE_LINKS_ROOM
   );
 
+  function getRefWidth(sidebarWidth: number) {
+    const subtractedPixels = 1875 - guarian.images.maxRefWidth + sidebarWidth;
+    return "calc(100vw - " + subtractedPixels + "px)";
+  }
+
   return (
     <>
       <div style={{ position: "absolute", top: -10, right: 0 }}>
@@ -44,7 +49,7 @@ const WideGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, onS
             style={
               isHorizontal
                 ? {
-                    width: isListCollapsed ? "calc(100vw - 1138px)" : "calc(100vw - 938px)",
+                    width: isListCollapsed ? getRefWidth(280) : getRefWidth(60),
                     maxWidth: guarian.images.maxRefWidth,
                     textAlign: "center",
                   }
@@ -58,7 +63,12 @@ const WideGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, onS
           </div>
         </div>
         <div>
-          <div style={{ minHeight: 441, marginRight: 270 }}>{guarian.notes}</div>
+          <div style={isHorizontal ? { minHeight: 441, marginRight: 270 } : {}}>
+            {guarian.notes}
+          </div>
+          {isHorizontal || (
+            <div style={{ margin: "10px 30px", borderBottom: "1px solid #fffcef33" }}></div>
+          )}
           <div className="description">{guarian.description}</div>
         </div>
       </div>

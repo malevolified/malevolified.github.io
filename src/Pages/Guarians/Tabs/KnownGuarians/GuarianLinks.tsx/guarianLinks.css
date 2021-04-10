@@ -29,8 +29,13 @@
   transition: 0.2s;
 }
 
-.character-link .nav-wrapper:hover {
+.character-link .nav-wrapper:hover,
+.narrow-screen .character-link .nav-wrapper {
   background-color: rgba(51, 48, 73, 0.473);
+}
+
+.narrow-screen .character-link .nav-wrapper {
+  background-color: transparent;
 }
 
 .character-link .nav-wrapper.selected-guarian {
