@@ -34,6 +34,10 @@ Character links
   transition: 0.2s;
 }
 
+.character-link .nav-wrapper:hover {
+  background-color: rgba(51, 48, 73, 0.473);
+}
+
 .character-link .nav-wrapper.selected-guarian {
   background-color: #ffffff00;
 }
@@ -41,57 +45,4 @@ Character links
 .character-link .nav-wrapper div {
   padding-right: 10px;
   padding-bottom: 5px;
-}
-
-/*~*~*~*~*~*~*~
-Character reference
-~*~*~*~*~*~*~*/
-
-.character-ref:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.character-ref .header {
-  display: flex;
-  align-items: flex-start;
-  border-bottom: 1px solid #fffcef;
-  margin-right: 260px;
-  font-size: 72px;
-  padding-left: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.character-ref .sub-title {
-  display: inline-block;
-  font-size: 28px;
-  margin-left: 13px;
-  margin-top: 16px;
-  font-weight: 100;
-}
-
-.character-ref .narrow-screen .header {
-  margin-right: 0px;
-  text-align: center;
-  flex-direction: column;
-  padding-left: 0px;
-  align-items: center;
-  font-size: 54px;
-}
-
-.character-ref .narrow-screen .sub-title {
-  margin-top: -5px;
-  margin-left: 0px;
-  margin-bottom: 5px;
-  font-size: 24px;
-}
-
-.character-ref .description {
-  margin: 0px 10px;
-}
-
-.character-ref .description p:first-child {
-  margin-top: 0px;
 }

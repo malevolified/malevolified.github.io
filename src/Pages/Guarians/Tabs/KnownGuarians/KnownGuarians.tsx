@@ -2,10 +2,10 @@ import React from "react";
 import { Link, Redirect, useParams } from "react-router-dom";
 import { GuarianReferenceLink } from "./GuarianReferenceLink";
 import { guarians } from "./guarians";
-import { GuarianCharacterReference } from "./GuarianCharacterReference";
 import { NarrowScreen, WideScreen } from "../../../../Components/ScreenDetector";
 import { useLocalStorage } from "../../../../Hooks/useLocalStorage";
 import { SHOW_SECRET_GUARIANS } from "../FAQ/FAQ";
+import { GuarianCharacterReference } from "./GuarianCharacterReference";
 
 interface IProps {}
 
