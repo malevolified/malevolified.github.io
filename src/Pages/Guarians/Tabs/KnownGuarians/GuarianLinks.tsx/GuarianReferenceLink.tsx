@@ -1,19 +1,20 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { GuarianInfo } from "./guarians";
-import "./knownGuarians.css";
+import { GuarianInfo } from "../guarians";
+import "./guarianLinks.css";
 
 interface IProps {
   guarian: GuarianInfo;
+  collapsed: boolean;
 }
 
-const GuarianReferenceLink: React.FC<IProps> = ({ guarian }) => {
+const GuarianReferenceLink: React.FC<IProps> = ({ guarian, collapsed }) => {
   return (
     <div
-      className="character-link"
+      className={"character-link" + (collapsed ? " collapsed" : "")}
       style={{
-        background: "url(" + guarian.images.emblems.list + ")",
-        backgroundSize: "contain",
+        backgroundImage:
+          "url(" + (collapsed ? guarian.images.emblems.icon : guarian.images.emblems.list) + ")",
       }}
     >
       <NavLink
@@ -21,7 +22,7 @@ const GuarianReferenceLink: React.FC<IProps> = ({ guarian }) => {
         className="nav-wrapper"
         activeClassName="selected-guarian"
       >
-        <div>{guarian.name}</div>
+        <div>{collapsed ? null : guarian.name}</div>
       </NavLink>
     </div>
   );
