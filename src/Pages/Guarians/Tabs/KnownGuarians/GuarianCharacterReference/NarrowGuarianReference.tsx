@@ -1,5 +1,5 @@
 import React from "react";
-import { GuarianMaterialSelector } from "../GuarianMaterialSelector/GuarianMaterialSelector";
+import { GuarianMaterialSelector } from "./GuarianMaterialSelector/GuarianMaterialSelector";
 import { GuarianInfo } from "../guarians";
 import { GuarianMaterial } from "../images/guarianImagePack";
 
@@ -21,10 +21,7 @@ const NarrowGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, o
       }}
     >
       <div style={{ backgroundColor: "rgb(51, 48, 73, 0.9)" }}>
-        <h1 className="header">
-          {guarian.name}
-          <span className="sub-title">{guarian.subTitle}</span>
-        </h1>
+        <h1 className="header">{guarian.name}</h1>
         <GuarianMaterialSelector
           materials={guarian.images.refs.map((r) => r.material)}
           selected={selectedMaterial}

@@ -18,4 +18,5 @@ export interface GuarianEmblems {
 export interface GuarianImagePack {
   emblems: GuarianEmblems;
   refs: GuarianMaterialRef[];
+  maxRefWidth: number;
 }

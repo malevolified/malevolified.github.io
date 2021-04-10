@@ -5,19 +5,21 @@ import { reguarPack } from "./images/reguar";
 
 export interface GuarianInfo {
   name: string;
-  subTitle: string;
 
   notes: React.ReactNode;
   description: React.ReactNode;
 
   images: GuarianImagePack;
+
   secret?: boolean;
 }
+
+export const COLLAPSE_LINKS_ROOM = 600;
+export const HORIZONTAL_REF_ROOM = 350;
 
 const guarians: GuarianInfo[] = [
   {
     name: "Reguar",
-    subTitle: "The Beginning",
     notes: (
       <ul className="big-list">
         <li>The average of every guarian combined into one entity</li>
@@ -49,7 +51,6 @@ const guarians: GuarianInfo[] = [
   },
   {
     name: "Lavuar",
-    subTitle: "PLACEHOLDER",
     notes: (
       <ul className="big-list">
         <li>Bouncy and energetic</li>
@@ -72,7 +73,6 @@ const guarians: GuarianInfo[] = [
   },
   {
     name: "Malvuar",
-    subTitle: "PLACEHOLDER",
     notes: (
       <ul className="big-list">
         <li>Uncharacteristically obnoxious for a guarian</li>
@@ -103,7 +103,6 @@ const guarians: GuarianInfo[] = [
   },
   {
     name: "Owluar",
-    subTitle: "PLACEHOLDER",
     notes: (
       <ul className="big-list">
         <li>Quiet, but incredibly caring</li>
@@ -119,7 +118,6 @@ const guarians: GuarianInfo[] = [
   },
   {
     name: "Serguar",
-    subTitle: "PLACEHOLDER",
     notes: (
       <ul className="big-list">
         <li>PLACEHOLDER</li>
@@ -130,7 +128,6 @@ const guarians: GuarianInfo[] = [
   },
   {
     name: "Wereguar",
-    subTitle: "PLACEHOLDER",
     notes: (
       <ul className="big-list">
         <li>PLACEHOLDER</li>
@@ -141,7 +138,6 @@ const guarians: GuarianInfo[] = [
   },
   {
     name: "Panthuar",
-    subTitle: "PLACEHOLDER",
     notes: (
       <ul className="big-list">
         <li>PLACEHOLDER</li>
@@ -152,7 +148,6 @@ const guarians: GuarianInfo[] = [
   },
   {
     name: "Septuar",
-    subTitle: "PLACEHOLDER",
     notes: (
       <ul className="big-list">
         <li>PLACEHOLDER</li>
@@ -164,7 +159,6 @@ const guarians: GuarianInfo[] = [
   },
   {
     name: "Enduar",
-    subTitle: "PLACEHOLDER",
     notes: (
       <ul className="big-list">
         <li>PLACEHOLDER</li>

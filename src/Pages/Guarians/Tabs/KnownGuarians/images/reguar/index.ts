@@ -21,6 +21,7 @@ const reguarPack: GuarianImagePack = {
       ref: inflatableRef,
     },
   ],
+  maxRefWidth: 900,
 };
 
 export { reguarPack };

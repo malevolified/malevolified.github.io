@@ -39,10 +39,6 @@
   font-size: 24px;
 }
 
-.character-ref .description {
-  margin: 0px 10px;
-}
-
 .character-ref .description p:first-child {
   margin-top: 0px;
 }

@@ -1,6 +1,7 @@
 import React from "react";
-import { GuarianMaterialSelector } from "../GuarianMaterialSelector/GuarianMaterialSelector";
-import { GuarianInfo } from "../guarians";
+import { useScreenWidthGreaterThan } from "../../../../../Hooks/useScreenWidthGreaterThan";
+import { GuarianMaterialSelector } from "./GuarianMaterialSelector/GuarianMaterialSelector";
+import { COLLAPSE_LINKS_ROOM, GuarianInfo, HORIZONTAL_REF_ROOM } from "../guarians";
 import { GuarianMaterial } from "../images/guarianImagePack";
 
 interface IProps {
@@ -10,27 +11,45 @@ interface IProps {
 }
 
 const WideGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, onSelect }) => {
+  const isHorizontal = useScreenWidthGreaterThan(
+    (guarian?.images.maxRefWidth ?? 900) + HORIZONTAL_REF_ROOM
+  );
+  const isListCollapsed = useScreenWidthGreaterThan(
+    (guarian?.images.maxRefWidth ?? 900) + COLLAPSE_LINKS_ROOM
+  );
+
   return (
     <>
-      <div style={{ position: "absolute", top: 0, right: 0 }}>
+      <div style={{ position: "absolute", top: -10, right: 0 }}>
         <img src={guarian.images.emblems.full} style={{ margin: 20 }} />
       </div>
-      <h1 className="header">
-        {guarian.name}
-        <span className="sub-title">{guarian.subTitle}</span>
-      </h1>
-      <div style={{ display: "flex" }}>
-        <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
+      <h1 className="header">{guarian.name}</h1>
+      <div style={{ display: "flex", flexDirection: isHorizontal ? "row" : "column" }}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: isHorizontal ? "column" : "row",
+            justifyContent: "center",
+            alignItems: "center",
+            marginLeft: isHorizontal ? 0 : 10,
+          }}
+        >
           <GuarianMaterialSelector
             materials={guarian.images.refs.map((r) => r.material)}
             selected={selectedMaterial}
             onSelect={onSelect}
+            direction={isHorizontal ? "horizontal" : "vertical"}
           />
           <div
-            style={{
-              width: "calc(100vw - 1138px)",
-              textAlign: "center",
-            }}
+            style={
+              isHorizontal
+                ? {
+                    width: isListCollapsed ? "calc(100vw - 1138px)" : "calc(100vw - 938px)",
+                    maxWidth: guarian.images.maxRefWidth,
+                    textAlign: "center",
+                  }
+                : { position: "relative", zIndex: 1 }
+            }
           >
             <img
               src={guarian.images.refs.find((r) => r.material == selectedMaterial)?.ref}

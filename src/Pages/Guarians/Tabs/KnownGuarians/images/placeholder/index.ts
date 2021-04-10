@@ -16,6 +16,7 @@ const placeholderPack: GuarianImagePack = {
       ref,
     },
   ],
+  maxRefWidth: 985,
 };
 
 export { placeholderPack };

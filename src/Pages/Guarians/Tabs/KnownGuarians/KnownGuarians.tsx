@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { Link, Redirect, useParams } from "react-router-dom";
 import { GuarianReferenceLink } from "./GuarianLinks.tsx/GuarianReferenceLink";
-import { guarians } from "./guarians";
+import { COLLAPSE_LINKS_ROOM, guarians } from "./guarians";
 import { NarrowScreen, WideScreen } from "../../../../Components/ScreenDetector";
 import { useLocalStorage } from "../../../../Hooks/useLocalStorage";
 import { SHOW_SECRET_GUARIANS } from "../FAQ/FAQ";
 import { GuarianCharacterReference } from "./GuarianCharacterReference";
 import { GuarianLinks } from "./GuarianLinks.tsx";
 import "./knownGuarians.css";
+import { useScreenWidthGreaterThan } from "../../../../Hooks/useScreenWidthGreaterThan";
 
 interface IProps {}
 
 const KnownGuarians: React.FC<IProps> = ({}) => {
   const [showSecret] = useLocalStorage(SHOW_SECRET_GUARIANS, false);
-
-  const [shouldCollapseList, setCollapseList] = useState(window.innerWidth < 1400);
 
   const { guarian: selectedGuarianName } = useParams<{ guarian?: string }>();
   const availableGuarians = guarians.filter((g) => !g.secret || showSecret);
@@ -22,21 +21,9 @@ const KnownGuarians: React.FC<IProps> = ({}) => {
     (g) => g.name.toLowerCase() == selectedGuarianName?.toLowerCase()
   );
 
-  useEffect(() => {
-    if (guarian) {
-      window.addEventListener("resize", handleResize);
-      return () => window.removeEventListener("resize", handleResize);
-    }
-  }, [guarian, shouldCollapseList]);
-
-  function handleResize() {
-    console.log(shouldCollapseList, window.innerWidth);
-    if (shouldCollapseList && window.innerWidth >= 1400) {
-      setCollapseList(false);
-    } else if (!shouldCollapseList && window.innerWidth < 1400) {
-      setCollapseList(true);
-    }
-  }
+  const shouldExpandList = useScreenWidthGreaterThan(
+    (guarian?.images.maxRefWidth ?? 900) + COLLAPSE_LINKS_ROOM
+  );
 
   function renderRef(includeMargin: boolean) {
     return (
@@ -73,7 +60,7 @@ const KnownGuarians: React.FC<IProps> = ({}) => {
       <WideScreen>
         <div style={{ display: "flex" }}>
           {renderRef(true)}
-          <GuarianLinks guarians={availableGuarians} collapsed={shouldCollapseList} />
+          <GuarianLinks guarians={availableGuarians} collapsed={!shouldExpandList} />
         </div>
       </WideScreen>
       <NarrowScreen>
