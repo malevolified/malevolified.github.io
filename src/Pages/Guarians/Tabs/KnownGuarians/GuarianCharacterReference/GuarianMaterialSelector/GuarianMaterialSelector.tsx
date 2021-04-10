@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { GuarianMaterial } from "../../images/guarianImagePack";
 import "./guarianMaterialSelector.css";
 import fluffyIcon from "./icons/fluffyIcon.png";
@@ -19,6 +19,13 @@ const GuarianMaterialSelector: React.FC<IProps> = ({
   onSelect,
   direction = "horizontal",
 }) => {
+  const [showShine, setShowShine] = useState(true);
+
+  useEffect(() => {
+    var timer = setTimeout(() => setShowShine(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
   function getIconForMaterial(material: GuarianMaterial) {
     switch (material) {
       case GuarianMaterial.Rubber:
@@ -32,15 +39,16 @@ const GuarianMaterialSelector: React.FC<IProps> = ({
 
   return (
     <div
-      className="material-selector-list"
+      className={"material-selector-list " + direction}
       style={{ display: "flex", flexDirection: direction == "horizontal" ? "row" : "column" }}
     >
       {materials.map((m) => (
         <div
           key={m}
-          className={"material-selector" + (m == selected ? " selected" : "")}
+          className={
+            "material-selector" + (m == selected ? " selected" : "") + (showShine ? " shine" : "")
+          }
           onClick={() => onSelect(m)}
-          style={direction == "horizontal" ? { marginRight: 10 } : { marginBottom: 10 }}
         >
           <img src={getIconForMaterial(m)} />
         </div>
