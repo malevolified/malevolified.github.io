@@ -1,5 +1,6 @@
 import React from "react";
 import { GuarianImagePack } from "./images/guarianImagePack";
+import { lavuarPack } from "./images/lavuar";
 import { placeholderPack } from "./images/placeholder";
 import { reguarPack } from "./images/reguar";
 
@@ -64,12 +65,13 @@ const guarians: GuarianInfo[] = [
     ),
     description: (
       <p>
-        Given their typical lack of perception, the guarians are often masters of the silent and
-        subtle hello. Lavuar, on the other hand, has such confindence in her movement that she's one
-        of the only guarians you'll find practically bouncing circles around you.
+        Aftering rousing from your slumber, you come to the realization that you fell asleep on
+        Lavuar's back. Having guided you on her own, you have no idea how long you've been out for,
+        how far she's taken you or where you even are right now. That said, it seems really nice
+        here, and Lavuar's
       </p>
     ),
-    images: placeholderPack,
+    images: lavuarPack,
   },
   {
     name: "Malvuar",

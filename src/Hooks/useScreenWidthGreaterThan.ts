@@ -6,6 +6,7 @@ export function useScreenWidthGreaterThan(value: number) {
   useEffect(() => {
     if (value) {
       window.addEventListener("resize", handleResize);
+      handleResize();
       return () => window.removeEventListener("resize", handleResize);
     }
   }, [value, isGreater]);

@@ -1,15 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { Link, Redirect, useParams } from "react-router-dom";
-import { GuarianReferenceLink } from "./GuarianLinks.tsx/GuarianReferenceLink";
-import { COLLAPSE_LINKS_ROOM, guarians } from "./guarians";
+import React from "react";
+import { Redirect, useParams } from "react-router-dom";
+import { guarians } from "./guarians";
 import { NarrowScreen, WideScreen } from "../../../../Components/ScreenDetector";
 import { useLocalStorage } from "../../../../Hooks/useLocalStorage";
 import { SHOW_SECRET_GUARIANS } from "../FAQ/FAQ";
 import { GuarianCharacterReference } from "./GuarianCharacterReference";
 import { GuarianLinks } from "./GuarianLinks.tsx";
 import "./knownGuarians.css";
-import { useScreenWidthGreaterThan } from "../../../../Hooks/useScreenWidthGreaterThan";
-import { useResizeDetector } from "react-resize-detector";
 import { WideKnownGuarians } from "./WideKnownGuarians";
 import { KnownGuarianBody } from "./KnownGuarianBody";
 

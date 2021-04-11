@@ -31,8 +31,8 @@ const NarrowGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, o
           src={guarian.images.refs.find((r) => r.material == selectedMaterial)?.ref}
           style={{ width: "100%" }}
         />
-        <p style={{ margin: 10 }}>{guarian.notes}</p>
-        <p style={{ margin: 10 }}>{guarian.description}</p>
+        <div style={{ margin: 10 }}>{guarian.notes}</div>
+        <div style={{ margin: 10 }}>{guarian.description}</div>
       </div>
     </div>
   );
