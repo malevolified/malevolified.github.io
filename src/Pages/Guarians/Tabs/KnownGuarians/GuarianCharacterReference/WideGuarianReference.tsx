@@ -18,11 +18,6 @@ const WideGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, onS
     (guarian?.images.maxRefWidth ?? 900) + COLLAPSE_LINKS_ROOM
   );
 
-  function getRefWidth(sidebarWidth: number) {
-    const subtractedPixels = 1875 - guarian.images.maxRefWidth + sidebarWidth;
-    return "calc(100vw - " + subtractedPixels + "px)";
-  }
-
   return (
     <>
       <div style={{ position: "absolute", top: -10, right: 0 }}>
@@ -32,6 +27,9 @@ const WideGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, onS
       <div style={{ display: "flex", flexDirection: isHorizontal ? "row" : "column" }}>
         <div
           style={{
+            //Massive flex so that this gets bigger before the text does
+            flex: 100,
+            maxWidth: isHorizontal ? guarian.images.maxRefWidth : undefined,
             display: "flex",
             flexDirection: isHorizontal ? "column" : "row",
             justifyContent: "center",
@@ -49,7 +47,6 @@ const WideGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, onS
             style={
               isHorizontal
                 ? {
-                    width: isListCollapsed ? getRefWidth(280) : getRefWidth(60),
                     maxWidth: guarian.images.maxRefWidth,
                     textAlign: "center",
                   }
@@ -62,7 +59,12 @@ const WideGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, onS
             />
           </div>
         </div>
-        <div>
+        <div
+          style={{
+            flex: 1,
+            minWidth: isHorizontal ? 1675 - guarian.images.maxRefWidth : undefined,
+          }}
+        >
           <div style={isHorizontal ? { minHeight: 441, marginRight: 270 } : {}}>
             {guarian.notes}
           </div>

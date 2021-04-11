@@ -64,12 +64,19 @@ const guarians: GuarianInfo[] = [
       </ul>
     ),
     description: (
-      <p>
-        Aftering rousing from your slumber, you come to the realization that you fell asleep on
-        Lavuar's back. Having guided you on her own, you have no idea how long you've been out for,
-        how far she's taken you or where you even are right now. That said, it seems really nice
-        here, and Lavuar's
-      </p>
+      <>
+        <p>
+          Aftering rousing from your slumber, you come to the realization that you fell asleep on
+          Lavuar's back. Having guided you on her own, you have no idea how long you've been riding
+          Lavuar for, how far she's taken you or where you even are right now.
+        </p>
+        <p>It seems really nice here though.</p>
+        <p>
+          You turn around to find Lavuar nestled under a tree. From what you can tell, the two of
+          you are completely alone here. You check the time. You still have a few hours yet. Perhaps
+          you'll rest just a moment longer
+        </p>
+      </>
     ),
     images: lavuarPack,
   },
