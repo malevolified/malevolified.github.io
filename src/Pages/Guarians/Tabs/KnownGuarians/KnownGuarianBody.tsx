@@ -1,5 +1,4 @@
 import React from "react";
-import { GuarianInfo } from "./Guarians/guarians";
 
 interface IProps {}
 

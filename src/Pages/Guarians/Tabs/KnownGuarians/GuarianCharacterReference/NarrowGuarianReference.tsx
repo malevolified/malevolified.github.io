@@ -1,6 +1,6 @@
 import React from "react";
 import { GuarianMaterialSelector } from "./GuarianMaterialSelector/GuarianMaterialSelector";
-import { GuarianInfo } from "../Guarians/guarians";
+import { GuarianInfo } from "../Guarians";
 import { GuarianMaterial } from "../Guarians/guarianImagePack";
 
 interface IProps {
@@ -27,10 +27,16 @@ const NarrowGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, o
           selected={selectedMaterial}
           onSelect={onSelect}
         />
-        <img
-          src={guarian.images.refs.find((r) => r.material == selectedMaterial)?.ref}
-          style={{ width: "100%" }}
-        />
+        {guarian.images.refs.map((r) => (
+          <img
+            key={r.material}
+            src={r.ref}
+            style={{
+              width: "100%",
+              display: selectedMaterial == r.material ? "inline" : "none",
+            }}
+          />
+        ))}
         <div style={{ margin: 10 }}>{guarian.notes}</div>
         <div style={{ margin: 10 }}>{guarian.description}</div>
       </div>

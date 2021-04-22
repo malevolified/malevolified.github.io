@@ -1,6 +1,6 @@
 import React from "react";
 import { Redirect, useParams } from "react-router-dom";
-import { guarians } from "./Guarians/guarians";
+import { guarians } from "./Guarians";
 import { NarrowScreen, WideScreen } from "../../../../Components/ScreenDetector";
 import { useLocalStorage } from "../../../../Hooks/useLocalStorage";
 import { SHOW_SECRET_GUARIANS } from "../FAQ/FAQ";

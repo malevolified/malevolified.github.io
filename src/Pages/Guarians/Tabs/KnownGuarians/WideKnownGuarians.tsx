@@ -3,7 +3,7 @@ import { useResizeDetector } from "react-resize-detector";
 import { useScreenWidthGreaterThan } from "../../../../Hooks/useScreenWidthGreaterThan";
 import { GuarianCharacterReference } from "./GuarianCharacterReference";
 import { GuarianLinks } from "./GuarianLinks";
-import { COLLAPSE_LINKS_ROOM, GuarianInfo } from "./Guarians/guarians";
+import { COLLAPSE_LINKS_ROOM, GuarianInfo } from "./Guarians";
 import { KnownGuarianBody } from "./KnownGuarianBody";
 
 interface IProps {

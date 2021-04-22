@@ -1,5 +1,5 @@
 import React from "react";
-import { GuarianInfo } from "../Guarians/guarians";
+import { GuarianInfo } from "../Guarians";
 import { GuarianReferenceLink } from "./GuarianReferenceLink";
 import "./guarianLinks.css";
 

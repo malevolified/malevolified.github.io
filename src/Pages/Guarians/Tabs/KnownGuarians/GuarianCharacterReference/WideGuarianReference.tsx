@@ -1,7 +1,7 @@
 import React from "react";
 import { useScreenWidthGreaterThan } from "../../../../../Hooks/useScreenWidthGreaterThan";
 import { GuarianMaterialSelector } from "./GuarianMaterialSelector/GuarianMaterialSelector";
-import { COLLAPSE_LINKS_ROOM, GuarianInfo, HORIZONTAL_REF_ROOM } from "../Guarians/guarians";
+import { COLLAPSE_LINKS_ROOM, GuarianInfo, HORIZONTAL_REF_ROOM } from "../Guarians";
 import { GuarianMaterial } from "../Guarians/guarianImagePack";
 
 interface IProps {
@@ -53,10 +53,17 @@ const WideGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, onS
                 : { position: "relative", zIndex: 1 }
             }
           >
-            <img
-              src={guarian.images.refs.find((r) => r.material == selectedMaterial)?.ref}
-              style={{ maxWidth: "100%", maxHeight: "100%" }}
-            />
+            {guarian.images.refs.map((r) => (
+              <img
+                key={r.material}
+                src={r.ref}
+                style={{
+                  maxWidth: "100%",
+                  maxHeight: "100%",
+                  display: selectedMaterial == r.material ? "inline" : "none",
+                }}
+              />
+            ))}
           </div>
         </div>
         <div
