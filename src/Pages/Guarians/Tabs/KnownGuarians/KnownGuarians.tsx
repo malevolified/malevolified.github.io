@@ -9,6 +9,7 @@ import { GuarianLinks } from "./GuarianLinks";
 import "./knownGuarians.css";
 import { WideKnownGuarians } from "./WideKnownGuarians";
 import { KnownGuarianBody } from "./KnownGuarianBody";
+import { SmartMounter } from "../../../../Components/SmartMounter";
 
 interface IProps {}
 
@@ -24,7 +25,15 @@ const KnownGuarians: React.FC<IProps> = ({}) => {
   function renderRef(includeMargin: boolean) {
     return (
       <div style={{ flex: 1, marginRight: includeMargin ? 10 : 0 }}>
-        {guarian ? <GuarianCharacterReference guarian={guarian} /> : <KnownGuarianBody />}
+        {guarian ? (
+          availableGuarians.map((g) => (
+            <SmartMounter key={g.name} visible={g.name == guarian.name}>
+              <GuarianCharacterReference guarian={g} />
+            </SmartMounter>
+          ))
+        ) : (
+          <KnownGuarianBody />
+        )}
       </div>
     );
   }

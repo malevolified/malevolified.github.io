@@ -1,5 +1,6 @@
 import React from "react";
 import { useResizeDetector } from "react-resize-detector";
+import { SmartMounter } from "../../../../Components/SmartMounter";
 import { useScreenWidthGreaterThan } from "../../../../Hooks/useScreenWidthGreaterThan";
 import { GuarianCharacterReference } from "./GuarianCharacterReference";
 import { GuarianLinks } from "./GuarianLinks";
@@ -23,7 +24,15 @@ const WideKnownGuarians: React.FC<IProps> = ({ guarians, selected }) => {
     <div style={{ display: "flex" }}>
       <div style={{ flex: 1, marginRight: 10 }}>
         <div ref={ref}>
-          {selected ? <GuarianCharacterReference guarian={selected} /> : <KnownGuarianBody />}
+          {selected ? (
+            guarians.map((g) => (
+              <SmartMounter key={g.name} visible={g.name == selected.name}>
+                <GuarianCharacterReference guarian={g} />
+              </SmartMounter>
+            ))
+          ) : (
+            <KnownGuarianBody />
+          )}
         </div>
       </div>
       <div style={{ maxHeight: Math.max(height ?? 0, 500) }}>

@@ -12,7 +12,7 @@ const GuarianLinks: React.FC<IProps> = ({ guarians, collapsed }) => {
   return (
     <div className="bordered-item character-link-wrapper">
       {guarians.map((g) => (
-        <GuarianReferenceLink guarian={g} collapsed={collapsed} />
+        <GuarianReferenceLink key={g.name} guarian={g} collapsed={collapsed} />
       ))}
     </div>
   );

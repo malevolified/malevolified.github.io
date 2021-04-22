@@ -27,6 +27,7 @@ export const GuarianMenuRef: React.FC<IProps> = ({}) => {
   function renderOption(s: RefSection, index: number) {
     return (
       <NavLink
+        key={s.route}
         exact={s.exact}
         to={generatePath(s.route)}
         className="option"

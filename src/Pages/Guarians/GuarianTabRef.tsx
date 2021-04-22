@@ -11,6 +11,7 @@ export const GuarianTabRef: React.FC<IProps> = ({}) => {
       <div className="tab-wrapper">
         {refSections.map((s) => (
           <NavLink
+            key={s.route}
             exact={s.exact}
             className="tab"
             activeClassName="selected"

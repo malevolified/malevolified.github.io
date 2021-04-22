@@ -2,6 +2,7 @@ import React from "react";
 import { GuarianMaterialSelector } from "./GuarianMaterialSelector/GuarianMaterialSelector";
 import { GuarianInfo } from "../Guarians";
 import { GuarianMaterial } from "../Guarians/guarianImagePack";
+import { SmartMounter } from "../../../../../Components/SmartMounter";
 
 interface IProps {
   guarian: GuarianInfo;
@@ -28,14 +29,18 @@ const NarrowGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, o
           onSelect={onSelect}
         />
         {guarian.images.refs.map((r) => (
-          <img
+          <SmartMounter
             key={r.material}
-            src={r.ref}
-            style={{
-              width: "100%",
-              display: selectedMaterial == r.material ? "inline" : "none",
-            }}
-          />
+            visible={selectedMaterial == r.material}
+            style={{ width: "100%", height: "100%" }}
+          >
+            <img
+              src={r.ref}
+              style={{
+                width: "100%",
+              }}
+            />
+          </SmartMounter>
         ))}
         <div style={{ margin: 10 }}>{guarian.notes}</div>
         <div style={{ margin: 10 }}>{guarian.description}</div>

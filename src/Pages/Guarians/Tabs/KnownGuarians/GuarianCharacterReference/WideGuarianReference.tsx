@@ -1,8 +1,9 @@
 import React from "react";
 import { useScreenWidthGreaterThan } from "../../../../../Hooks/useScreenWidthGreaterThan";
 import { GuarianMaterialSelector } from "./GuarianMaterialSelector/GuarianMaterialSelector";
-import { COLLAPSE_LINKS_ROOM, GuarianInfo, HORIZONTAL_REF_ROOM } from "../Guarians";
+import { COLLAPSE_LINKS_ROOM, GuarianInfo, guarians, HORIZONTAL_REF_ROOM } from "../Guarians";
 import { GuarianMaterial } from "../Guarians/guarianImagePack";
+import { SmartMounter } from "../../../../../Components/SmartMounter";
 
 interface IProps {
   guarian: GuarianInfo;
@@ -54,15 +55,19 @@ const WideGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, onS
             }
           >
             {guarian.images.refs.map((r) => (
-              <img
+              <SmartMounter
                 key={r.material}
-                src={r.ref}
-                style={{
-                  maxWidth: "100%",
-                  maxHeight: "100%",
-                  display: selectedMaterial == r.material ? "inline" : "none",
-                }}
-              />
+                visible={selectedMaterial == r.material}
+                style={{ width: "100%", height: "100%" }}
+              >
+                <img
+                  src={r.ref}
+                  style={{
+                    maxWidth: "100%",
+                    maxHeight: "100%",
+                  }}
+                />
+              </SmartMounter>
             ))}
           </div>
         </div>
