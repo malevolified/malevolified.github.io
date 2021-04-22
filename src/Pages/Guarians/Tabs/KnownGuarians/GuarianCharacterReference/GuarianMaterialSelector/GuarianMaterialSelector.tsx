@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { GuarianMaterial } from "../../images/guarianImagePack";
+import { GuarianMaterial } from "../../Guarians/guarianImagePack";
 import "./guarianMaterialSelector.css";
 import fluffyIcon from "./icons/fluffyIcon.png";
 import rubberIcon from "./icons/rubberIcon.png";

@@ -1,0 +1,1 @@
+export { reguar } from "./reguar";

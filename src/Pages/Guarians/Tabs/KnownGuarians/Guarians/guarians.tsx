@@ -1,8 +1,8 @@
 import React from "react";
-import { GuarianImagePack } from "./images/guarianImagePack";
-import { lavuarPack } from "./images/lavuar";
-import { placeholderPack } from "./images/placeholder";
-import { reguarPack } from "./images/reguar";
+import { GuarianImagePack } from "./guarianImagePack";
+import { lavuar } from "./lavuar";
+import { placeholderPack } from "./placeholder";
+import { reguar } from "./reguar";
 
 export interface GuarianInfo {
   name: string;
@@ -19,67 +19,8 @@ export const COLLAPSE_LINKS_ROOM = 670;
 export const HORIZONTAL_REF_ROOM = 430;
 
 const guarians: GuarianInfo[] = [
-  {
-    name: "Reguar",
-    notes: (
-      <ul className="big-list">
-        <li>The average of every guarian combined into one entity</li>
-        <li>Extremely lazy but happy to nap with you whenever</li>
-        <li>
-          They may not be as exciting as the other guarians, but they still care for you just as
-          much
-        </li>
-        <li>
-          Very low perception (even for a guarian)
-          <ul>
-            <li>
-              You might hear the sound of them gently bumping into a wall every so often, but don't
-              worry, they'll be alright
-            </li>
-          </ul>
-        </li>
-      </ul>
-    ),
-    description: (
-      <p>
-        Depending on who you meet, a visit from a guarian can be an ethereal experience. A visit
-        from Reguar, on the other hand, is more akin to being visited by an especially oversized
-        lazy dog. After a long day, they lumber up next to you and clumsily flop onto their side,
-        waiting to either be petted or laid upon.
-      </p>
-    ),
-    images: reguarPack,
-  },
-  {
-    name: "Lavuar",
-    notes: (
-      <ul className="big-list">
-        <li>Bouncy and energetic</li>
-        <li>
-          Possesses really high perception
-          <ul>
-            <li>So high that she can actually be safely ridden without needing guidance!</li>
-          </ul>
-        </li>
-      </ul>
-    ),
-    description: (
-      <>
-        <p>
-          Aftering rousing from your slumber, you come to the realization that you fell asleep on
-          Lavuar's back. Having guided you on her own, you have no idea how long you've been riding
-          Lavuar for, how far she's taken you or where you even are right now.
-        </p>
-        <p>It seems really nice here though.</p>
-        <p>
-          You turn around to find Lavuar nestled under a tree. From what you can tell, the two of
-          you are completely alone here. You check the time. You still have a few hours yet. Perhaps
-          you'll rest just a moment longer
-        </p>
-      </>
-    ),
-    images: lavuarPack,
-  },
+  reguar,
+  lavuar,
   {
     name: "Malvuar",
     notes: (

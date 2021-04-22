@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { NarrowScreen, WideScreen } from "../../../../../Components/ScreenDetector";
 import { GuarianMaterialSelector } from "./GuarianMaterialSelector/GuarianMaterialSelector";
-import { GuarianInfo } from "../guarians";
-import { GuarianMaterial } from "../images/guarianImagePack";
+import { GuarianInfo } from "../Guarians/guarians";
+import { GuarianMaterial } from "../Guarians/guarianImagePack";
 import "./guarianCharacterReference.css";
 import { NarrowGuarianReference } from "./NarrowGuarianReference";
 import { WideGuarianReference } from "./WideGuarianReference";

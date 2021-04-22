@@ -1,8 +1,8 @@
 import React from "react";
 import { useScreenWidthGreaterThan } from "../../../../../Hooks/useScreenWidthGreaterThan";
 import { GuarianMaterialSelector } from "./GuarianMaterialSelector/GuarianMaterialSelector";
-import { COLLAPSE_LINKS_ROOM, GuarianInfo, HORIZONTAL_REF_ROOM } from "../guarians";
-import { GuarianMaterial } from "../images/guarianImagePack";
+import { COLLAPSE_LINKS_ROOM, GuarianInfo, HORIZONTAL_REF_ROOM } from "../Guarians/guarians";
+import { GuarianMaterial } from "../Guarians/guarianImagePack";
 
 interface IProps {
   guarian: GuarianInfo;

@@ -1,7 +1,7 @@
 import React from "react";
 import { GuarianMaterialSelector } from "./GuarianMaterialSelector/GuarianMaterialSelector";
-import { GuarianInfo } from "../guarians";
-import { GuarianMaterial } from "../images/guarianImagePack";
+import { GuarianInfo } from "../Guarians/guarians";
+import { GuarianMaterial } from "../Guarians/guarianImagePack";
 
 interface IProps {
   guarian: GuarianInfo;

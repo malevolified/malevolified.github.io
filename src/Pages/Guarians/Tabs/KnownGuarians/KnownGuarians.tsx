@@ -1,11 +1,11 @@
 import React from "react";
 import { Redirect, useParams } from "react-router-dom";
-import { guarians } from "./guarians";
+import { guarians } from "./Guarians/guarians";
 import { NarrowScreen, WideScreen } from "../../../../Components/ScreenDetector";
 import { useLocalStorage } from "../../../../Hooks/useLocalStorage";
 import { SHOW_SECRET_GUARIANS } from "../FAQ/FAQ";
 import { GuarianCharacterReference } from "./GuarianCharacterReference";
-import { GuarianLinks } from "./GuarianLinks.tsx";
+import { GuarianLinks } from "./GuarianLinks";
 import "./knownGuarians.css";
 import { WideKnownGuarians } from "./WideKnownGuarians";
 import { KnownGuarianBody } from "./KnownGuarianBody";

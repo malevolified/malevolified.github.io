@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { GuarianInfo } from "../guarians";
+import { GuarianInfo } from "../Guarians/guarians";
 import "./guarianLinks.css";
 
 interface IProps {
