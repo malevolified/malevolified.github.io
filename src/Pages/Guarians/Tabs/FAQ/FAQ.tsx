@@ -1,4 +1,5 @@
 import React from "react";
+import { FadeText } from "../../../../Components/FadeText";
 import { useLocalStorage } from "../../../../Hooks/useLocalStorage";
 import "./faq.css";
 
@@ -13,7 +14,9 @@ const FAQ: React.FC<IProps> = ({}) => {
     <div className="faq">
       <div className="question">Do you have any other secret guarians?</div>
       <div className="answer secret" onClick={() => setShowSecrets(!showSecrets)}>
-        {showSecrets ? "Okay, maybe a few..." : "I have no idea what you're talking about!"}
+        <FadeText
+          text={showSecrets ? "Okay, maybe a few..." : "I have no idea what you're talking about!"}
+        />
       </div>
     </div>
   );
