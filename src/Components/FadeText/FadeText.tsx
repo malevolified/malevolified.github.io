@@ -9,6 +9,10 @@ export const FadeText: React.FC<IProps> = ({ text }) => {
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
+    if (text == currentText) {
+      return;
+    }
+
     setFadeOut(true);
 
     setTimeout(() => {

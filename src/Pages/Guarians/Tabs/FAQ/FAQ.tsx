@@ -12,6 +12,15 @@ const FAQ: React.FC<IProps> = ({}) => {
 
   return (
     <div className="faq">
+      <div className="question">
+        Where do the guarians come from? Were they something else before or do they just
+        spontaneously occur?
+      </div>
+      <div className="answer">
+        Unfortunately, the origins of the guarians are rather nebulous, especially since every
+        guarian tends to have their own story.
+      </div>
+      <div className="separator" />
       <div className="question">Do you have any other secret guarians?</div>
       <div className="answer secret" onClick={() => setShowSecrets(!showSecrets)}>
         <FadeText
