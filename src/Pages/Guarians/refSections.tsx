@@ -1,8 +1,8 @@
 import React from "react";
 import Placeholder from "./Tabs/Placeholder";
 import { KnownGuarians } from "./Tabs/KnownGuarians";
-import { Lore } from "./Tabs/Lore/Lore";
-import { FAQ } from "./Tabs/FAQ/FAQ";
+import { Lore } from "./Tabs/Lore";
+import { FAQ } from "./Tabs/FAQ";
 
 export interface RefSection {
   title: string;
