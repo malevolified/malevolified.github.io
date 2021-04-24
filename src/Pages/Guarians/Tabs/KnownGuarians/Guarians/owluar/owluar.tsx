@@ -4,7 +4,7 @@ import { GuarianImagePack, GuarianMaterial } from "../guarianImagePack";
 import emblem from "./images/owluarEmblem.png";
 import listEmblem from "./images/owluarListEmblem.png";
 import listIcon from "./images/owluarIcon.png";
-import ref from "./images/sampleRef.png";
+import ref from "./images/featherRef.png";
 
 export const owluar: GuarianInfo = {
   name: "Owluar",
@@ -15,10 +15,8 @@ export const owluar: GuarianInfo = {
         Even though they don't really understand you, they will happily listen to whatever's on your
         mind
       </li>
-      <li>
-        Their politeness should not be mistaken for seriousness, for they're actually incredibly
-        open
-      </li>
+      <li>Incredibly patient and surprisingly open to odd ideas</li>
+      <li>Uncharacteristically enthusiastic about "The Guarian Kiss"</li>
     </ul>
   ),
   description: (
@@ -35,10 +33,7 @@ export const owluar: GuarianInfo = {
         to them and wrap them in a very gentle hug. After a moment, you feel their wings on your
         back like oversized blankets.
       </p>
-      <p>
-        You feel somewhat tired having woken up at such an odd hour, but you feel like you can rest
-        like this for a while
-      </p>
+      <p>The angle is a little awkward, but you feel like you can rest like this for a while</p>
     </>
   ),
   images: {
@@ -53,6 +48,6 @@ export const owluar: GuarianInfo = {
         ref,
       },
     ],
-    maxRefWidth: 985,
+    maxRefWidth: 766,
   },
 };
