@@ -28,7 +28,7 @@ h6 {
 }
 
 .guarian-ref {
-  background-color: rgb(31, 29, 44);
+  background: url("./bgFiligree.png");
   color: #fffae4;
   padding: 5vh 4vw;
   min-height: 100vh;
