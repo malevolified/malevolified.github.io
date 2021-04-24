@@ -1,6 +1,7 @@
 import React from "react";
 import { GuarianImagePack } from "./guarianImagePack";
 import { lavuar } from "./lavuar";
+import { owluar } from "./owluar/owluar";
 import { placeholderPack } from "./placeholder";
 import { reguar } from "./reguar";
 
@@ -51,21 +52,7 @@ const guarians: GuarianInfo[] = [
     ),
     images: placeholderPack,
   },
-  {
-    name: "Owluar",
-    notes: (
-      <ul className="big-list">
-        <li>Quiet, but incredibly caring</li>
-        <li>
-          Even though they don't really understand you, they will happily listen to whatever's on
-          your mind
-        </li>
-        <li>Possesses an incredible stillness, even for a guarian</li>
-      </ul>
-    ),
-    description: <p>PLACEHOLDER</p>,
-    images: placeholderPack,
-  },
+  owluar,
   {
     name: "Serguar",
     notes: (
