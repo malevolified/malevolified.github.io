@@ -163,6 +163,7 @@ export const GuarianTooltip: React.FC<IProps> = ({
     <>
       <span
         ref={contentRef}
+        className="tooltip-text"
         onMouseMove={(e) => {
           setCoords({ x: e.clientX, y: e.clientY });
         }}

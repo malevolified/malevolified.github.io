@@ -8,3 +8,14 @@
   border-radius: 10px;
   display: flex;
 }
+
+.tooltip-text {
+  color: rgb(255, 247, 200);
+  text-decoration: underline dotted;
+  cursor: help;
+}
+
+.tooltip-text:hover {
+  color: rgb(255, 250, 225);
+  background-color: rgba(255, 250, 225, 0.212);
+}
