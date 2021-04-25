@@ -1,0 +1,10 @@
+.guarian-tooltip {
+  position: fixed;
+  background: #ffffff;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  pointer-events: none;
+  color: black;
+  border-radius: 10px;
+  display: flex;
+}
