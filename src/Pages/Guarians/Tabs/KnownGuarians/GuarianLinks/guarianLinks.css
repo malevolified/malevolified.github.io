@@ -1,8 +1,14 @@
 .character-link-wrapper {
   display: inline-block;
   overflow-y: auto;
-  scrollbar-color: rgb(51, 48, 73) rgb(31, 29, 44);
   max-height: 100%;
+  scrollbar-color: rgb(71, 67, 102) rgb(31, 29, 44);
+}
+
+@-moz-document url-prefix() {
+  .character-link-wrapper {
+    overflow-y: scroll;
+  }
 }
 
 .character-link {

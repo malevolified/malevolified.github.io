@@ -20,6 +20,14 @@ const Lore: React.FC<IProps> = ({}) => {
           seen to date (not counting those who have had their eyes drawn on after the fact).
         </p>
       </div>
+      <div className={styles.tidbit}>
+        <h3>Material Shifting</h3>
+        <p>PLACEHOLDER</p>
+      </div>
+      <div className={styles.tidbit}>
+        <h3>Size Shifting</h3>
+        <p>PLACEHOLDER</p>
+      </div>
     </div>
   );
 };
