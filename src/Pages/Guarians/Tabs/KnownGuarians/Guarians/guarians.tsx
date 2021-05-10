@@ -4,6 +4,7 @@ import { lavuar } from "./lavuar";
 import { owluar } from "./owluar/owluar";
 import { placeholderPack } from "./placeholder";
 import { reguar } from "./reguar";
+import { serguar } from "./serguar";
 
 export interface GuarianInfo {
   name: string;
@@ -53,16 +54,7 @@ const guarians: GuarianInfo[] = [
     images: placeholderPack,
   },
   owluar,
-  {
-    name: "Serguar",
-    notes: (
-      <ul className="big-list">
-        <li>PLACEHOLDER</li>
-      </ul>
-    ),
-    description: <p>PLACEHOLDER</p>,
-    images: placeholderPack,
-  },
+  serguar,
   {
     name: "Wereguar",
     notes: (
