@@ -26,6 +26,6 @@ export const serguar: GuarianInfo = {
         ref: fluffyRef,
       },
     ],
-    maxRefWidth: 825,
+    maxRefWidth: 857,
   },
 };
