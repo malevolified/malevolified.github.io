@@ -17,8 +17,8 @@ export interface GuarianInfo {
   secret?: boolean;
 }
 
-export const COLLAPSE_LINKS_ROOM = 670;
-export const HORIZONTAL_REF_ROOM = 430;
+export const COLLAPSE_LINKS_ROOM = 720;
+export const HORIZONTAL_REF_ROOM = 480;
 
 const guarians: GuarianInfo[] = [
   reguar,

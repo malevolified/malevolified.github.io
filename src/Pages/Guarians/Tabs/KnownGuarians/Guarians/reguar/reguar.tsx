@@ -28,12 +28,20 @@ export const reguar: GuarianInfo = {
     </ul>
   ),
   description: (
-    <p>
-      Depending on who you meet, a visit from a guarian can be an ethereal experience. A visit from
-      Reguar, on the other hand, is more akin to being visited by an especially oversized lazy dog.
-      After a long day, they lumber up next to you and clumsily flop onto their side, waiting to
-      either be petted or laid upon.
-    </p>
+    <>
+      <p>
+        After hearing some sort of clumsy stumbling noises in the next room, you hear a sudden thud
+        against the wall right next to the door. After a brief moment, you see Reguar poke his head
+        around the corner (completely unharmed). He steps through the doorway (just barely small
+        enough to fit through it) and lumbers towards you in no particular rush at all. Only a few
+        steps away from you, he thunderously flops onto his side with enough force that you feel
+        everything in the room bounce a bit when he lands.
+      </p>
+      <p>
+        The room sits in silence for a second. Eventually, Reguar lifts his head somewhat curiously,
+        awaiting to either be hugged, petted, laid upon or any combination of the three.
+      </p>
+    </>
   ),
   images: {
     emblems: {
