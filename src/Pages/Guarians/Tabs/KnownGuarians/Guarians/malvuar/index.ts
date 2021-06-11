@@ -1,0 +1,1 @@
+export { malvuar } from "./malvuar";
