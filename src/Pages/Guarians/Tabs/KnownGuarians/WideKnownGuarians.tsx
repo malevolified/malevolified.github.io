@@ -4,8 +4,10 @@ import { SmartMounter } from "../../../../Components/SmartMounter";
 import { useScreenWidthGreaterThan } from "../../../../Hooks/useScreenWidthGreaterThan";
 import { GuarianCharacterReference } from "./GuarianCharacterReference";
 import { GuarianLinks } from "./GuarianLinks";
-import { COLLAPSE_LINKS_ROOM, GuarianInfo } from "./Guarians";
+import { GuarianInfo } from "./Guarians";
 import { KnownGuarianBody } from "./KnownGuarianBody";
+
+const COLLAPSE_LINKS_ROOM = 1540;
 
 interface IProps {
   guarians: GuarianInfo[];
@@ -16,9 +18,7 @@ interface IProps {
 const WideKnownGuarians: React.FC<IProps> = ({ guarians, selected }) => {
   const { height, ref } = useResizeDetector({ handleHeight: true });
 
-  const shouldExpandList = useScreenWidthGreaterThan(
-    (selected?.images.maxRefWidth ?? 900) + COLLAPSE_LINKS_ROOM
-  );
+  const shouldExpandList = useScreenWidthGreaterThan(COLLAPSE_LINKS_ROOM);
 
   return (
     <div style={{ display: "flex" }}>

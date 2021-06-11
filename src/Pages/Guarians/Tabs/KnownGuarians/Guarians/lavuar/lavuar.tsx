@@ -46,6 +46,6 @@ export const lavuar: GuarianInfo = {
         ref,
       },
     ],
-    maxRefWidth: 960,
+    maxRefWidth: 944,
   },
 };

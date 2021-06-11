@@ -1,9 +1,11 @@
 import React from "react";
 import { useScreenWidthGreaterThan } from "../../../../../Hooks/useScreenWidthGreaterThan";
 import { GuarianMaterialSelector } from "./GuarianMaterialSelector/GuarianMaterialSelector";
-import { COLLAPSE_LINKS_ROOM, GuarianInfo, guarians, HORIZONTAL_REF_ROOM } from "../Guarians";
+import { GuarianInfo, guarians } from "../Guarians";
 import { GuarianMaterial } from "../Guarians/guarianImagePack";
 import { SmartMounter } from "../../../../../Components/SmartMounter";
+
+const HORIZONTAL_REF_ROOM = 1200;
 
 interface IProps {
   guarian: GuarianInfo;
@@ -12,12 +14,7 @@ interface IProps {
 }
 
 const WideGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, onSelect }) => {
-  const isHorizontal = useScreenWidthGreaterThan(
-    (guarian?.images.maxRefWidth ?? 900) + HORIZONTAL_REF_ROOM
-  );
-  const isListCollapsed = useScreenWidthGreaterThan(
-    (guarian?.images.maxRefWidth ?? 900) + COLLAPSE_LINKS_ROOM
-  );
+  const isHorizontal = useScreenWidthGreaterThan(HORIZONTAL_REF_ROOM);
 
   return (
     <>
@@ -29,8 +26,7 @@ const WideGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, onS
         <div
           style={{
             //Massive flex so that this gets bigger before the text does
-            flex: 100,
-            maxWidth: isHorizontal ? guarian.images.maxRefWidth : undefined,
+            flex: 1 + (guarian.images.maxRefWidth ?? 900) / 900,
             display: "flex",
             flexDirection: isHorizontal ? "column" : "row",
             justifyContent: "center",
@@ -76,8 +72,7 @@ const WideGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, onS
         </div>
         <div
           style={{
-            flex: 1,
-            minWidth: isHorizontal ? 1675 - guarian.images.maxRefWidth : undefined,
+            flex: 3,
           }}
         >
           <div style={isHorizontal ? { minHeight: 441, marginRight: 270 } : {}}>
