@@ -55,10 +55,13 @@ const WideGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, onS
             }
           >
             {guarian.images.refs.map((r) => (
-              <SmartMounter
+              <div
                 key={r.material}
-                visible={selectedMaterial == r.material}
-                style={{ width: "100%", height: "100%" }}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  display: r.material == selectedMaterial ? "block" : "none",
+                }}
               >
                 <img
                   src={r.ref}
@@ -67,7 +70,7 @@ const WideGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, onS
                     maxHeight: "100%",
                   }}
                 />
-              </SmartMounter>
+              </div>
             ))}
           </div>
         </div>

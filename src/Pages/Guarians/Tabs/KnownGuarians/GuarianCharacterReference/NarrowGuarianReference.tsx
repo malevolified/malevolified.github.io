@@ -29,10 +29,13 @@ const NarrowGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, o
           onSelect={onSelect}
         />
         {guarian.images.refs.map((r) => (
-          <SmartMounter
+          <div
             key={r.material}
-            visible={selectedMaterial == r.material}
-            style={{ width: "100%", height: "100%" }}
+            style={{
+              width: "100%",
+              height: "100%",
+              display: r.material == selectedMaterial ? "block" : "none",
+            }}
           >
             <img
               src={r.ref}
@@ -40,7 +43,7 @@ const NarrowGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, o
                 width: "100%",
               }}
             />
-          </SmartMounter>
+          </div>
         ))}
         <div style={{ margin: 10 }}>{guarian.notes}</div>
         <div style={{ margin: 10 }}>{guarian.description}</div>
