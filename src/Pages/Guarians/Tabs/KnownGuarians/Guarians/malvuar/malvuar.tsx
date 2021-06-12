@@ -5,6 +5,7 @@ import emblem from "./images/sampleEmblem.png";
 import listEmblem from "./images/sampleListEmblem.png";
 import listIcon from "./images/sampleListIcon.png";
 import ref from "./images/malvuarFluffy.png";
+import inflatableRef from "./images/malvuarInflatable.png";
 
 export const malvuar: GuarianInfo = {
   name: "Malvuar",
@@ -45,7 +46,11 @@ export const malvuar: GuarianInfo = {
         material: GuarianMaterial.Fluffy,
         ref,
       },
+      {
+        material: GuarianMaterial.Inflatable,
+        ref: inflatableRef,
+      },
     ],
-    maxRefWidth: 764,
+    maxRefWidth: 896,
   },
 };
