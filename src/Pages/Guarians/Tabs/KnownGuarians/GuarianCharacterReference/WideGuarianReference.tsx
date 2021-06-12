@@ -4,6 +4,7 @@ import { GuarianMaterialSelector } from "./GuarianMaterialSelector/GuarianMateri
 import { GuarianInfo, guarians } from "../Guarians";
 import { GuarianMaterial } from "../Guarians/guarianImagePack";
 import { SmartMounter } from "../../../../../Components/SmartMounter";
+import { GuarianEmblem } from "./GuarianEmblem";
 
 const HORIZONTAL_REF_ROOM = 1200;
 
@@ -19,7 +20,7 @@ const WideGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, onS
   return (
     <>
       <div style={{ position: "absolute", top: -10, right: 0 }}>
-        <img src={guarian.images.emblems.full} style={{ margin: 20 }} />
+        <GuarianEmblem emblem={guarian.images.emblems.full} />
       </div>
       <h1 className="header">{guarian.name}</h1>
       <div style={{ display: "flex", flexDirection: isHorizontal ? "row" : "column" }}>
