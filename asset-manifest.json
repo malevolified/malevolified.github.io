@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.51b329ad.chunk.css",
-    "main.js": "/static/js/main.dcd37b82.chunk.js",
-    "main.js.map": "/static/js/main.dcd37b82.chunk.js.map",
+    "main.js": "/static/js/main.98bcb34f.chunk.js",
+    "main.js.map": "/static/js/main.98bcb34f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2608cf5a.js",
     "runtime-main.js.map": "/static/js/runtime-main.2608cf5a.js.map",
     "static/js/2.a34f3c70.chunk.js": "/static/js/2.a34f3c70.chunk.js",
@@ -15,6 +15,7 @@
     "static/media/guarianRef.css": "/static/media/bgFiligree.117a582b.png",
     "static/media/featherRef.a9dacee1.png": "/static/media/featherRef.a9dacee1.png",
     "static/media/fluffy.f2c58666.png": "/static/media/fluffy.f2c58666.png",
+    "static/media/lavuar.0902c187.png": "/static/media/lavuar.0902c187.png",
     "static/media/lavuarFluffyRef.44366169.png": "/static/media/lavuarFluffyRef.44366169.png",
     "static/media/listEmblem.e61e2740.png": "/static/media/listEmblem.e61e2740.png",
     "static/media/malvuarFluffy.adf64ab4.png": "/static/media/malvuarFluffy.adf64ab4.png",
@@ -35,6 +36,6 @@
     "static/js/runtime-main.2608cf5a.js",
     "static/js/2.a34f3c70.chunk.js",
     "static/css/main.51b329ad.chunk.css",
-    "static/js/main.dcd37b82.chunk.js"
+    "static/js/main.98bcb34f.chunk.js"
   ]
 }
