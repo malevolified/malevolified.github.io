@@ -25,7 +25,6 @@ const WideGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, onS
       <div style={{ display: "flex", flexDirection: isHorizontal ? "row" : "column" }}>
         <div
           style={{
-            //Massive flex so that this gets bigger before the text does
             flex: 1 + (guarian.images.maxRefWidth ?? 900) / 900,
             display: "flex",
             flexDirection: isHorizontal ? "column" : "row",

@@ -3,6 +3,8 @@ import { GuarianTooltip } from "../../../../Components/GuarianTooltip";
 import { TipIcon } from "../../../../Components/GuarianTooltip/Images";
 import styles from "./lore.module.css";
 
+const Gt = GuarianTooltip;
+
 interface IProps {}
 
 const Lore: React.FC<IProps> = ({}) => {
@@ -12,12 +14,13 @@ const Lore: React.FC<IProps> = ({}) => {
         <h3>Facial Features</h3>
         <p>
           One of the most notable and immediately apparent features of their guarians is their
-          typical lack of facial features. While total facelessness can be found in some guarians,
-          there are a few facial features that appear at varying frequencies. Ears are actually
-          relatively common and can be found on{" "}
-          <GuarianTooltip images={TipIcon.Reguar}>many guarians</GuarianTooltip>. Mouths are far
-          rarer, but can still be found on rare occassion. Not a single guarian with eyes has been
-          seen to date (not counting those who have had their eyes drawn on after the fact).
+          typical lack of facial features. While total facelessness is{" "}
+          <Gt images={TipIcon.Owluar}>relatively common</Gt>, a few facial features still naturally
+          occur. Ears are actually relatively common and can be found on{" "}
+          <Gt images={TipIcon.Reguar}>many guarians</Gt>. Mouths are far rarer, but can still be
+          found on rare occassion. Not a single guarian with eyes has been seen to date (not
+          counting those who have had their eyes{" "}
+          <Gt images={TipIcon.Wereguar}>drawn on after the fact</Gt>).
         </p>
       </div>
       <div className={styles.tidbit}>
