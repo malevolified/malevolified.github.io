@@ -16,10 +16,10 @@ const Lore: React.FC<IProps> = ({}) => {
           One of the most notable and immediately apparent features of their guarians is their
           typical lack of facial features. While total facelessness is{" "}
           <Gt images={TipIcon.Owluar}>relatively common</Gt>, a few facial features still naturally
-          occur. Ears are actually relatively common and can be found on{" "}
-          <Gt images={TipIcon.Reguar}>many guarians</Gt>. Mouths are far rarer, but can still be
-          found on rare occassion. Not a single guarian with eyes has been seen to date (not
-          counting those who have had their eyes{" "}
+          occur. Ears are actually quite common and can be found on{" "}
+          <Gt images={[TipIcon.Reguar, TipIcon.Lavuar]}>many guarians</Gt>. Mouths are far rarer,
+          but can still be found on rare occassion. Not a single guarian with eyes has been seen to
+          date (not counting those who have had their eyes{" "}
           <Gt images={TipIcon.Wereguar}>drawn on after the fact</Gt>).
         </p>
       </div>
