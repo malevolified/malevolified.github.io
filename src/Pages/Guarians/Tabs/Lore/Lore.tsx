@@ -17,10 +17,10 @@ const Lore: React.FC<IProps> = ({}) => {
           typical lack of facial features. While total facelessness is{" "}
           <Gt images={TipIcon.Owluar}>relatively common</Gt>, a few facial features still naturally
           occur. Ears are actually quite common and can be found on{" "}
-          <Gt images={[TipIcon.Reguar, TipIcon.Lavuar]}>many guarians</Gt>. Mouths are far rarer,
-          but can still be found on rare occassion. Not a single guarian with eyes has been seen to
-          date (not counting those who have had their eyes{" "}
-          <Gt images={TipIcon.Wereguar}>drawn on after the fact</Gt>).
+          <Gt images={[TipIcon.Reguar, TipIcon.Lavuar, TipIcon.Panthuar]}>many guarians</Gt>. Mouths
+          are far rarer, but can still be found on <Gt images={TipIcon.Serguar}>rare occassion</Gt>.
+          Not a single guarian with eyes has been seen to date (not counting those who have had
+          their eyes <Gt images={TipIcon.Wereguar}>drawn on after the fact</Gt>).
         </p>
       </div>
       <div className={styles.tidbit}>
