@@ -18,7 +18,7 @@ const NarrowGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, o
         backgroundRepeat: "no-repeat",
         backgroundSize: "100%",
         width: "100%",
-        boxShadow: "0px 0px 50px 25px rgb(51, 48, 73) inset",
+        boxShadow: "0px 0px 50px 25px var(--guarian-background-color) inset",
       }}
     >
       <div style={{ backgroundColor: "rgb(51, 48, 73, 0.9)" }}>

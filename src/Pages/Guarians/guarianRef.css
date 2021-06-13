@@ -1,3 +1,7 @@
+:root {
+  --guarian-background-color: rgb(51, 48, 73);
+}
+
 @font-face {
   font-family: "Title";
   src: url(./Fonts/OptimusPrinceps.ttf);
@@ -70,7 +74,7 @@ a {
 
 .menu-clickable {
   padding: 10px;
-  background-color: rgb(51, 48, 73);
+  background-color: var(--guarian-background-color);
   cursor: pointer;
   user-select: none;
 }
@@ -90,7 +94,7 @@ a {
   bottom: 0px;
   width: 0px;
   overflow-y: hidden;
-  background-color: rgb(51, 48, 73);
+  background-color: var(--guarian-background-color);
   transition: 0.3s;
 }
 
@@ -112,7 +116,7 @@ a {
 
 .overlay-menu .option.selected {
   background-color: rgb(203, 200, 233);
-  color: rgb(51, 48, 73);
+  color: var(--guarian-background-color);
   font-weight: bold;
 }
 
@@ -141,7 +145,7 @@ a {
 
 .guarian-ref .tab-wrapper .tab {
   padding: 10px;
-  background-color: rgb(51, 48, 73);
+  background-color: var(--guarian-background-color);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border: 1px solid #fffcef;
@@ -162,7 +166,7 @@ a {
 
 .guarian-ref .tab-wrapper .tab.selected:hover,
 .guarian-ref .tab-wrapper .tab.selected:hover:active {
-  background-color: rgb(51, 48, 73);
+  background-color: var(--guarian-background-color);
 }
 
 /*~*~*~*~*~*~*~*~*~*~*~*~*
@@ -173,7 +177,7 @@ a {
   display: block;
   border: 1px solid #fffcef;
   border-radius: 10px;
-  background-color: rgb(51, 48, 73);
+  background-color: var(--guarian-background-color);
   flex: 1;
   padding: 20px;
 }
