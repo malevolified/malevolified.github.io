@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { TipIcon, tooltipMap } from "./Images";
-import "./Tooltip.css";
+import styles from "./GuarianTooltip.module.css";
 
 type GuarianImage = string | TipIcon;
 
@@ -149,13 +149,43 @@ export const GuarianTooltip: React.FC<IProps> = ({
     };
   }
 
+  function renderImages(images: GuarianImage[]) {
+    if (images.length <= 3) {
+      return <div style={{ display: "flex" }}>{images.map((i) => renderImage(i))}</div>;
+    } else if (images.length == 4) {
+      return (
+        <div>
+          <div style={{ display: "flex", borderBottom: "2px solid black" }}>
+            {renderImage(images[0])}
+            {renderImage(images[1])}
+          </div>
+          <div style={{ display: "flex" }}>
+            {renderImage(images[2])}
+            {renderImage(images[3])}
+          </div>
+        </div>
+      );
+    } else {
+      <div>
+        <div style={{ display: "flex", borderBottom: "2px solid black" }}>
+          {renderImage(images[0])}
+          {renderImage(images[1])}
+          {renderImage(images[3])}
+        </div>
+        <div style={{ display: "flex" }}>{images.slice(3).map(renderImage)}</div>
+      </div>;
+    }
+  }
+
   function renderImage(image: GuarianImage) {
     return (
-      <img
-        key={image}
-        src={typeof image == "string" ? image : tooltipMap[image]}
-        style={{ display: "block" }}
-      />
+      <div>
+        <img
+          key={image}
+          src={typeof image == "string" ? image : tooltipMap[image]}
+          style={{ display: "block" }}
+        />
+      </div>
     );
   }
 
@@ -163,7 +193,7 @@ export const GuarianTooltip: React.FC<IProps> = ({
     <>
       <span
         ref={contentRef}
-        className="tooltip-text"
+        className={styles.text}
         onMouseMove={(e) => {
           setCoords({ x: e.clientX, y: e.clientY });
         }}
@@ -175,10 +205,10 @@ export const GuarianTooltip: React.FC<IProps> = ({
       </span>
       <div
         ref={tooltipRef}
-        className={"guarian-tooltip " + position}
+        className={styles.tooltip}
         style={{ ...getOffset(), visibility: visible && !disabled ? "visible" : "hidden" }}
       >
-        {Array.isArray(images) ? images.map((i) => renderImage(i)) : renderImage(images)}
+        {Array.isArray(images) ? renderImages(images) : renderImage(images)}
       </div>
     </>
   );

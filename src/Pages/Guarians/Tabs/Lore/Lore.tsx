@@ -30,14 +30,15 @@ interface SpiritualityProps {}
 
 const Spirituality: React.FC<SpiritualityProps> = ({}) => {
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.tidbit}>
+    <div>
+      <div>
         <h3>Materialization</h3>
         <p>
           Acting with mysteriously perfect timing and awareness, the guarians only appear when you
-          are completely alone (with <Gt images={TipIcon.Malvuar}>few exceptions</Gt>). When
-          choosing to make an appearence, the guarians appear somewhere out of view completely
-          instantaneously and silently, and the same is true when they decide to take their leave.
+          are completely alone (with{" "}
+          <Gt images={[TipIcon.Malvuar, TipIcon.Panthuar]}>few exceptions</Gt>). When choosing to
+          make an appearence, the guarians appear somewhere out of view completely instantaneously
+          and silently, and the same is true when they decide to take their leave.
         </p>
         <p>
           The frequency with which the guarians decide to make their visits is mostly dependent on
@@ -49,7 +50,7 @@ const Spirituality: React.FC<SpiritualityProps> = ({}) => {
           <Gt images={TipIcon.Lavuar}>they've already appeared behind you</Gt>.
         </p>
       </div>
-      <div className={styles.tidbit}>
+      <div>
         <h3>Facial Features</h3>
         <p>
           One of the most notable and immediately apparent features of their guarians is their
@@ -62,7 +63,7 @@ const Spirituality: React.FC<SpiritualityProps> = ({}) => {
           their eyes <Gt images={TipIcon.Wereguar}>drawn on after the fact</Gt>).
         </p>
       </div>
-      <div className={styles.tidbit}>
+      <div>
         <h3>Material Shifting</h3>
         <p>
           The guarians are rather unconventional in that they are not each defined by a static form,
@@ -82,9 +83,26 @@ const Spirituality: React.FC<SpiritualityProps> = ({}) => {
           of being <Gt images={TipIcon.Wereguar}>a little more creative</Gt>
         </p>
       </div>
-      <div className={styles.tidbit}>
+      <div>
         <h3>Size Shifting</h3>
-        <p>PLACEHOLDER</p>
+        <p>
+          As with the material shifting, each guarian is more of a vague concept of what they should
+          be rather than something unchanging, and because of this, they are the ones who define
+          their size, rather than their size defining who they are. As with all guarian abilities,
+          the change takes place silently and instantaneously, but only when not perceived. The
+          bounds for these changes in size are not clearly known.
+        </p>
+        <p>
+          Some guarians tend to enjoy a more{" "}
+          <Gt images={[TipIcon.Serguar, TipIcon.Wereguar]}>stable size</Gt>, usually maintaining
+          their preferred height in both indoor and outdoor situations. Other guarians tend to play
+          around with their size more, enjoying{" "}
+          <Gt images={[TipIcon.Reguar, TipIcon.Lavuar, TipIcon.Owluar, TipIcon.Malvuar]}>
+            larger forms
+          </Gt>{" "}
+          when outdoors while certain other guarians take this to{" "}
+          <Gt images={TipIcon.Panthuar}>extreme lengths</Gt>.
+        </p>
       </div>
     </div>
   );

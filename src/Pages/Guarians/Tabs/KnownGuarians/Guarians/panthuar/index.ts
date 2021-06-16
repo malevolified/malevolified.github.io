@@ -1,0 +1,1 @@
+export { panthuar } from "./panthuar";

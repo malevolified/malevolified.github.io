@@ -1,4 +1,4 @@
-.guarian-tooltip {
+.tooltip {
   position: fixed;
   background: #ffffff;
   box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
@@ -6,16 +6,15 @@
   pointer-events: none;
   color: black;
   border-radius: 10px;
-  display: flex;
 }
 
-.tooltip-text {
+.text {
   color: rgb(255, 247, 200);
   text-decoration: underline dotted;
   cursor: help;
 }
 
-.tooltip-text:hover {
+.text:hover {
   color: rgb(255, 250, 225);
   background-color: rgba(255, 250, 225, 0.212);
 }

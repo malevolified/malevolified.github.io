@@ -3,6 +3,7 @@ import { GuarianImagePack } from "./guarianImagePack";
 import { lavuar } from "./lavuar";
 import { malvuar } from "./malvuar";
 import { owluar } from "./owluar";
+import { panthuar } from "./panthuar";
 import { placeholderPack } from "./placeholder";
 import { reguar } from "./reguar";
 import { serguar } from "./serguar";
@@ -34,16 +35,7 @@ const guarians: GuarianInfo[] = [
     description: <p>PLACEHOLDER</p>,
     images: placeholderPack,
   },
-  {
-    name: "Panthuar",
-    notes: (
-      <ul className="big-list">
-        <li>PLACEHOLDER</li>
-      </ul>
-    ),
-    description: <p>PLACEHOLDER</p>,
-    images: placeholderPack,
-  },
+  panthuar,
   {
     name: "Septuar",
     notes: (

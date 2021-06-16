@@ -59,6 +59,9 @@ a {
 
 .guarian-ref .big-list li > ul > li:first-child {
   margin-top: 20px;
+}
+
+.guarian-ref .big-list li > ul > li {
   font-size: 20px;
 }
 
