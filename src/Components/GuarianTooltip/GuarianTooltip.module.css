@@ -6,6 +6,7 @@
   pointer-events: none;
   color: black;
   border-radius: 10px;
+  display: flex;
 }
 
 .text {

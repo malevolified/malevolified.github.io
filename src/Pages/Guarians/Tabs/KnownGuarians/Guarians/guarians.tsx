@@ -1,4 +1,5 @@
 import React from "react";
+import { enduar } from "./enduar";
 import { GuarianImagePack } from "./guarianImagePack";
 import { lavuar } from "./lavuar";
 import { malvuar } from "./malvuar";
@@ -47,17 +48,7 @@ const guarians: GuarianInfo[] = [
     secret: true,
     images: placeholderPack,
   },
-  {
-    name: "Enduar",
-    notes: (
-      <ul className="big-list">
-        <li>PLACEHOLDER</li>
-      </ul>
-    ),
-    description: <p>PLACEHOLDER</p>,
-    secret: true,
-    images: placeholderPack,
-  },
+  enduar,
 ];
 
 export { guarians };
