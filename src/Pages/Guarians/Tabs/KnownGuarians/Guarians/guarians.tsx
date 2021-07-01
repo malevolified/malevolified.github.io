@@ -8,6 +8,7 @@ import { panthuar } from "./panthuar";
 import { placeholderPack } from "./placeholder";
 import { reguar } from "./reguar";
 import { serguar } from "./serguar";
+import { wereguar } from "./wereguar";
 
 export interface GuarianInfo {
   name: string;
@@ -26,16 +27,7 @@ const guarians: GuarianInfo[] = [
   malvuar,
   owluar,
   serguar,
-  {
-    name: "Wereguar",
-    notes: (
-      <ul className="big-list">
-        <li>PLACEHOLDER</li>
-      </ul>
-    ),
-    description: <p>PLACEHOLDER</p>,
-    images: placeholderPack,
-  },
+  wereguar,
   panthuar,
   {
     name: "Septuar",

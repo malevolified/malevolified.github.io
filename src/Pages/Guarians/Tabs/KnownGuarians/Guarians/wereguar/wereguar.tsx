@@ -1,13 +1,13 @@
 import React from "react";
 import { GuarianInfo } from "../guarians";
 import { GuarianImagePack, GuarianMaterial } from "../guarianImagePack";
-import emblem from "./images/sampleEmblem.png";
-import listEmblem from "./images/sampleListEmblem.png";
-import listIcon from "./images/sampleListIcon.png";
-import ref from "./images/enduarFluffy.png";
+import emblem from "./images/wereguarEmblem.png";
+import listEmblem from "./images/wereguarListEmblem.png";
+import listIcon from "./images/wereguarIcon.png";
+import ref from "./images/sampleRef.png";
 
-export const enduar: GuarianInfo = {
-  name: "Enduar",
+export const wereguar: GuarianInfo = {
+  name: "Wereguar",
   notes: (
     <ul className="big-list">
       <li>PLACEHOLDER</li>
@@ -30,6 +30,6 @@ export const enduar: GuarianInfo = {
         ref,
       },
     ],
-    maxRefWidth: 852,
+    maxRefWidth: 944,
   },
 };
