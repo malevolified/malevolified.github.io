@@ -5,7 +5,6 @@ import { lavuar } from "./lavuar";
 import { malvuar } from "./malvuar";
 import { owluar } from "./owluar";
 import { panthuar } from "./panthuar";
-import { placeholderPack } from "./placeholder";
 import { reguar } from "./reguar";
 import { septuar } from "./septuar/septuar";
 import { serguar } from "./serguar";

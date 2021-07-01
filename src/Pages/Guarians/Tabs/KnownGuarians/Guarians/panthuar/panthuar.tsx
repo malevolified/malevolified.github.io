@@ -1,6 +1,10 @@
 import React from "react";
+import { GuarianMaterial } from "../guarianImagePack";
 import { GuarianInfo } from "../guarians";
-import { placeholderPack } from "../placeholder";
+import emblem from "./images/sampleEmblem.png";
+import listEmblem from "./images/sampleListEmblem.png";
+import listIcon from "./images/sampleListIcon.png";
+import fluffyRef from "./images/sampleRef.png";
 
 export const panthuar: GuarianInfo = {
   name: "Panthuar",
@@ -36,5 +40,18 @@ export const panthuar: GuarianInfo = {
       </p>
     </>
   ),
-  images: placeholderPack,
+  images: {
+    emblems: {
+      full: emblem,
+      list: listEmblem,
+      icon: listIcon,
+    },
+    refs: [
+      {
+        material: GuarianMaterial.Fluffy,
+        ref: fluffyRef,
+      },
+    ],
+    maxRefWidth: 985,
+  },
 };
