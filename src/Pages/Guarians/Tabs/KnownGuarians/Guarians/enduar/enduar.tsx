@@ -18,6 +18,7 @@ export const enduar: GuarianInfo = {
       <p>PLACEHOLDER</p>
     </>
   ),
+  secret: true,
   images: {
     emblems: {
       full: emblem,
