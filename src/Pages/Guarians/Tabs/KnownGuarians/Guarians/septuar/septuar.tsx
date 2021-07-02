@@ -4,7 +4,7 @@ import { GuarianMaterial } from "../guarianImagePack";
 import emblem from "./images/sampleEmblem.png";
 import listEmblem from "./images/sampleListEmblem.png";
 import listIcon from "./images/sampleListIcon.png";
-import fluffyRef from "./images/sampleRef.png";
+import fluffyRef from "./images/fluffySeptuar.png";
 
 export const septuar: GuarianInfo = {
   name: "Septuar",
@@ -47,6 +47,6 @@ export const septuar: GuarianInfo = {
         ref: fluffyRef,
       },
     ],
-    maxRefWidth: 985,
+    maxRefWidth: 741,
   },
 };
