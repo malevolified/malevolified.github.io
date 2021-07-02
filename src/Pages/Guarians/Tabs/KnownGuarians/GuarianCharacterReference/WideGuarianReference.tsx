@@ -47,7 +47,7 @@ const WideGuarianReference: React.FC<IProps> = ({ guarian, selectedMaterial, onS
                     maxWidth: guarian.images.maxRefWidth,
                     textAlign: "center",
                   }
-                : { position: "relative", zIndex: 1 }
+                : { position: "relative", zIndex: 3 }
             }
           >
             {guarian.images.refs.map((r) => (
