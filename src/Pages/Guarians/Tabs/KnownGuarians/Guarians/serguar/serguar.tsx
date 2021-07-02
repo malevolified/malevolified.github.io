@@ -5,6 +5,7 @@ import emblem from "./images/sampleEmblem.png";
 import listEmblem from "./images/sampleListEmblem.png";
 import listIcon from "./images/sampleListIcon.png";
 import fluffyRef from "./images/fluffy.png";
+import inflatableRef from "./images/serguarInflatable.png";
 
 export const serguar: GuarianInfo = {
   name: "Serguar",
@@ -39,7 +40,11 @@ export const serguar: GuarianInfo = {
         material: GuarianMaterial.Fluffy,
         ref: fluffyRef,
       },
+      {
+        material: GuarianMaterial.Inflatable,
+        ref: inflatableRef,
+      },
     ],
-    maxRefWidth: 856,
+    maxRefWidth: 943,
   },
 };

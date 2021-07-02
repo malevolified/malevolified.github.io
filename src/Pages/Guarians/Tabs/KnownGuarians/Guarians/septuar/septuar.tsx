@@ -29,9 +29,9 @@ export const septuar: GuarianInfo = {
       </p>
       <p>
         After a long stretch of silence, Septuar suddenly flops directly onto the wet grass and
-        curiously tilts their head at you
+        curiously tilts their head at you.
       </p>
-      <p>Nope, definitely a guarian.</p>
+      <p>Well, they're definitely a guarian at least.</p>
     </>
   ),
   secret: true,
