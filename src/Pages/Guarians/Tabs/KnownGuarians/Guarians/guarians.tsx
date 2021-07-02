@@ -6,7 +6,7 @@ import { malvuar } from "./malvuar";
 import { owluar } from "./owluar";
 import { panthuar } from "./panthuar";
 import { reguar } from "./reguar";
-import { septuar } from "./septuar/septuar";
+import { septuar } from "./septuar";
 import { serguar } from "./serguar";
 import { wereguar } from "./wereguar";
 
