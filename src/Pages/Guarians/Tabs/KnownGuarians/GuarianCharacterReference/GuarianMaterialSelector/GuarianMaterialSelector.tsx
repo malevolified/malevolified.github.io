@@ -4,6 +4,7 @@ import "./guarianMaterialSelector.css";
 import fluffyIcon from "./icons/fluffyIcon.png";
 import rubberIcon from "./icons/rubberIcon.png";
 import inflatableIcon from "./icons/inflatableIcon.png";
+import matteIcon from "./icons/matteIcon.png";
 import { dir } from "console";
 
 interface IProps {
@@ -32,6 +33,8 @@ const GuarianMaterialSelector: React.FC<IProps> = ({
         return rubberIcon;
       case GuarianMaterial.Inflatable:
         return inflatableIcon;
+      case GuarianMaterial.Matte:
+        return matteIcon;
       default:
         return fluffyIcon;
     }

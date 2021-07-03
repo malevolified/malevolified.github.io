@@ -4,7 +4,7 @@ import { GuarianInfo } from "../guarians";
 import emblem from "./images/sampleEmblem.png";
 import listEmblem from "./images/sampleListEmblem.png";
 import listIcon from "./images/sampleListIcon.png";
-import fluffyRef from "./images/sampleRef.png";
+import matteRef from "./images/panthuarMatte.png";
 
 export const panthuar: GuarianInfo = {
   name: "Panthuar",
@@ -48,10 +48,10 @@ export const panthuar: GuarianInfo = {
     },
     refs: [
       {
-        material: GuarianMaterial.Fluffy,
-        ref: fluffyRef,
+        material: GuarianMaterial.Matte,
+        ref: matteRef,
       },
     ],
-    maxRefWidth: 985,
+    maxRefWidth: 716,
   },
 };
