@@ -13,9 +13,17 @@ export const lavuar: GuarianInfo = {
     <ul className="big-list">
       <li>Bouncy and energetic</li>
       <li>
-        Possesses really high perception
+        Possesses such high perception and awareness for a guarian that she can actually be safely
+        ridden
+      </li>
+      <li>
+        <b>Very</b> clingy
+      </li>
+      <li>
+        Appears so frequently that you can basically assume she's already there the moment she has
+        the chance
         <ul>
-          <li>So high that she can actually be safely ridden without needing guidance!</li>
+          <li>If you didn't know any better, you'd think she'd never left</li>
         </ul>
       </li>
     </ul>
