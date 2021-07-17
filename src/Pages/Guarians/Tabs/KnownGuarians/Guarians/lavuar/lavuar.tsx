@@ -5,6 +5,7 @@ import emblem from "./images/sampleEmblem.png";
 import listEmblem from "./images/sampleListEmblem.png";
 import listIcon from "./images/sampleListIcon.png";
 import ref from "./images/lavuarFluffyRef.png";
+import squishyRef from "./images/lavuarSquish.png";
 
 export const lavuar: GuarianInfo = {
   name: "Lavuar",
@@ -44,6 +45,10 @@ export const lavuar: GuarianInfo = {
       {
         material: GuarianMaterial.Fluffy,
         ref,
+      },
+      {
+        material: GuarianMaterial.Inflatable,
+        ref: squishyRef,
       },
     ],
     maxRefWidth: 944,
