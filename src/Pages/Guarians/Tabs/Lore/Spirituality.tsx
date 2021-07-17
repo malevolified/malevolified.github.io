@@ -2,6 +2,7 @@ import React from "react";
 import { GuarianTooltip } from "../../../../Components/GuarianTooltip";
 import { TipIcon } from "../../../../Components/GuarianTooltip/Images";
 import styles from "./lore.module.css";
+import { MaterialDisplay } from "./MaterialDisplay";
 
 const Gt = GuarianTooltip;
 
@@ -45,23 +46,29 @@ export const Spirituality: React.FC<SpiritualityProps> = ({}) => {
         eyes <Gt images={TipIcon.Wereguar}>drawn on after the fact</Gt>).
       </p>
       <h3>Material Shifting</h3>
-      <p>
-        The guarians are rather unconventional in that they are not each defined by a static form,
-        but rather, a vague concept of who they are and what they're meant to be, something that
-        could be molded by those who behold them. As the guarians are not conventionally living
-        beings, they are not bound to conventionally living bodies and are free to experiment with
-        alternate states of being altogether.
-      </p>
-      <p>
-        A guarian can freely change its composition whenever it so chooses, only shifting when not
-        seen. Given they're unalive nature, there appears to be no restrictions on what form they
-        take. While plenty of fluffy, feathery guarians have been seen, many often take typically
-        inanimate forms such as inflatable or plush forms while still remaining fully animate. Many
-        more materials have been seen beyond this such as rubber, mud, water, plastic, clay, and
-        even obsidian. While some guarians tend to prefer themselves{" "}
-        <Gt images={TipIcon.Malvuar}>as a specific material</Gt>, other guarians have a tendency of
-        being <Gt images={TipIcon.Wereguar}>a little more creative</Gt>
-      </p>
+      <div style={{ display: "flex" }}>
+        <div>
+          <p>
+            The guarians are rather unconventional in that they are not each defined by a static
+            form, but rather, a vague concept of who they are and what they're meant to be,
+            something that could be molded by those who behold them. As the guarians are not
+            conventionally living beings, they are not bound to conventionally living bodies and are
+            free to experiment with alternate states of being altogether.
+          </p>
+          <p>
+            A guarian can freely change its composition whenever it so chooses, only shifting when
+            not seen. Given they're unalive nature, there appears to be no restrictions on what form
+            they take. While plenty of fluffy, feathery guarians have been seen, many often take
+            typically inanimate forms such as inflatable or plush forms while still remaining fully
+            animate. Many more materials have been seen beyond this such as rubber, mud, water,
+            plastic, clay, and even obsidian. While some guarians tend to prefer themselves{" "}
+            <Gt images={TipIcon.Malvuar}>as a specific material</Gt>, other guarians have a tendency
+            of being <Gt images={TipIcon.Wereguar}>a little more creative</Gt>
+          </p>
+        </div>
+        <MaterialDisplay />
+      </div>
+
       <h3>Size Shifting</h3>
       <p>
         As with the material shifting, each guarian is more of a vague concept of what they should
