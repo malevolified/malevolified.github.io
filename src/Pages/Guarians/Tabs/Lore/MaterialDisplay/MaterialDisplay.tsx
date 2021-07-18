@@ -14,11 +14,7 @@ export const MaterialDisplay: React.FC<MaterialDisplayProps> = ({}) => {
   const [target, setTarget] = useState(0);
 
   useEffect(() => {
-    setTarget(getNext());
-  }, []);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setTarget(getNext()), 5000);
+    const timer = setTimeout(() => setTarget(getNext()), 7500);
 
     return () => clearTimeout(timer);
   }, [target]);
@@ -54,12 +50,14 @@ export const MaterialDisplay: React.FC<MaterialDisplayProps> = ({}) => {
   }
 
   return (
-    <div style={{ display: "flex", flexDirection: getNext() == 0 ? "row-reverse" : "row" }}>
+    <div
+      style={{ display: "flex", flexDirection: getNext() == 0 ? "row-reverse" : "row", width: 527 }}
+    >
       {images.map((i, index) => (
         <div
-          key={i}
+          key={index}
           style={{
-            transition: isActive(index) ? "5s linear" : undefined,
+            transition: "1.8s",
             maxHeight: 760,
             overflow: "hidden",
             width: getCropWidth(index),
@@ -68,7 +66,7 @@ export const MaterialDisplay: React.FC<MaterialDisplayProps> = ({}) => {
           <img
             src={i}
             style={{
-              transition: isActive(index) ? "5s linear" : undefined,
+              transition: "1.8s",
               marginLeft: getSecondaryOffset(index),
             }}
           />
