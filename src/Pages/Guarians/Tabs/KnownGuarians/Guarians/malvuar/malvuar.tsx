@@ -51,6 +51,6 @@ export const malvuar: GuarianInfo = {
         ref: inflatableRef,
       },
     ],
-    maxRefWidth: 896,
+    maxRefWidth: 960,
   },
 };

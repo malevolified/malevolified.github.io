@@ -3,7 +3,9 @@ import rubber from "./wereguarMaterialsRubber.png";
 import plush from "./wereguarMaterialsPlush.png";
 import fluffy from "./wereguarMaterialsFluffy.png";
 
-interface MaterialDisplayProps {}
+interface MaterialDisplayProps {
+  small?: boolean;
+}
 
 //THIS BREAKS IF YOU ONLY USE TWO IMAGES, you need to use three otherwise
 // the initial margin offset won't get set properly
@@ -11,8 +13,10 @@ const images = [rubber, fluffy, plush];
 
 const IMAGE_WIDTH = 518;
 
-export const MaterialDisplay: React.FC<MaterialDisplayProps> = ({}) => {
+export const MaterialDisplay: React.FC<MaterialDisplayProps> = ({ small }) => {
   const [target, setTarget] = useState(0);
+
+  const actualWidth = small ? IMAGE_WIDTH * (5 / 8) : IMAGE_WIDTH;
 
   useEffect(() => {
     const timer = setTimeout(() => setTarget(getNext()), 5000);
@@ -33,7 +37,7 @@ export const MaterialDisplay: React.FC<MaterialDisplayProps> = ({}) => {
       case target:
         return 0;
       case getNext():
-        return IMAGE_WIDTH;
+        return actualWidth;
       default:
         return 0;
     }
@@ -46,37 +50,70 @@ export const MaterialDisplay: React.FC<MaterialDisplayProps> = ({}) => {
       case getNext():
         return 0;
       default:
-        return -IMAGE_WIDTH;
+        return -actualWidth;
     }
   }
 
-  return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: getNext() == 0 ? "row-reverse" : "row",
-        width: IMAGE_WIDTH,
-      }}
-    >
-      {images.map((i, index) => (
-        <div
-          key={index}
-          style={{
-            transition: "1s",
-            maxHeight: 800,
-            overflow: "hidden",
-            width: getCropWidth(index),
-          }}
-        >
-          <img
-            src={i}
+  if (small) {
+    return (
+      <div
+        style={{
+          display: "flex",
+          flexDirection: getNext() == 0 ? "row-reverse" : "row",
+          width: actualWidth,
+        }}
+      >
+        {images.map((i, index) => (
+          <div
+            key={index}
             style={{
               transition: "1s",
-              marginLeft: getSecondaryOffset(index),
+              maxHeight: 500,
+              overflow: "hidden",
+              width: getCropWidth(index),
             }}
-          />
-        </div>
-      ))}
-    </div>
-  );
+          >
+            <img
+              src={i}
+              style={{
+                transition: "1s",
+                height: 500,
+                marginLeft: getSecondaryOffset(index),
+              }}
+            />
+          </div>
+        ))}
+      </div>
+    );
+  } else {
+    return (
+      <div
+        style={{
+          display: "flex",
+          flexDirection: getNext() == 0 ? "row-reverse" : "row",
+          width: IMAGE_WIDTH,
+        }}
+      >
+        {images.map((i, index) => (
+          <div
+            key={index}
+            style={{
+              transition: "1s",
+              maxHeight: 800,
+              overflow: "hidden",
+              width: getCropWidth(index),
+            }}
+          >
+            <img
+              src={i}
+              style={{
+                transition: "1s",
+                marginLeft: getSecondaryOffset(index),
+              }}
+            />
+          </div>
+        ))}
+      </div>
+    );
+  }
 };

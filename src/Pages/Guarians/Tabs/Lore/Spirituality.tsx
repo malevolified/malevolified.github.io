@@ -1,6 +1,7 @@
 import React from "react";
 import { GuarianTooltip } from "../../../../Components/GuarianTooltip";
 import { TipIcon } from "../../../../Components/GuarianTooltip/Images";
+import { useScreenWidthGreaterThan } from "../../../../Hooks/useScreenWidthGreaterThan";
 import styles from "./lore.module.css";
 import { MaterialDisplay } from "./MaterialDisplay";
 
@@ -9,6 +10,9 @@ const Gt = GuarianTooltip;
 interface SpiritualityProps {}
 
 export const Spirituality: React.FC<SpiritualityProps> = ({}) => {
+  const horizontalMatDisplay = useScreenWidthGreaterThan(1000);
+  const largeMatDisplay = useScreenWidthGreaterThan(600);
+
   return (
     <div>
       <h1>Spirituality</h1>
@@ -46,7 +50,13 @@ export const Spirituality: React.FC<SpiritualityProps> = ({}) => {
         eyes <Gt images={TipIcon.Wereguar}>drawn on after the fact</Gt>).
       </p>
       <h3>Material Shifting</h3>
-      <div style={{ display: "flex" }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: horizontalMatDisplay ? "row" : "column",
+          alignItems: horizontalMatDisplay ? undefined : "center",
+        }}
+      >
         <div>
           <p>
             The guarians are rather unconventional in that they are not each defined by a static
@@ -66,7 +76,7 @@ export const Spirituality: React.FC<SpiritualityProps> = ({}) => {
             of being <Gt images={TipIcon.Wereguar}>a little more creative</Gt>
           </p>
         </div>
-        <MaterialDisplay />
+        <MaterialDisplay small={!largeMatDisplay} />
       </div>
 
       <h3>Size Shifting</h3>
