@@ -13,6 +13,7 @@ const Lore: React.FC<IProps> = ({}) => {
   return (
     <>
       <Spirituality />
+      <div style={{ paddingBottom: 50 }}></div>
       <Companionship />
     </>
   );
