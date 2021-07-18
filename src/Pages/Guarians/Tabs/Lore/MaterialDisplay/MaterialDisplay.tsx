@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from "react";
-import first from "./wereguarMaterials1.png";
-import second from "./wereguarMaterials2.png";
+import rubber from "./wereguarMaterialsRubber.png";
+import plush from "./wereguarMaterialsPlush.png";
+import fluffy from "./wereguarMaterialsFluffy.png";
 
 interface MaterialDisplayProps {}
 
 //THIS BREAKS IF YOU ONLY USE TWO IMAGES, you need to use three otherwise
 // the initial margin offset won't get set properly
-const images = [first, second, first, second];
+const images = [rubber, fluffy, plush];
 
-const IMAGE_WIDTH = 527;
+const IMAGE_WIDTH = 518;
 
 export const MaterialDisplay: React.FC<MaterialDisplayProps> = ({}) => {
   const [target, setTarget] = useState(0);
 
   useEffect(() => {
-    const timer = setTimeout(() => setTarget(getNext()), 7500);
+    const timer = setTimeout(() => setTarget(getNext()), 5000);
 
     return () => clearTimeout(timer);
   }, [target]);
@@ -51,14 +52,18 @@ export const MaterialDisplay: React.FC<MaterialDisplayProps> = ({}) => {
 
   return (
     <div
-      style={{ display: "flex", flexDirection: getNext() == 0 ? "row-reverse" : "row", width: 527 }}
+      style={{
+        display: "flex",
+        flexDirection: getNext() == 0 ? "row-reverse" : "row",
+        width: IMAGE_WIDTH,
+      }}
     >
       {images.map((i, index) => (
         <div
           key={index}
           style={{
-            transition: "1.8s",
-            maxHeight: 760,
+            transition: "1s",
+            maxHeight: 800,
             overflow: "hidden",
             width: getCropWidth(index),
           }}
@@ -66,7 +71,7 @@ export const MaterialDisplay: React.FC<MaterialDisplayProps> = ({}) => {
           <img
             src={i}
             style={{
-              transition: "1.8s",
+              transition: "1s",
               marginLeft: getSecondaryOffset(index),
             }}
           />
