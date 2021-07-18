@@ -22,7 +22,7 @@ const GuarianReferenceLink: React.FC<IProps> = ({ guarian, collapsed }) => {
         className="nav-wrapper"
         activeClassName="selected-guarian"
       >
-        <div>{collapsed ? null : guarian.name}</div>
+        <div className="name">{collapsed ? null : guarian.name}</div>
       </NavLink>
     </div>
   );
