@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.1cc1ecc5.chunk.css",
-    "main.js": "/static/js/main.f4a48d41.chunk.js",
-    "main.js.map": "/static/js/main.f4a48d41.chunk.js.map",
+    "main.js": "/static/js/main.d038769b.chunk.js",
+    "main.js.map": "/static/js/main.d038769b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2608cf5a.js",
     "runtime-main.js.map": "/static/js/runtime-main.2608cf5a.js.map",
-    "static/js/2.4cd678ca.chunk.js": "/static/js/2.4cd678ca.chunk.js",
-    "static/js/2.4cd678ca.chunk.js.map": "/static/js/2.4cd678ca.chunk.js.map",
+    "static/js/2.c5dd4d5f.chunk.js": "/static/js/2.c5dd4d5f.chunk.js",
+    "static/js/2.c5dd4d5f.chunk.js.map": "/static/js/2.c5dd4d5f.chunk.js.map",
     "static/js/3.acb4ac00.chunk.js": "/static/js/3.acb4ac00.chunk.js",
     "static/js/3.acb4ac00.chunk.js.map": "/static/js/3.acb4ac00.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.1cc1ecc5.chunk.css.map": "/static/css/main.1cc1ecc5.chunk.css.map",
-    "static/js/2.4cd678ca.chunk.js.LICENSE.txt": "/static/js/2.4cd678ca.chunk.js.LICENSE.txt",
+    "static/js/2.c5dd4d5f.chunk.js.LICENSE.txt": "/static/js/2.c5dd4d5f.chunk.js.LICENSE.txt",
     "static/media/guarianRef.css": "/static/media/bgFiligree.117a582b.png",
     "static/media/emblemBorder.07faac2b.png": "/static/media/emblemBorder.07faac2b.png",
     "static/media/enduarFluffy.d33b8880.png": "/static/media/enduarFluffy.d33b8880.png",
@@ -21,6 +21,7 @@
     "static/media/fluffySeptuar.a6884eb3.png": "/static/media/fluffySeptuar.a6884eb3.png",
     "static/media/lavuar.0902c187.png": "/static/media/lavuar.0902c187.png",
     "static/media/lavuarFluffyRef.44366169.png": "/static/media/lavuarFluffyRef.44366169.png",
+    "static/media/lavuarSquish.e25718ad.png": "/static/media/lavuarSquish.e25718ad.png",
     "static/media/listEmblem.28806dfe.png": "/static/media/listEmblem.28806dfe.png",
     "static/media/malvuar.4d5c4692.png": "/static/media/malvuar.4d5c4692.png",
     "static/media/malvuarFluffy.79bdd335.png": "/static/media/malvuarFluffy.79bdd335.png",
@@ -41,12 +42,15 @@
     "static/media/serguarInflatable.9cd22464.png": "/static/media/serguarInflatable.9cd22464.png",
     "static/media/wereguar.ca5ef136.png": "/static/media/wereguar.ca5ef136.png",
     "static/media/wereguarEmblem.711b6d80.png": "/static/media/wereguarEmblem.711b6d80.png",
-    "static/media/wereguarListEmblem.c1b0205f.png": "/static/media/wereguarListEmblem.c1b0205f.png"
+    "static/media/wereguarListEmblem.c1b0205f.png": "/static/media/wereguarListEmblem.c1b0205f.png",
+    "static/media/wereguarMaterialsFluffy.1f630e45.png": "/static/media/wereguarMaterialsFluffy.1f630e45.png",
+    "static/media/wereguarMaterialsPlush.1f248f50.png": "/static/media/wereguarMaterialsPlush.1f248f50.png",
+    "static/media/wereguarMaterialsRubber.0f43c1d4.png": "/static/media/wereguarMaterialsRubber.0f43c1d4.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2608cf5a.js",
-    "static/js/2.4cd678ca.chunk.js",
+    "static/js/2.c5dd4d5f.chunk.js",
     "static/css/main.1cc1ecc5.chunk.css",
-    "static/js/main.f4a48d41.chunk.js"
+    "static/js/main.d038769b.chunk.js"
   ]
 }
