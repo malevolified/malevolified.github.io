@@ -19,10 +19,16 @@ export const Companionship: React.FC<CompanionshipProps> = ({}) => {
         guarians seem to build a complex relationships, actively shaping itself in strange ways in
         order to resonate with those that it befriends
       </p>
-      <h3>Self Image</h3>
-      <p></p>
       <h3>Simplicity</h3>
-      <p></p>
+      <p>PLACEHOLDER - Write about guarian intelligence</p>
+      <h3>Perception</h3>
+      <p>PLACEHOLDER - Write about how guarians see</p>
+      <h3>Self Image</h3>
+      <p>
+        PLACEHOLDER - Write about guarian gender/size/material and how it relates to other people
+      </p>
+      <h3>Markings</h3>
+      <p>PLACEHOLDER - Write about how guarians like being drawn on/adorned with stuff</p>
     </div>
   );
 };
