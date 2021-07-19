@@ -1,9 +1,13 @@
 import React from "react";
 import { FadeText } from "../../../../Components/FadeText";
+import { GuarianTooltip, TipIcon } from "../../../../Components/GuarianTooltip";
 import { useLocalStorage } from "../../../../Hooks/useLocalStorage";
 import "./faq.css";
+import { QuestionAnswer } from "./QuestionAnswer";
 
 export const SHOW_SECRET_GUARIANS = "show_secret_guarians";
+
+const QA = QuestionAnswer;
 
 interface IProps {}
 
@@ -12,21 +16,46 @@ const FAQ: React.FC<IProps> = ({}) => {
 
   return (
     <div className="faq">
-      <div className="question">
-        Where do the guarians come from? Were they something else before or do they just
-        spontaneously occur?
-      </div>
-      <div className="answer">
-        Unfortunately, the origins of the guarians are rather nebulous, especially since every
-        guarian tends to have their own story.
-      </div>
-      <div className="separator" />
-      <div className="question">Do you have any other secret guarians?</div>
-      <div className="answer secret" onClick={() => setShowSecrets(!showSecrets)}>
-        <FadeText
-          text={showSecrets ? "Okay, maybe a few..." : "I have no idea what you're talking about!"}
-        />
-      </div>
+      <QA question={<>Where do the guarians come from? How are they actually formed?</>}>
+        <p>
+          Unfortunately, the origins of the guarians are actually rather nebulous! There are loads
+          of theories on where the actually originate! Some might say that the guarians just
+          spontaneously occur from nothing, while others might feel that they were some other being
+          prior that transcended into a guarian form. Some might say that they have no origin at all
+          and are primordial beings, and others might say that they're created from within{" "}
+          <i>you</i> instead
+        </p>
+        <p>
+          Things get profoundly more complicated when you consider that not all guarians are alike.
+          Most of the guarians are guarians through and through, which I've usually been referring
+          to as{" "}
+          <GuarianTooltip
+            position="bottom"
+            images={[TipIcon.Reguar, TipIcon.Lavuar, TipIcon.Owluar, TipIcon.Panthuar]}
+          >
+            pure guarians.
+          </GuarianTooltip>{" "}
+          Regarding the other guarians however, you get a funny feeling that they might be{" "}
+          <GuarianTooltip images={[TipIcon.Malvuar, TipIcon.Serguar, TipIcon.Wereguar]}>
+            hiding something.
+          </GuarianTooltip>
+        </p>
+      </QA>
+      <QA question={<>How does gender work with the guarians?</>}>
+        The guarians actually have no concept of gender at all, so all the references you see to
+        pronouns are purely just based on whatever felt most appropriate for them! Each guarian
+        might represent something completely different for each person, so really, you're free to
+        gender them however you please!
+      </QA>
+      <QA question={<>Do you have any other secret guarians?</>}>
+        <div className="secret" onClick={() => setShowSecrets(!showSecrets)}>
+          <FadeText
+            text={
+              showSecrets ? "Okay, maybe a few..." : "I have no idea what you're talking about!"
+            }
+          />
+        </div>
+      </QA>
     </div>
   );
 };

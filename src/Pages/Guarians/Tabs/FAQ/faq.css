@@ -1,12 +1,11 @@
 .faq .question {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 22px;
+  margin-bottom: 8px;
 }
 
 .faq .answer {
   display: inline-block;
   font-size: 18px;
-  margin-left: 20px;
   padding: 10px;
   background-color: rgb(66, 63, 92);
   border: 3px dotted rgb(83, 81, 107);
@@ -20,13 +19,17 @@
   margin-bottom: 0px;
 }
 
-.faq .answer.secret {
+.faq .answer .secret {
   text-decoration: underline dotted;
   text-decoration-thickness: 1px;
   cursor: pointer;
 }
 
 .faq .separator {
-  margin: 25px 10px;
+  margin: 22px 10px;
   border-bottom: 1px solid #fffae470;
+}
+
+.separator:last-child {
+  display: none;
 }
