@@ -33,3 +33,12 @@
 .separator:last-child {
   display: none;
 }
+
+.not-a-guarian {
+  opacity: 0.05;
+  cursor: help;
+}
+
+.not-a-guarian:hover {
+  opacity: 1;
+}
