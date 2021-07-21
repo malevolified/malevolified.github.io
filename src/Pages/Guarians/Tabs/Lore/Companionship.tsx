@@ -16,11 +16,17 @@ export const Companionship: React.FC<CompanionshipProps> = ({}) => {
         This reliance upon being in the company of someone more real is not well understood, and
         their motives for behaving this way are completely unknown, but given the nature of these
         encounters, it appears as though their intent is purely just altruistic benevolence. The
-        guarians seem to build a complex relationships, actively shaping itself in strange ways in
-        order to resonate with those that it befriends
+        guarians seem to build a complex relationships, actively shaping themselves in strange ways
+        in order to resonate with those they befriend
       </p>
-      <h3>Intelligence</h3>
-      <p>PLACEHOLDER - Write about guarian intelligence</p>
+      <h3>Understanding</h3>
+      <p>
+        Given their spiritual nature, their fantastical abilities and their completely inexplicable
+        existence, one has to wonder what goes on within the mind of a guarian. Contrary to what one
+        might think, it turns out that the answer is: probably not much. Unsurprisingly, usually
+        lacking mouths, the guarians lack the ability to communicate, but it also seems like they
+        only possess a rudimentary understanding of language in the first place.
+      </p>
       <h3>Perception</h3>
       <p>PLACEHOLDER - Write about how guarians see</p>
       <h3>Self Image</h3>

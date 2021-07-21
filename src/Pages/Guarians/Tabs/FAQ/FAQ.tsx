@@ -28,9 +28,9 @@ const FAQ: React.FC<IProps> = ({}) => {
           <i>you</i> instead
         </p>
         <p>
-          Things get profoundly more complicated when you consider that not all guarians are alike.
-          Most of the guarians are guarians through and through, which I've usually been referring
-          to as{" "}
+          Things get profoundly more complicated when you consider that not all guarians have the
+          same origins. Most of the guarians are guarians through and through, which I've usually
+          been referring to as{" "}
           <GT
             position="bottom"
             images={[TipIcon.Reguar, TipIcon.Lavuar, TipIcon.Owluar, TipIcon.Panthuar]}
@@ -40,7 +40,7 @@ const FAQ: React.FC<IProps> = ({}) => {
           Regarding the other guarians however, you get a funny feeling that they might be{" "}
           <GT images={[TipIcon.Malvuar, TipIcon.Serguar, TipIcon.Wereguar]}>hiding something.</GT>.{" "}
           <span className="not-a-guarian">
-            Some guarians are very definitely{" "}
+            Worth mentioning however is that some guarians are very definitely{" "}
             <GT images={[notAGuarian]} position="bottom">
               not a guarian
             </GT>
