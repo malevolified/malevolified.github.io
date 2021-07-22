@@ -41,11 +41,17 @@ const FAQ: React.FC<IProps> = ({}) => {
           <GT images={[TipIcon.Malvuar, TipIcon.Serguar, TipIcon.Wereguar]}>hiding something.</GT>.{" "}
           <span className="not-a-guarian">
             Worth mentioning however is that some guarians are very definitely{" "}
-            <GT images={[notAGuarian]} position="bottom">
+            <GT images={notAGuarian} position="bottom">
               not a guarian
             </GT>
           </span>
         </p>
+      </QA>
+      <QA question={<>Is there a reason every guarian name ends with -uar?</>}>
+        To be completely honest, no! My first guarian character, Reguar, just happened to get that
+        name randomly, and then I named Lavuar as just a spin on Reguar's name. After that, I just
+        felt like I was committed which is fine since I sort of just have fun having arbitrary
+        patterns in naming schemes.
       </QA>
       <QA question={<>How does gender work with the guarians?</>}>
         The guarians actually have no concept of gender at all, so all the references you see to
