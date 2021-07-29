@@ -1,4 +1,5 @@
 import React from "react";
+import { PlaceholderText } from "../../../../Components/PlaceholderText";
 
 interface CompanionshipProps {}
 
@@ -28,13 +29,23 @@ export const Companionship: React.FC<CompanionshipProps> = ({}) => {
         only possess a rudimentary understanding of language in the first place.
       </p>
       <h3>Perception</h3>
-      <p>PLACEHOLDER - Write about how guarians see</p>
+      <p>
+        Lacking eyes, the guarians do not see the world as we see it. Instead, the guarians seem to
+        perceive things in their own unconventional way, somehow being able to sense the world
+        around them.
+      </p>
       <h3>Self Image</h3>
       <p>
-        PLACEHOLDER - Write about guarian gender/size/material and how it relates to other people
+        <PlaceholderText>
+          PLACEHOLDER - Write about guarian gender/size/material and how it relates to other people
+        </PlaceholderText>
       </p>
       <h3>Markings</h3>
-      <p>PLACEHOLDER - Write about how guarians like being drawn on/adorned with stuff</p>
+      <p>
+        <PlaceholderText>
+          PLACEHOLDER - Write about how guarians like being drawn on/adorned with stuff
+        </PlaceholderText>
+      </p>
     </div>
   );
 };
