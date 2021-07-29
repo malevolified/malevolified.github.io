@@ -20,6 +20,10 @@ export const malvuar: GuarianInfo = {
         </ul>
       </li>
       <li>Despite being completely visible, nobody seems to mind their presence except you</li>
+      <li>
+        Becuase of this, he's frustrastingly impossible to get rid of, only seeming to leave you
+        alone once he's gotten bored of rather than just politely leaving when convenient
+      </li>
     </ul>
   ),
   description: (

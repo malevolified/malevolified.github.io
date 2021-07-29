@@ -26,6 +26,9 @@ export const lavuar: GuarianInfo = {
           <li>If you didn't know any better, you'd think she'd never left</li>
         </ul>
       </li>
+      <li>
+        Perfectly happy to lay down with you in the grass, even if just for a really quick moment!
+      </li>
     </ul>
   ),
   description: (

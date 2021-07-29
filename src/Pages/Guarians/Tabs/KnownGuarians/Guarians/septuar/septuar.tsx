@@ -10,7 +10,20 @@ export const septuar: GuarianInfo = {
   name: "Septuar",
   notes: (
     <ul className="big-list">
-      <li>PLACEHOLDER</li>
+      <li>Capable of so much more than you've ever seen from another guarian</li>
+      <li>Just as they appear in our reality, you can appear in Septuar's reality as well</li>
+      <li>Fur/material color actually adapts to their environment</li>
+      <li>
+        While capable of floating, they're perfectly happy to walk with you, possessing such grace
+        and confidence that it leaves you wondering what they really are...
+        <ul>
+          <li>
+            ...until you very quickly realize that they're actually just as goofy as any other
+            guarian
+          </li>
+          <li>Gives very nice hugs though</li>
+        </ul>
+      </li>
     </ul>
   ),
   description: (
