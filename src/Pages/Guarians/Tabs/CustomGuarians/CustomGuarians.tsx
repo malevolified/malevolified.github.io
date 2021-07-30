@@ -78,8 +78,14 @@ export const CustomGuarians: React.FC<CustomGuariansProps> = ({}) => {
             <img src={facelessness} style={{ maxWidth: "100%", borderRadius: 10 }} />
           </div>
         </div>
-        <p></p>
       </div>
+      <p>
+        Besides this, there are a lot more really subtle aspects that define what it means to be a
+        guarian, but regardless, what really defines a guarian is subjective, and thus, these
+        guidelines are merely guidelines and nothing more. In the end, you should design what you
+        feel is right for your guarian, what you feel actually defines a guarian, and above all,
+        what you find most fun.
+      </p>
     </div>
   );
 };
