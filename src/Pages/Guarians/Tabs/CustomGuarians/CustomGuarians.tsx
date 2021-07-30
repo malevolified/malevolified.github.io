@@ -2,10 +2,13 @@ import React from "react";
 import styles from "./CustomGuarians.module.css";
 import necks from "./necks.png";
 import facelessness from "./facelessness.png";
+import { useScreenWidthGreaterThan } from "../../../../Hooks/useScreenWidthGreaterThan";
 
 interface CustomGuariansProps {}
 
 export const CustomGuarians: React.FC<CustomGuariansProps> = ({}) => {
+  const horizontal = useScreenWidthGreaterThan(1000);
+
   return (
     <div>
       <p>
@@ -54,9 +57,9 @@ export const CustomGuarians: React.FC<CustomGuariansProps> = ({}) => {
         you should mostly just design whatever you find most fun. In general, my guarian designs
         feature:
       </p>
-      <div style={{ display: "flex", gap: 20 }}>
+      <div style={{ display: "flex", gap: 20, flexDirection: horizontal ? "row" : "column" }}>
         <div className={styles.guideline}>
-          <h3>Bulky Necks</h3>
+          <h4>Bulky Necks</h4>
           <p>
             Guarians typically have large, pronounced, swooping necks. Characters who have been
             "guarified" are typically given necks far larger than what they had before
@@ -66,7 +69,7 @@ export const CustomGuarians: React.FC<CustomGuariansProps> = ({}) => {
           </div>
         </div>
         <div className={styles.guideline}>
-          <h3>Facelessness</h3>
+          <h4>Facelessness</h4>
           <p>
             Consider designing your guarian to be faceless, or at the very least, eyeless. Ears are
             pretty common, while mouthes are rarer but still perfectly fine.
@@ -75,6 +78,7 @@ export const CustomGuarians: React.FC<CustomGuariansProps> = ({}) => {
             <img src={facelessness} style={{ maxWidth: "100%", borderRadius: 10 }} />
           </div>
         </div>
+        <p></p>
       </div>
     </div>
   );
