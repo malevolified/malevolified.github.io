@@ -1,5 +1,8 @@
 import React from "react";
+import { GuarianTooltip, TipIcon } from "../../../../Components/GuarianTooltip";
 import { PlaceholderText } from "../../../../Components/PlaceholderText";
+
+const Gt = GuarianTooltip;
 
 interface CompanionshipProps {}
 
@@ -42,11 +45,21 @@ export const Companionship: React.FC<CompanionshipProps> = ({}) => {
       </p>
       <h3>Perception</h3>
       <p>
-        <PlaceholderText>
-          Lacking eyes, the guarians do not see the world as we see it. Instead, the guarians seem
-          to perceive things in their own unconventional way, somehow being able to sense the world
-          around them.
-        </PlaceholderText>
+        Despite lacking eyes, the guarians seem to still be able to see. It is unknown by what
+        mechanism they are able to perceive the world around them, but whatever it may be, it allows
+        them to see the world completely different from how we see it. Rather than taking light in,
+        the guarians seem to be capable of perceiving a small area around them. The range of this
+        effect is limited and varies between guarian to guarian. Furthermore, this form of
+        perception seems to require a small amount of energy to take effect and can be "turned off"
+        when a guarian chooses to rest. Based on these factors, some guarians have{" "}
+        <Gt images={TipIcon.Reguar}>unfortunately low perception</Gt> while other guarians have{" "}
+        <Gt images={[TipIcon.Lavuar, TipIcon.Wereguar]}>incredibly high perception</Gt>, far beyond
+        what we're capable of.
+      </p>
+      <p>
+        What's really surprising, however, is that this sort of perceptive sense the guarians have{" "}
+        <i>isn't</i>
+        actually the only way they're capable of seeing.
       </p>
       <h3>Self Image</h3>
       <p>

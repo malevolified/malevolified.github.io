@@ -27,6 +27,18 @@ export const GuarianHoverTooltip: React.FC<GuarianTooltipProps> = ({
     y: 0,
   });
 
+  function getClampedOffset() {
+    const offset = getOffset();
+
+    offset.left = Math.max(offset.left as number, 0);
+    offset.left = Math.min(
+      offset.left as number,
+      window.innerWidth - (tooltipRef.current?.offsetWidth ?? 0)
+    );
+
+    return offset;
+  }
+
   function getOffset() {
     if (anchor == "mouse") {
       switch (position) {
@@ -196,7 +208,7 @@ export const GuarianHoverTooltip: React.FC<GuarianTooltipProps> = ({
       <div
         ref={tooltipRef}
         className={styles.tooltip}
-        style={{ ...getOffset(), visibility: visible && !disabled ? "visible" : "hidden" }}
+        style={{ ...getClampedOffset(), visibility: visible && !disabled ? "visible" : "hidden" }}
       >
         {Array.isArray(images) ? renderImages(images) : renderImage(images)}
       </div>
