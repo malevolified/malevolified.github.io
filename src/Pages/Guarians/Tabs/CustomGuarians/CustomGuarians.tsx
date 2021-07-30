@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./CustomGuarians.module.css";
+import necks from "./necks.png";
+import facelessness from "./facelessness.png";
 
 interface CustomGuariansProps {}
 
@@ -59,6 +61,9 @@ export const CustomGuarians: React.FC<CustomGuariansProps> = ({}) => {
             Guarians typically have large, pronounced, swooping necks. Characters who have been
             "guarified" are typically given necks far larger than what they had before
           </p>
+          <div style={{ width: "100%", textAlign: "center" }}>
+            <img src={necks} style={{ maxWidth: "100%", borderRadius: 10 }} />
+          </div>
         </div>
         <div className={styles.guideline}>
           <h3>Facelessness</h3>
@@ -66,6 +71,9 @@ export const CustomGuarians: React.FC<CustomGuariansProps> = ({}) => {
             Consider designing your guarian to be faceless, or at the very least, eyeless. Ears are
             pretty common, while mouthes are rarer but still perfectly fine.
           </p>
+          <div style={{ width: "100%", textAlign: "center" }}>
+            <img src={facelessness} style={{ maxWidth: "100%", borderRadius: 10 }} />
+          </div>
         </div>
       </div>
     </div>
