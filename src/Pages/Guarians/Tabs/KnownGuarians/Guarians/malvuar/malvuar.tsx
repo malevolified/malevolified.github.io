@@ -1,9 +1,9 @@
 import React from "react";
 import { GuarianInfo } from "../guarians";
 import { GuarianImagePack, GuarianMaterial } from "../guarianImagePack";
-import emblem from "./images/sampleEmblem.png";
-import listEmblem from "./images/sampleListEmblem.png";
-import listIcon from "./images/sampleListIcon.png";
+import emblem from "./images/emblem.png";
+import listEmblem from "./images/emblemSide.png";
+import listIcon from "./images/icon.png";
 import ref from "./images/malvuarFluffy.png";
 import inflatableRef from "./images/malvuarInflatable.png";
 
