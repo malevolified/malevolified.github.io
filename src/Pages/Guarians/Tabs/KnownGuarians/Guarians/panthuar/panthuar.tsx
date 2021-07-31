@@ -1,9 +1,9 @@
 import React from "react";
 import { GuarianMaterial } from "../guarianImagePack";
 import { GuarianInfo } from "../guarians";
-import emblem from "./images/sampleEmblem.png";
-import listEmblem from "./images/sampleListEmblem.png";
-import listIcon from "./images/sampleListIcon.png";
+import emblem from "./images/emblem.png";
+import listEmblem from "./images/emblemSide.png";
+import listIcon from "./images/icon.png";
 import matteRef from "./images/panthuarMatte.png";
 
 export const panthuar: GuarianInfo = {
