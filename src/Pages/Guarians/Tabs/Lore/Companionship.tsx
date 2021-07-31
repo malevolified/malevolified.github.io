@@ -57,9 +57,17 @@ export const Companionship: React.FC<CompanionshipProps> = ({}) => {
         what we're capable of.
       </p>
       <p>
-        What's really surprising, however, is that this sort of perceptive sense the guarians have{" "}
-        <i>isn't</i>
-        actually the only way they're capable of seeing.
+        Interestingly enough, this strange sense of perception <i>isn't</i> actually their only way
+        of seeing. This understanding a guarian has of one's emotions appears to go beyond simple
+        knowledge or senses, as the guarians seem to be capable of benefiting from the senses of
+        their companions as well. In addition to their own perception, the guarians seem to
+        incorporate the perception of those around them as well. Unlike their own perception, this
+        sharing of vision actually seems to cost no energy on their part and is an intrinsic way of
+        seeing the world around them. Because of this, guarians tend to be much more confident in
+        their steps whenever they're close to their companion. Conversely, this reliance on other's
+        vision results in scenarios where a guarian might not be aware of what's between themselves
+        and their companion, which is the leading cause for the guarian's tendency to bump into
+        walls.
       </p>
       <h3>Self Image</h3>
       <p>

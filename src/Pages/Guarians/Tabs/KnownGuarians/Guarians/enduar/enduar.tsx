@@ -14,7 +14,7 @@ const repeatedText = `Something about this guarian is beyond comprehension. This
         I try, I cannot understand what's causing this, what's creating this. I simply look forth,
         and find that I am at peace with him, in a way that I can't explain, for reasons I don't
         know. Something about this is just so perfect and I want to explain why so badly, but I try
-        and I try and it never comes forth. There's so much more. I don't even know where to start`;
+        and I try and it never comes forth. There's so much more. I don't even know where to start.`;
 
 export const enduar: GuarianInfo = {
   name: "Enduar",
