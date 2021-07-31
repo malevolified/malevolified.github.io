@@ -6,3 +6,27 @@ Common
   border: 3px solid #fffcef;
   border-radius: 10px;
 }
+
+.pressable-header {
+  border: 2px solid #fffcef;
+  padding: 10px;
+  background-color: rgb(70, 66, 94);
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.541);
+}
+
+.pressable-header:hover:active {
+  background-color: rgb(48, 45, 65);
+  box-shadow: none;
+}
+
+.go-back-button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  border-bottom-left-radius: 10px;
+  border-left: rgb(88, 83, 124) solid 3px;
+  border-bottom: rgb(88, 83, 124) solid 3px;
+  box-shadow: -2px 6px 14px 0px rgba(0, 0, 0, 0.19);
+}

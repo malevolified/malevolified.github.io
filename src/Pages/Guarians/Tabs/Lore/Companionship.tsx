@@ -70,11 +70,7 @@ export const Companionship: React.FC<CompanionshipProps> = ({}) => {
         walls.
       </p>
       <h3>Self Image</h3>
-      <p>
-        <PlaceholderText>
-          Write about guarian gender/size/material and how it relates to other people
-        </PlaceholderText>
-      </p>
+      <p></p>
       <h3>Markings</h3>
       <p>
         <PlaceholderText>

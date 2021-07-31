@@ -10,6 +10,7 @@ import "./knownGuarians.css";
 import { WideKnownGuarians } from "./WideKnownGuarians";
 import { KnownGuarianBody } from "./KnownGuarianBody";
 import { SmartMounter } from "../../../../Components/SmartMounter";
+import { NarrowKnownGuarians } from "./NarrowKnownGuarians";
 
 interface IProps {}
 
@@ -22,22 +23,6 @@ const KnownGuarians: React.FC<IProps> = ({}) => {
     (g) => g.name.toLowerCase() == selectedGuarianName?.toLowerCase()
   );
 
-  function renderRef(includeMargin: boolean) {
-    return (
-      <div style={{ flex: 1, marginRight: includeMargin ? 10 : 0 }}>
-        {guarian ? (
-          availableGuarians.map((g) => (
-            <SmartMounter key={g.name} visible={g.name == guarian.name}>
-              <GuarianCharacterReference guarian={g} />
-            </SmartMounter>
-          ))
-        ) : (
-          <KnownGuarianBody />
-        )}
-      </div>
-    );
-  }
-
   if (selectedGuarianName != null && guarian == null) {
     return <Redirect to="/guarians/list" />;
   }
@@ -48,13 +33,7 @@ const KnownGuarians: React.FC<IProps> = ({}) => {
         <WideKnownGuarians guarians={availableGuarians} selected={guarian} />
       </WideScreen>
       <NarrowScreen>
-        {guarian ? (
-          renderRef(false)
-        ) : (
-          <div style={{ display: "flex", justifyContent: "center" }}>
-            <GuarianLinks guarians={availableGuarians} collapsed={false} />
-          </div>
-        )}
+        <NarrowKnownGuarians availableGuarians={availableGuarians} selected={guarian} />
       </NarrowScreen>
     </>
   );

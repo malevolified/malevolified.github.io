@@ -31,7 +31,7 @@ const WideKnownGuarians: React.FC<IProps> = ({ guarians, selected }) => {
               </SmartMounter>
             ))
           ) : (
-            <KnownGuarianBody />
+            <KnownGuarianBody forceOpen />
           )}
         </div>
       </div>
