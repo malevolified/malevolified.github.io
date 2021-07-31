@@ -5,6 +5,7 @@ import { useLocalStorage } from "../../../../Hooks/useLocalStorage";
 import { QuestionAnswer } from "./QuestionAnswer";
 import "./faq.css";
 import notAGuarian from "./notAGuarian.png";
+import { Link } from "react-router-dom";
 
 export const SHOW_SECRET_GUARIANS = "show_secret_guarians";
 
@@ -18,6 +19,13 @@ const FAQ: React.FC<IProps> = ({}) => {
 
   return (
     <div className="faq">
+      <QA question={<>Are guarians an open species? Can I make one?</>}>
+        You can indeed! You can view the full details over in the{" "}
+        <Link to={"/guarians/custom"} style={{ textDecoration: "underline dotted" }}>
+          A Guarian of Your Own
+        </Link>{" "}
+        section!
+      </QA>
       <QA question={<>Where do the guarians come from? How are they actually formed?</>}>
         <p>
           Unfortunately, the origins of the guarians are actually rather nebulous! There are loads

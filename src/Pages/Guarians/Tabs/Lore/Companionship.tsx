@@ -70,8 +70,18 @@ export const Companionship: React.FC<CompanionshipProps> = ({}) => {
         walls.
       </p>
       <h3>Self Image</h3>
+      <p>
+        Through the guarians' ability to see within us, understanding our emotions and sensing our
+        own senses, it's almost as if the guarians bind themselves to one in a way that we cannot
+        see or understand ourselves. Through these shared senses and emotions, it's unclear how
+        deeply the guarians can see into our minds, but it is clear that they possess some level of
+        knowing, as accounts of specific guarians have differed from one person to the next. Through
+        these varied encounters, the guarians are evidently not static beings and appear to craft
+        themselves in the image of those that they're bound to, not only in make, but subtly in
+        behavior as well.
+      </p>
       <p></p>
-      <h3>Markings</h3>
+      <h3>Adornments</h3>
       <p>
         <PlaceholderText>
           Write about how guarians like being drawn on/adorned with stuff
