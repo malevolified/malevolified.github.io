@@ -11,7 +11,24 @@ export const serguar: GuarianInfo = {
   name: "Serguar",
   notes: (
     <ul className="big-list">
-      <li>PLACEHOLDER</li>
+      <li>Mysterious, yet incredibly courteous, somehow flatteringly so</li>
+      <li>Only appears on rare occassion, every encounter as memorable as the last</li>
+      <li>
+        Despite the guarian's typical pacifist nature, you feel oddly safe around him in a way
+        that's hard to explain
+      </li>
+      <li>
+        You indeed may ride him
+        <ul>
+          <li>He insists</li>
+        </ul>
+      </li>
+      <li>
+        His weakness: having his mane brushed
+        <ul>
+          <li>Or polished as the case may be</li>
+        </ul>
+      </li>
     </ul>
   ),
   description: (

@@ -10,13 +10,18 @@ export const owluar: GuarianInfo = {
   name: "Owluar",
   notes: (
     <ul className="big-list">
-      <li>Extremely quiet and courteous</li>
+      <li>Extremely quiet and calm, very deliberate with their movements</li>
       <li>
         Even though they don't really understand you, they will happily listen to whatever's on your
         mind
       </li>
       <li>Incredibly patient and surprisingly open to odd ideas</li>
-      <li>Uncharacteristically enthusiastic about "The Guarian Kiss"</li>
+      <li>
+        Expresses affection by gently touching their forehead against yours, a gesture they're so
+        uncharacteristically enthusiastic about that it actually it becomes rather difficult to
+        escape
+      </li>
+      <li>Just likes being there with you, even if you aren't actively giving them attention</li>
     </ul>
   ),
   description: (
