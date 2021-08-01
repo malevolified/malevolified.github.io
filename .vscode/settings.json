@@ -1,4 +1,7 @@
 {
     "prettier.printWidth": 100,
-    "workbench.colorTheme": "Abyss"
+    "workbench.colorTheme": "Abyss",
+    "cSpell.words": [
+        "Guarian"
+    ]
 }

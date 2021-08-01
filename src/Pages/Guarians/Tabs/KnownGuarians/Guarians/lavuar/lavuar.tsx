@@ -34,7 +34,7 @@ export const lavuar: GuarianInfo = {
   description: (
     <>
       <p>
-        Aftering rousing from your slumber, you come to the realization that you fell asleep on
+        After rousing from your slumber, you come to the realization that you fell asleep on
         Lavuar's back. Having guided you on her own, you have no idea how long you've been riding
         Lavuar for, how far she's taken you or where you even are right now.
       </p>

@@ -12,7 +12,7 @@ export const serguar: GuarianInfo = {
   notes: (
     <ul className="big-list">
       <li>Mysterious, yet incredibly courteous, somehow flatteringly so</li>
-      <li>Only appears on rare occassion, every encounter as memorable as the last</li>
+      <li>Only appears on rare occasion, every encounter as memorable as the last</li>
       <li>
         Despite the guarian's typical pacifist nature, you feel oddly safe around him in a way
         that's hard to explain

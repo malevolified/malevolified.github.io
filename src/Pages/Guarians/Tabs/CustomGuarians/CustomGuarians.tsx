@@ -72,7 +72,7 @@ export const CustomGuarians: React.FC<CustomGuariansProps> = ({}) => {
           <h4>Facelessness</h4>
           <p>
             Consider designing your guarian to be faceless, or at the very least, eyeless. Ears are
-            pretty common, while mouthes are rarer but still perfectly fine.
+            pretty common, while mouths are rarer but still perfectly fine.
           </p>
           <div style={{ width: "100%", textAlign: "center" }}>
             <img src={facelessness} style={{ maxWidth: "100%", borderRadius: 10 }} />

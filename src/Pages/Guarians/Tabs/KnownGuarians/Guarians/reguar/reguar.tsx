@@ -16,7 +16,7 @@ export const reguar: GuarianInfo = {
         So lazy that they'll usually just flop next to you
         <ul>
           <li>The kind of guarian who shoves their face against you if you stop petting them</li>
-          <li>The'll still follow you around though if you move</li>
+          <li>They'll still follow you around though if you move</li>
         </ul>
       </li>
       <li>

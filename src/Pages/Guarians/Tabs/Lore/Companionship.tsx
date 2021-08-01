@@ -28,7 +28,7 @@ export const Companionship: React.FC<CompanionshipProps> = ({}) => {
         Given their spiritual nature, their fantastical abilities and their completely inexplicable
         existence, one has to wonder what goes on within the mind of a guarian. Contrary to what one
         might think, it turns out that the answer is: probably not much. Unsurprisingly, as they
-        typically lack mouthes, the guarians are not able to speak, but many of them do seem
+        typically lack mouths, the guarians are not able to speak, but many of them do seem
         proficient at expressing themselves via body language. Some guarians do seem curious by
         nature, but overall it appears that they're generally uninterested in more complicated
         concepts.
@@ -41,7 +41,7 @@ export const Companionship: React.FC<CompanionshipProps> = ({}) => {
         that we cannot perceive. Because of this, even though the guarians themselves are not able
         to speak, they're still able to understand us regardless by the emotions we feel when we
         express ourselves. Through this understanding, the guarians have even demonstrated
-        responding to simple quesitons via body language
+        responding to simple questions via body language
       </p>
       <h3>Perception</h3>
       <p>
@@ -119,7 +119,7 @@ export const Companionship: React.FC<CompanionshipProps> = ({}) => {
         </li>
         <ul>
           <li>
-            While permenant, they are not irreversible. Adornments permanently remain until the
+            While permanent, they are not irreversible. Adornments permanently remain until the
             moment you wish to remove them, which can be done by totally ordinary means. When
             removed, these adornments return to their ordinary state and are ordinarily effected by
             reality once more

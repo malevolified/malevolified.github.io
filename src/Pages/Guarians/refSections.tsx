@@ -1,9 +1,9 @@
 import React from "react";
-import Placeholder from "./Tabs/Placeholder";
 import { KnownGuarians } from "./Tabs/KnownGuarians";
 import { Lore } from "./Tabs/Lore";
 import { FAQ } from "./Tabs/FAQ";
 import { CustomGuarians } from "./Tabs/CustomGuarians";
+import { Overview } from "./Tabs/Overview";
 
 export interface RefSection {
   title: string;
@@ -13,7 +13,7 @@ export interface RefSection {
 }
 
 const refSections: RefSection[] = [
-  { title: "Overview", content: <Placeholder />, route: "/guarians", exact: true },
+  { title: "Overview", content: <Overview />, route: "/guarians", exact: true },
   { title: "Lore", content: <Lore />, route: "/guarians/lore" },
   { title: "Known Guarians", content: <KnownGuarians />, route: "/guarians/list/:guarian?" },
   { title: "A Guarian of Your Own", content: <CustomGuarians />, route: "/guarians/custom" },
