@@ -27,8 +27,6 @@ const KnownGuarianBody: React.FC<IProps> = ({ forceOpen }) => {
     );
   }
 
-  console.log(forceOpen);
-
   return (
     <div>
       {renderHeader()}
