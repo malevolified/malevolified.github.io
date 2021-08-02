@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.57046d12.chunk.css",
-    "main.js": "/static/js/main.aae2679f.chunk.js",
-    "main.js.map": "/static/js/main.aae2679f.chunk.js.map",
+    "main.css": "/static/css/main.7f866c2c.chunk.css",
+    "main.js": "/static/js/main.bb88087a.chunk.js",
+    "main.js.map": "/static/js/main.bb88087a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fa65483c.js",
     "runtime-main.js.map": "/static/js/runtime-main.fa65483c.js.map",
-    "static/js/2.6a10bee6.chunk.js": "/static/js/2.6a10bee6.chunk.js",
-    "static/js/2.6a10bee6.chunk.js.map": "/static/js/2.6a10bee6.chunk.js.map",
+    "static/js/2.b957dc5c.chunk.js": "/static/js/2.b957dc5c.chunk.js",
+    "static/js/2.b957dc5c.chunk.js.map": "/static/js/2.b957dc5c.chunk.js.map",
     "static/js/3.f69478fd.chunk.js": "/static/js/3.f69478fd.chunk.js",
     "static/js/3.f69478fd.chunk.js.map": "/static/js/3.f69478fd.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.57046d12.chunk.css.map": "/static/css/main.57046d12.chunk.css.map",
-    "static/js/2.6a10bee6.chunk.js.LICENSE.txt": "/static/js/2.6a10bee6.chunk.js.LICENSE.txt",
+    "static/css/main.7f866c2c.chunk.css.map": "/static/css/main.7f866c2c.chunk.css.map",
+    "static/js/2.b957dc5c.chunk.js.LICENSE.txt": "/static/js/2.b957dc5c.chunk.js.LICENSE.txt",
     "static/media/guarianRef.css": "/static/media/linlibertine_adrs-webfont.2f987dfb.woff2",
     "static/media/emblem.0d350e08.png": "/static/media/emblem.0d350e08.png",
     "static/media/emblem.10b95075.png": "/static/media/emblem.10b95075.png",
@@ -30,7 +30,6 @@
     "static/media/floffy.6d4d1fd8.png": "/static/media/floffy.6d4d1fd8.png",
     "static/media/fluffy.7333134b.png": "/static/media/fluffy.7333134b.png",
     "static/media/fluffySeptuar.a6884eb3.png": "/static/media/fluffySeptuar.a6884eb3.png",
-    "static/media/icon.7e6e267a.png": "/static/media/icon.7e6e267a.png",
     "static/media/inflatable.b020968f.png": "/static/media/inflatable.b020968f.png",
     "static/media/lavuar.0902c187.png": "/static/media/lavuar.0902c187.png",
     "static/media/lavuarFluffyRef.44366169.png": "/static/media/lavuarFluffyRef.44366169.png",
@@ -63,8 +62,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.fa65483c.js",
-    "static/js/2.6a10bee6.chunk.js",
-    "static/css/main.57046d12.chunk.css",
-    "static/js/main.aae2679f.chunk.js"
+    "static/js/2.b957dc5c.chunk.js",
+    "static/css/main.7f866c2c.chunk.css",
+    "static/js/main.bb88087a.chunk.js"
   ]
 }
