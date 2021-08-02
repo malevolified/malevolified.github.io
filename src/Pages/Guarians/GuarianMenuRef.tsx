@@ -2,6 +2,7 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useRef, useState } from "react";
 import { generatePath, NavLink } from "react-router-dom";
+import { ScrollToTop } from "../../Components/ScrollToTop";
 import "./guarianRef.css";
 import { GuarianRoutes } from "./GuarianRoutes";
 import refSections, { RefSection } from "./refSections";
@@ -66,6 +67,7 @@ export const GuarianMenuRef: React.FC<IProps> = ({}) => {
         {refSections.map(renderOption)}
       </div>
       <div className="content">
+        <ScrollToTop />
         <GuarianRoutes />
       </div>
     </div>

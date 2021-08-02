@@ -1,5 +1,5 @@
 import React from "react";
-import { NarrowScreen, WideScreen } from "../../Components/ScreenDetector";
+import { StrictNarrowScreen, StrictWideScreen } from "../../Components/ScreenDetector";
 import { GuarianFooter } from "./GuarianFooter";
 import GuarianMenuRef from "./GuarianMenuRef";
 import "./guarianRef.css";
@@ -12,12 +12,12 @@ export const GuarianRef: React.FC<IProps> = ({}) => {
     <div className="guarian-ref">
       <div style={{ flex: 1, padding: "0 4vw" }}>
         <h1 className="title">The Guarians</h1>
-        <WideScreen>
+        <StrictWideScreen>
           <GuarianTabRef />
-        </WideScreen>
-        <NarrowScreen>
+        </StrictWideScreen>
+        <StrictNarrowScreen>
           <GuarianMenuRef />
-        </NarrowScreen>
+        </StrictNarrowScreen>
       </div>
       <GuarianFooter />
     </div>

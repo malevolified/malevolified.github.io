@@ -126,6 +126,7 @@ a {
   overflow-y: hidden;
   background-color: var(--guarian-background-color);
   transition: 0.3s;
+  z-index: 3;
 }
 
 .overlay-menu .option {
