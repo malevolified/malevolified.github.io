@@ -20,7 +20,10 @@ export const CustomGuarians: React.FC<CustomGuariansProps> = ({}) => {
         <li>
           You are completely free to make as many guarians as you like without needing permission
           <ul>
-            <li>You can create guarian versions of your existing characters too!</li>
+            <li>
+              You can create guarian versions of your existing characters as well and even have one
+              as your sona!
+            </li>
           </ul>
         </li>
         <li>You're free to use them for any purpose, be it art, stories, roleplay, etc</li>
@@ -53,9 +56,9 @@ export const CustomGuarians: React.FC<CustomGuariansProps> = ({}) => {
       <p>
         The guarians were very much designed around being as vague and open to interpretation as
         possible. As such, there are no true <i>rules</i> as to how you must create your guarian.
-        Instead, there is mostly just guidelines that you're free to follow if you want. In the end,
-        you should mostly just design whatever you find most fun. In general, my guarian designs
-        feature:
+        Instead, there are mostly just guidelines that you're free to follow if you want. In the
+        end, you should mostly just design whatever you find most fun. In general, my guarian
+        designs feature:
       </p>
       <div style={{ display: "flex", gap: 20, flexDirection: horizontal ? "row" : "column" }}>
         <div className={styles.guideline}>

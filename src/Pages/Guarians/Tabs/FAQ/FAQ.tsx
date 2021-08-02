@@ -19,7 +19,15 @@ const FAQ: React.FC<IProps> = ({}) => {
 
   return (
     <div className="faq">
-      <QA question={<>Are guarians an open species? Can I make one?</>}>
+      <p style={{ fontSize: 13 }}>
+        All questions here are written from the direct perspective of the{" "}
+        <a href="https://twitter.com/malevolified" style={{ textDecoration: "underline dotted" }}>
+          author
+        </a>
+        . More Q&amp;A will added over time as questions come up.
+      </p>
+      <div className="separator"></div>
+      <QA question={<>Can I make a guarian?</>}>
         You can indeed! You can view the full details over in the{" "}
         <Link to={"/guarians/custom"} style={{ textDecoration: "underline dotted" }}>
           A Guarian of Your Own
@@ -59,7 +67,8 @@ const FAQ: React.FC<IProps> = ({}) => {
         To be completely honest, no! My first guarian character, Reguar, just happened to get that
         name randomly, and then I named Lavuar as just a spin on Reguar's name. After that, I just
         felt like I was committed which is fine since I sort of just have fun having arbitrary
-        patterns in naming schemes.
+        patterns in naming schemes. You don't have to follow it at all and are completely free to
+        name your guarian whatever you want!
       </QA>
       <QA question={<>How does gender work with the guarians?</>}>
         The guarians actually have no concept of gender at all, so all the references you see to
