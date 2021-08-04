@@ -58,6 +58,6 @@ export const owluar: GuarianInfo = {
         ref: latex,
       },
     ],
-    maxRefWidth: 766,
+    maxRefWidth: 806,
   },
 };
