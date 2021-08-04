@@ -1,11 +1,18 @@
 import React from "react";
 import styles from "./Overview.module.css";
+import cover from "./cover.png";
 
 interface OverviewProps {}
 
 export const Overview: React.FC<OverviewProps> = ({}) => {
   return (
     <div>
+      <div style={{ textAlign: "center", marginTop: 10 }}>
+        <img
+          src={cover}
+          style={{ maxWidth: "min(1600px, 100%)", width: "calc(50% + 300px)", borderRadius: 25 }}
+        />
+      </div>
       <p className={styles.main}>
         Unbound by the laws of nature and capable of a great many things, the guarians are a broad
         collective of spiritual companions who simply wish to keep you company whenever you need
