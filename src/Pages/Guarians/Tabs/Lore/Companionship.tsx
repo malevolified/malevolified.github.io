@@ -1,6 +1,7 @@
 import React from "react";
 import { GuarianTooltip, TipIcon } from "../../../../Components/GuarianTooltip";
 import { PlaceholderText } from "../../../../Components/PlaceholderText";
+import shortPerception from "./images/shortPerception.png";
 
 const Gt = GuarianTooltip;
 
@@ -56,6 +57,9 @@ export const Companionship: React.FC<CompanionshipProps> = ({}) => {
         <Gt images={[TipIcon.Lavuar, TipIcon.Wereguar]}>incredibly high perception</Gt>, far beyond
         what we're capable of.
       </p>
+      <div style={{ textAlign: "center" }}>
+        <img src={shortPerception} style={{ maxWidth: "50%" }} />
+      </div>
       <p>
         Interestingly enough, this strange sense of perception <i>isn't</i> actually their only way
         of seeing. This understanding a guarian has of one's emotions appears to go beyond simple
