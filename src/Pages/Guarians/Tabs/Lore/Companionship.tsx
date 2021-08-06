@@ -2,12 +2,16 @@ import React from "react";
 import { GuarianTooltip, TipIcon } from "../../../../Components/GuarianTooltip";
 import { PlaceholderText } from "../../../../Components/PlaceholderText";
 import shortPerception from "./images/shortPerception.png";
+import longPerception from "./images/longPerception.png";
+import { useScreenWidthGreaterThan } from "../../../../Hooks/useScreenWidthGreaterThan";
 
 const Gt = GuarianTooltip;
 
 interface CompanionshipProps {}
 
 export const Companionship: React.FC<CompanionshipProps> = ({}) => {
+  const horizPerception = useScreenWidthGreaterThan(1400);
+
   return (
     <div>
       <h1>Companionship</h1>
@@ -57,8 +61,19 @@ export const Companionship: React.FC<CompanionshipProps> = ({}) => {
         <Gt images={[TipIcon.Lavuar, TipIcon.Wereguar]}>incredibly high perception</Gt>, far beyond
         what we're capable of.
       </p>
-      <div style={{ textAlign: "center" }}>
-        <img src={shortPerception} style={{ maxWidth: "50%" }} />
+      <div
+        style={{
+          display: "flex",
+          alignItems: horizPerception ? "flex-end" : "center",
+          flexDirection: horizPerception ? "row" : "column",
+        }}
+      >
+        <div style={{ flex: 1 }}>
+          <img src={shortPerception} style={{ maxWidth: "100%" }} />
+        </div>
+        <div style={{ flex: 1 }}>
+          <img src={longPerception} style={{ maxWidth: "100%" }} />
+        </div>
       </div>
       <p>
         Interestingly enough, this strange sense of perception <i>isn't</i> actually their only way
