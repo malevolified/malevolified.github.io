@@ -127,6 +127,8 @@ a {
   background-color: var(--guarian-background-color);
   transition: 0.3s;
   z-index: 3;
+  display: flex;
+  flex-direction: column;
 }
 
 .overlay-menu .option {
@@ -135,6 +137,12 @@ a {
   user-select: none;
   display: block;
   white-space: nowrap;
+}
+
+.overlay-menu .option.small {
+  padding: 7px;
+  font-size: 14px;
+  margin-left: 7px;
 }
 
 .overlay-menu .option:hover {
@@ -182,9 +190,18 @@ a {
   border: 1px solid #fffcef;
 }
 
+.guarian-ref .tab-wrapper .tab.small {
+  padding: 7px;
+  font-size: 15px;
+}
+
 .guarian-ref .tab-wrapper .tab.selected {
   padding-bottom: 11px;
   border-bottom: none;
+}
+
+.guarian-ref .tab-wrapper .tab.small.selected {
+  padding: 8px;
 }
 
 .guarian-ref .tab-wrapper .tab:hover {
