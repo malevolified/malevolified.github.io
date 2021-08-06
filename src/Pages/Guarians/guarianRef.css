@@ -195,6 +195,17 @@ a {
   font-size: 15px;
 }
 
+/*When this stops working, just hide the text altogether*/
+@media (max-width: 900px) {
+  .guarian-ref .tab-wrapper .tab {
+    font-size: 15px;
+  }
+
+  .guarian-ref .tab-wrapper .tab.small {
+    font-size: 12px;
+  }
+}
+
 .guarian-ref .tab-wrapper .tab.selected {
   padding-bottom: 11px;
   border-bottom: none;
