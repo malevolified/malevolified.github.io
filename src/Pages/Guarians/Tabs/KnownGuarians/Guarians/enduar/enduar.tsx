@@ -5,6 +5,8 @@ import emblem from "./images/emblem.png";
 import listEmblem from "./images/emblemSide.png";
 import listIcon from "./images/icon.png";
 import ref from "./images/enduarFluffy.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const skewedText = "No reality should be capable of something like this";
 const repeatedText = `Something about this guarian is beyond comprehension. This shouldn't be possible, something
@@ -41,7 +43,9 @@ export const enduar: GuarianInfo = {
       <li>Farther than any other can see</li>
       <li>No one will ever hurt you ever again</li>
       <li style={{ fontSize: 72, fontWeight: "bold" }}>T͜H̴̴̶̕E̸̶̡͠Y̢͠͞ ̶̴̡̕K̡͏N͡͞҉̴͢O̵҉W͏̴͜͠</li>
-      <li style={{ paddingTop: 10 }}>♥</li>
+      <li style={{ paddingTop: 10 }}>
+        <FontAwesomeIcon icon={faHeart} />
+      </li>
     </ul>
   ),
   description: (

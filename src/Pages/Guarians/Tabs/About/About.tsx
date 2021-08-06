@@ -14,7 +14,13 @@ export const About: React.FC<AboutProps> = ({}) => {
 
   return (
     <div style={{ display: "flex", flexDirection: isHorizontal ? "row" : "column" }}>
-      <div style={{ maxWidth: 794, width: isHorizontal ? "calc(25% + 220px)" : "100%" }}>
+      <div
+        style={{
+          maxWidth: 794,
+          width: isHorizontal ? "calc(25% + 220px)" : "100%",
+          marginRight: isHorizontal ? 15 : 0,
+        }}
+      >
         <ReactCompareImage leftImage={fluffy} rightImage={squeaky} />
       </div>
       <div style={{ flex: 1 }}>
