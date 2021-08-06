@@ -1,39 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Redirect, useParams } from "react-router-dom";
 import { guarians } from "./Guarians";
 import { NarrowScreen, WideScreen } from "../../../../Components/ScreenDetector";
-import { useLocalStorage } from "../../../../Hooks/useLocalStorage";
-import { SHOW_SECRET_GUARIANS } from "../FAQ/FAQ";
-import { GuarianCharacterReference } from "./GuarianCharacterReference";
-import { GuarianLinks } from "./GuarianLinks";
 import "./knownGuarians.css";
 import { WideKnownGuarians } from "./WideKnownGuarians";
-import { KnownGuarianBody } from "./KnownGuarianBody";
-import { SmartMounter } from "../../../../Components/SmartMounter";
 import { NarrowKnownGuarians } from "./NarrowKnownGuarians";
+import { useSecret } from "../../Contexts/SecretContext";
 
 interface IProps {}
 
 const KnownGuarians: React.FC<IProps> = ({}) => {
-  const [showSecret] = useLocalStorage(SHOW_SECRET_GUARIANS, false);
+  const { showSecret, setShowSecret } = useSecret();
 
   const { guarian: selectedGuarianName } = useParams<{ guarian?: string }>();
-  const availableGuarians = guarians.filter((g) => !g.secret || showSecret);
-  const guarian = availableGuarians.find(
-    (g) => g.name.toLowerCase() == selectedGuarianName?.toLowerCase()
-  );
+  const selected = guarians.find((g) => g.name.toLowerCase() == selectedGuarianName?.toLowerCase());
 
-  if (selectedGuarianName != null && guarian == null) {
+  useEffect(() => {
+    if (selected?.secret && !showSecret) {
+      setShowSecret(true);
+    }
+  }, [selected, showSecret]);
+
+  const availableGuarians = guarians.filter((g) => !g.secret || showSecret);
+
+  if (selectedGuarianName != null && selected == null) {
     return <Redirect to="/guarians/list" />;
   }
 
   return (
     <>
       <WideScreen>
-        <WideKnownGuarians guarians={availableGuarians} selected={guarian} />
+        <WideKnownGuarians guarians={availableGuarians} selected={selected} />
       </WideScreen>
       <NarrowScreen>
-        <NarrowKnownGuarians availableGuarians={availableGuarians} selected={guarian} />
+        <NarrowKnownGuarians availableGuarians={availableGuarians} selected={selected} />
       </NarrowScreen>
     </>
   );

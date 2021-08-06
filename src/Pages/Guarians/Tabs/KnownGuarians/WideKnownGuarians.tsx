@@ -25,11 +25,7 @@ const WideKnownGuarians: React.FC<IProps> = ({ guarians, selected }) => {
       <div style={{ flex: 1, marginRight: 10 }}>
         <div ref={ref}>
           {selected ? (
-            guarians.map((g) => (
-              <SmartMounter key={g.name} visible={g.name == selected.name}>
-                <GuarianCharacterReference guarian={g} />
-              </SmartMounter>
-            ))
+            <GuarianCharacterReference guarian={selected} />
           ) : (
             <KnownGuarianBody forceOpen />
           )}

@@ -6,8 +6,7 @@ import { QuestionAnswer } from "./QuestionAnswer";
 import "./faq.css";
 import notAGuarian from "./notAGuarian.png";
 import { Link } from "react-router-dom";
-
-export const SHOW_SECRET_GUARIANS = "show_secret_guarians";
+import { useSecret } from "../../Contexts/SecretContext";
 
 const QA = QuestionAnswer;
 const GT = GuarianTooltip;
@@ -15,7 +14,7 @@ const GT = GuarianTooltip;
 interface IProps {}
 
 const FAQ: React.FC<IProps> = ({}) => {
-  const [showSecrets, setShowSecrets] = useLocalStorage<boolean>(SHOW_SECRET_GUARIANS, false);
+  const { showSecret, setShowSecret } = useSecret();
 
   return (
     <div className="faq">
@@ -77,11 +76,9 @@ const FAQ: React.FC<IProps> = ({}) => {
         gender them however you please!
       </QA>
       <QA question={<>Do you have any secret guarians?</>}>
-        <div className="secret" onClick={() => setShowSecrets(!showSecrets)}>
+        <div className="secret" onClick={() => setShowSecret(!showSecret)}>
           <FadeText
-            text={
-              showSecrets ? "Okay, maybe a few..." : "I have no idea what you're talking about!"
-            }
+            text={showSecret ? "Okay, maybe a few..." : "I have no idea what you're talking about!"}
           />
         </div>
       </QA>
