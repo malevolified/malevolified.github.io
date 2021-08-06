@@ -10,7 +10,7 @@ const Gt = GuarianTooltip;
 interface SpiritualityProps {}
 
 export const Spirituality: React.FC<SpiritualityProps> = ({}) => {
-  const horizontalMatDisplay = useScreenWidthGreaterThan(1000);
+  const horizontalShiftDisplay = useScreenWidthGreaterThan(1200);
   const largeMatDisplay = useScreenWidthGreaterThan(600);
 
   return (
@@ -49,55 +49,67 @@ export const Spirituality: React.FC<SpiritualityProps> = ({}) => {
         Not a single guarian with eyes has been seen to date (not counting those who have had their
         eyes <Gt images={TipIcon.Wereguar}>drawn on after the fact</Gt>).
       </p>
-      <h3>Material Shifting</h3>
       <div
         style={{
           display: "flex",
-          flexDirection: horizontalMatDisplay ? "row" : "column",
-          alignItems: horizontalMatDisplay ? undefined : "center",
+          gap: 30,
+          flexDirection: horizontalShiftDisplay ? "row" : "column",
         }}
       >
-        <div>
+        <div style={{ flex: 1 }}>
+          <h3>Material Shifting</h3>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <div>
+              <p>
+                The guarians are rather unconventional in that they are not each defined by a static
+                form, but rather, a vague concept of who they are and what they're meant to be,
+                something that could be molded by those who behold them. As the guarians are not
+                conventionally living beings, they are not bound to conventionally living bodies and
+                are free to experiment with alternate states of being altogether.
+              </p>
+              <p>
+                A guarian can freely change its composition whenever it so chooses, only shifting
+                when not seen. Given they're unalive nature, there appears to be no restrictions on
+                what form they take. While plenty of fluffy, feathery guarians have been seen, many
+                often take typically inanimate forms such as inflatable or plush forms while still
+                remaining fully animate. Many more materials have been seen beyond this such as
+                rubber, mud, water, plastic, clay, and even obsidian. While some guarians tend to
+                prefer themselves <Gt images={TipIcon.Malvuar}>as a specific material</Gt>, other
+                guarians have a tendency of being{" "}
+                <Gt images={TipIcon.Wereguar}>a little more creative</Gt>
+              </p>
+            </div>
+            <MaterialDisplay small={!largeMatDisplay} />
+          </div>
+        </div>
+        <div style={{ flex: 1 }}>
+          <h3>Size Shifting</h3>
           <p>
-            The guarians are rather unconventional in that they are not each defined by a static
-            form, but rather, a vague concept of who they are and what they're meant to be,
-            something that could be molded by those who behold them. As the guarians are not
-            conventionally living beings, they are not bound to conventionally living bodies and are
-            free to experiment with alternate states of being altogether.
+            As with the material shifting, each guarian is more of a vague concept of what they
+            should be rather than something unchanging, and because of this, they are the ones who
+            define their size, rather than their size defining who they are. As with all guarian
+            abilities, the change takes place silently and instantaneously, but only when not
+            perceived. The bounds for these changes in size are not clearly known.
           </p>
           <p>
-            A guarian can freely change its composition whenever it so chooses, only shifting when
-            not seen. Given they're unalive nature, there appears to be no restrictions on what form
-            they take. While plenty of fluffy, feathery guarians have been seen, many often take
-            typically inanimate forms such as inflatable or plush forms while still remaining fully
-            animate. Many more materials have been seen beyond this such as rubber, mud, water,
-            plastic, clay, and even obsidian. While some guarians tend to prefer themselves{" "}
-            <Gt images={TipIcon.Malvuar}>as a specific material</Gt>, other guarians have a tendency
-            of being <Gt images={TipIcon.Wereguar}>a little more creative</Gt>
+            Some guarians tend to enjoy a more{" "}
+            <Gt images={[TipIcon.Serguar, TipIcon.Wereguar]}>stable size</Gt>, usually maintaining
+            their preferred height in both indoor and outdoor situations. Other guarians tend to
+            play around with their size more, enjoying{" "}
+            <Gt images={[TipIcon.Reguar, TipIcon.Lavuar, TipIcon.Owluar, TipIcon.Malvuar]}>
+              larger forms
+            </Gt>{" "}
+            when outdoors while certain other guarians take this to{" "}
+            <Gt images={TipIcon.Panthuar}>extreme lengths</Gt>.
           </p>
         </div>
-        <MaterialDisplay small={!largeMatDisplay} />
       </div>
-
-      <h3>Size Shifting</h3>
-      <p>
-        As with the material shifting, each guarian is more of a vague concept of what they should
-        be rather than something unchanging, and because of this, they are the ones who define their
-        size, rather than their size defining who they are. As with all guarian abilities, the
-        change takes place silently and instantaneously, but only when not perceived. The bounds for
-        these changes in size are not clearly known.
-      </p>
-      <p>
-        Some guarians tend to enjoy a more{" "}
-        <Gt images={[TipIcon.Serguar, TipIcon.Wereguar]}>stable size</Gt>, usually maintaining their
-        preferred height in both indoor and outdoor situations. Other guarians tend to play around
-        with their size more, enjoying{" "}
-        <Gt images={[TipIcon.Reguar, TipIcon.Lavuar, TipIcon.Owluar, TipIcon.Malvuar]}>
-          larger forms
-        </Gt>{" "}
-        when outdoors while certain other guarians take this to{" "}
-        <Gt images={TipIcon.Panthuar}>extreme lengths</Gt>.
-      </p>
     </div>
   );
 };
