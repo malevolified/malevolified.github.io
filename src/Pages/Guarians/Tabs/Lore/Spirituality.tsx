@@ -4,6 +4,8 @@ import { TipIcon } from "../../../../Components/GuarianTooltip/Images";
 import { useScreenWidthGreaterThan } from "../../../../Hooks/useScreenWidthGreaterThan";
 import styles from "./lore.module.css";
 import { MaterialDisplay } from "./MaterialDisplay";
+import small from "./images/small.png";
+import big from "./images/big.png";
 
 const Gt = GuarianTooltip;
 
@@ -52,11 +54,11 @@ export const Spirituality: React.FC<SpiritualityProps> = ({}) => {
       <div
         style={{
           display: "flex",
-          gap: 30,
+          gap: horizontalShiftDisplay ? 15 : 0,
           flexDirection: horizontalShiftDisplay ? "row" : "column",
         }}
       >
-        <div style={{ flex: 1 }}>
+        <div style={{ width: horizontalShiftDisplay ? 600 : undefined }}>
           <h3>Material Shifting</h3>
           <div
             style={{
@@ -88,6 +90,9 @@ export const Spirituality: React.FC<SpiritualityProps> = ({}) => {
             <MaterialDisplay small={!largeMatDisplay} />
           </div>
         </div>
+        {horizontalShiftDisplay && (
+          <div style={{ borderRight: "1px solid #fffae4", marginTop: 40 }}></div>
+        )}
         <div style={{ flex: 1 }}>
           <h3>Size Shifting</h3>
           <p>
@@ -108,6 +113,10 @@ export const Spirituality: React.FC<SpiritualityProps> = ({}) => {
             when outdoors while certain other guarians take this to{" "}
             <Gt images={TipIcon.Panthuar}>extreme lengths</Gt>.
           </p>
+          <div style={{ textAlign: "center" }}>
+            <img src={small} style={{ maxWidth: "100%" }} />
+            <img src={big} style={{ maxWidth: "100%" }} />
+          </div>
         </div>
       </div>
     </div>
