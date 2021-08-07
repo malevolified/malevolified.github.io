@@ -4,6 +4,8 @@ import { PlaceholderText } from "../../../../Components/PlaceholderText";
 import shortPerception from "./images/shortPerception.png";
 import longPerception from "./images/longPerception.png";
 import { useScreenWidthGreaterThan } from "../../../../Hooks/useScreenWidthGreaterThan";
+import bow from "./images/bow.png";
+import paint from "./images/paint.png";
 
 const Gt = GuarianTooltip;
 
@@ -11,6 +13,8 @@ interface CompanionshipProps {}
 
 export const Companionship: React.FC<CompanionshipProps> = ({}) => {
   const horizPerception = useScreenWidthGreaterThan(1400);
+  const horizSections = useScreenWidthGreaterThan(1740);
+  const hoirzAdornments = useScreenWidthGreaterThan(600);
 
   return (
     <div>
@@ -88,73 +92,101 @@ export const Companionship: React.FC<CompanionshipProps> = ({}) => {
         and their companion, which is the leading cause for the guarian's tendency to bump into
         walls.
       </p>
-      <h3>Self Image</h3>
-      <p>
-        Through the guarians' ability to see within us, understanding our emotions and sensing our
-        own senses, it's almost as if the guarians bind themselves to one in a way that we cannot
-        see or understand ourselves. Through these shared senses and emotions, it's unclear how
-        deeply the guarians can see into our minds, but it is clear that they possess some level of
-        knowing, as accounts of specific guarians have differed from one person to the next. Through
-        these varied encounters, the guarians are evidently not static beings and appear to craft
-        themselves in the image of those that they're bound to, not only in make, but subtly in
-        behavior as well.
-      </p>
-      <p>
-        Given the emotions and the inner workings of those of who a guarian is bound to, the
-        guarians actually shift themselves to suit themselves to their companions. Through the
-        material shifting and size shifting, the guarians can rebuild themselves as they see fit
-        with what seems to be little effort, but what's more interesting is the fact that the
-        guarians seem not only to shift themselves, but their actual preferences as well. Where one
-        guarian may prefer themselves as a specific material for one person, they may suddenly enjoy
-        great change when interacting with another. Where another guarian may size themselves to fit
-        indoors, they may suddenly enjoy towering over the clouds depending on who they're with.
-        Furthermore, this level of variance actually varies between guarians as well, but regardless
-        of to what degree, the bottom line is that accounts of individual guarians may differ
-        heavily from one person to another.
-      </p>
-      <h3>Adornments</h3>
-      <p>
-        Regarding the guarian's odd spiritual nature, one of their most intriguing traits is their
-        receptiveness to being personalized. Given their simplicity, the guarians actually seem to
-        enjoy acting as a canvas for others (some of whom{" "}
-        <Gt images={TipIcon.Panthuar}>
-          <i>really</i> enjoy it
-        </Gt>
-        ), and are very open to being drawn upon, painted, dyed, or even adorned with various
-        accessories. Thus far, there appears not to be any limit to what sort of accessories one
-        could adorn their guarian with; necklaces, bracelets, even ribbons and bows.
-      </p>
-      <p>
-        Once applied to a guarian, these adornments practically become a part of their very being,
-        resulting in some surprising properties.
-      </p>
-      <ul>
-        <li>
-          Applied adornments (if applied properly and securely) become permanently affixed.
-          Markings, paints and dyes never fade away or degrade over time regardless of the elements
-          they're subjected to. Adornments remain in exactly the condition they were in when they
-          were applied. Bows remain tied and loose adornments stay perfectly perched upon where they
-          were placed.
-        </li>
-        <ul>
-          <li>
-            While permanent, they are not irreversible. Adornments permanently remain until the
-            moment you wish to remove them, which can be done by totally ordinary means. When
-            removed, these adornments return to their ordinary state and are ordinarily effected by
-            reality once more
-          </li>
-        </ul>
-        <li>
-          Applied adornments shift with the guarian wearing them. When shifting size, their
-          accessories actually <i>change size with them</i>, shrinking or growing to fit a guarian
-          regardless of their size. Markings also change scale with their guarian, appearing exactly
-          as it did the moment you applied it. Furthermore, when a guarian shifts materials,
-          markings and accessories often remain unchanged, but in certain circumstances, these
-          adornments also shift with the guarian, taking on the material they themselves have
-          become, or sometimes even taking on new forms entirely to suit the change (dyes shifting
-          to paints or vice versa).
-        </li>
-      </ul>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: horizSections ? "row" : "column",
+          gap: horizSections ? 15 : 0,
+        }}
+      >
+        <div style={{ flex: 1 }}>
+          <h3>Self Image</h3>
+          <p>
+            Through the guarians' ability to see within us, understanding our emotions and sensing
+            our own senses, it's almost as if the guarians bind themselves to one in a way that we
+            cannot see or understand ourselves. Through these shared senses and emotions, it's
+            unclear how deeply the guarians can see into our minds, but it is clear that they
+            possess some level of knowing, as accounts of specific guarians have differed from one
+            person to the next. Through these varied encounters, the guarians are evidently not
+            static beings and appear to craft themselves in the image of those that they're bound
+            to, not only in make, but subtly in behavior as well.
+          </p>
+          <p>
+            Given the emotions and the inner workings of those of who a guarian is bound to, the
+            guarians actually shift themselves to suit themselves to their companions. Through the
+            material shifting and size shifting, the guarians can rebuild themselves as they see fit
+            with what seems to be little effort, but what's more interesting is the fact that the
+            guarians seem not only to shift themselves, but their actual preferences as well. Where
+            one guarian may prefer themselves as a specific material for one person, they may
+            suddenly enjoy great change when interacting with another. Where another guarian may
+            size themselves to fit indoors, they may suddenly enjoy towering over the clouds
+            depending on who they're with. Furthermore, this level of variance actually varies
+            between guarians as well, but regardless of to what degree, the bottom line is that
+            accounts of individual guarians may differ heavily from one person to another.
+          </p>
+        </div>
+        {horizSections && <div style={{ borderRight: "1px solid #fffae4", marginTop: 40 }}></div>}
+        <div style={{ flex: 2.5, minWidth: horizSections ? 1090 : undefined }}>
+          <h3>Adornments</h3>
+          <p>
+            Regarding the guarian's odd spiritual nature, one of their most intriguing traits is
+            their receptiveness to being personalized. Given their simplicity, the guarians actually
+            seem to enjoy acting as a canvas for others (some of whom{" "}
+            <Gt images={TipIcon.Panthuar}>
+              <i>really</i> enjoy it
+            </Gt>
+            ), and are very open to being drawn upon, painted, dyed, or even adorned with various
+            accessories. Thus far, there appears not to be any limit to what sort of accessories one
+            could adorn their guarian with; necklaces, bracelets, even ribbons and bows.
+          </p>
+          <p>
+            Once applied to a guarian, these adornments practically become a part of their very
+            being, resulting in some surprising properties.
+          </p>
+          <ul>
+            <li>
+              Applied adornments (if applied properly and securely) become permanently affixed.
+              Markings, paints and dyes never fade away or degrade over time regardless of the
+              elements they're subjected to. Adornments remain in exactly the condition they were in
+              when they were applied. Bows remain tied and loose adornments stay perfectly perched
+              upon where they were placed.
+            </li>
+            <ul>
+              <li>
+                While permanent, they are not irreversible. Adornments permanently remain until the
+                moment you wish to remove them, which can be done by totally ordinary means. When
+                removed, these adornments return to their ordinary state and are ordinarily effected
+                by reality once more
+              </li>
+            </ul>
+            <li>
+              Applied adornments shift with the guarian wearing them. When shifting size, their
+              accessories actually <i>change size with them</i>, shrinking or growing to fit a
+              guarian regardless of their size. Markings also change scale with their guarian,
+              appearing exactly as it did the moment you applied it. Furthermore, when a guarian
+              shifts materials, markings and accessories often remain unchanged, but in certain
+              circumstances, these adornments also shift with the guarian, taking on the material
+              they themselves have become, or sometimes even taking on new forms entirely to suit
+              the change (dyes shifting to paints or vice versa).
+            </li>
+          </ul>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: hoirzAdornments ? "row" : "column",
+              alignItems: hoirzAdornments ? "flex-start" : "center",
+              justifyContent: "center",
+            }}
+          >
+            <div style={{ marginBottom: -50 }}>
+              <img src={bow} style={{ maxWidth: "100%" }} />
+            </div>
+            <div>
+              <img src={paint} style={{ maxWidth: "100%" }} />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
