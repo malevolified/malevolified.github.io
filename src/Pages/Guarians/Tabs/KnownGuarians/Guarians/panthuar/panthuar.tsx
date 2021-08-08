@@ -5,6 +5,7 @@ import emblem from "./images/emblem.png";
 import listEmblem from "./images/emblemSide.png";
 import listIcon from "./images/icon.png";
 import matteRef from "./images/panthuarMatte.png";
+import inflatableRef from "./images/inflatable.png";
 
 export const panthuar: GuarianInfo = {
   name: "Panthuar",
@@ -51,7 +52,11 @@ export const panthuar: GuarianInfo = {
         material: GuarianMaterial.Matte,
         ref: matteRef,
       },
+      {
+        material: GuarianMaterial.Inflatable,
+        ref: inflatableRef,
+      },
     ],
-    maxRefWidth: 716,
+    maxRefWidth: 838,
   },
 };
