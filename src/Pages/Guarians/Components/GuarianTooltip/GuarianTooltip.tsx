@@ -1,7 +1,5 @@
 import React, { useRef, useState } from "react";
 import { TipIcon, tooltipMap } from "./Images";
-import styles from "./GuarianTooltip.module.css";
-import { WideScreen } from "../ScreenDetector";
 import { GuarianHoverTooltip } from "./GuarianHoverTooltip";
 import { GuarianClickTip } from "./GuarianClickTip";
 

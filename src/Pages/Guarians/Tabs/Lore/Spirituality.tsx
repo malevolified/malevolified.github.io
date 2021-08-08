@@ -1,11 +1,10 @@
 import React from "react";
-import { GuarianTooltip } from "../../../../Components/GuarianTooltip";
-import { TipIcon } from "../../../../Components/GuarianTooltip/Images";
 import { useScreenWidthGreaterThan } from "../../../../Hooks/useScreenWidthGreaterThan";
 import styles from "./lore.module.css";
 import { MaterialDisplay } from "./MaterialDisplay";
 import small from "./images/small.png";
 import big from "./images/big.png";
+import { GuarianTooltip, TipIcon } from "../../Components/GuarianTooltip";
 
 const Gt = GuarianTooltip;
 

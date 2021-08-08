@@ -1,12 +1,12 @@
 import React from "react";
 import { FadeText } from "../../../../Components/FadeText";
-import { GuarianTooltip, TipIcon } from "../../../../Components/GuarianTooltip";
 import { useLocalStorage } from "../../../../Hooks/useLocalStorage";
 import { QuestionAnswer } from "./QuestionAnswer";
 import "./faq.css";
 import notAGuarian from "./notAGuarian.png";
 import { Link } from "react-router-dom";
 import { useSecret } from "../../Contexts/SecretContext";
+import { GuarianTooltip, TipIcon } from "../../Components/GuarianTooltip";
 
 const QA = QuestionAnswer;
 const GT = GuarianTooltip;

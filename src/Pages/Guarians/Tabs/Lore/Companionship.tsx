@@ -1,11 +1,11 @@
 import React from "react";
-import { GuarianTooltip, TipIcon } from "../../../../Components/GuarianTooltip";
 import { PlaceholderText } from "../../../../Components/PlaceholderText";
 import shortPerception from "./images/shortPerception.png";
 import longPerception from "./images/longPerception.png";
 import { useScreenWidthGreaterThan } from "../../../../Hooks/useScreenWidthGreaterThan";
 import bow from "./images/bow.png";
 import paint from "./images/paint.png";
+import { GuarianTooltip, TipIcon } from "../../Components/GuarianTooltip";
 
 const Gt = GuarianTooltip;
 
