@@ -76,7 +76,7 @@ const FAQ: React.FC<IProps> = ({}) => {
         gender them however you please!
       </QA>
       <QA question={<>Do you have any secret guarians?</>}>
-        <div className="secret" onClick={() => setShowSecret(!showSecret)}>
+        <div className="secret" onClick={() => setShowSecret(true)}>
           <FadeText
             text={showSecret ? "Okay, maybe a few..." : "I have no idea what you're talking about!"}
           />
