@@ -1,0 +1,19 @@
+.footer {
+  padding: 8px 20px;
+  margin-top: 50px;
+  font-size: 15px;
+  background-color: rgb(10 9 12);
+  color: #8c87ac;
+  opacity: 0.35;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer a {
+  opacity: 0.7;
+}
+
+.footer a:hover {
+  opacity: 1;
+}

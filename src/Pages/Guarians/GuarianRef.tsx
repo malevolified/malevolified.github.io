@@ -1,7 +1,7 @@
 import React from "react";
 import { StrictNarrowScreen, StrictWideScreen } from "../../Components/ScreenDetector";
 import { SecretProvider } from "./Contexts/SecretContext";
-import { GuarianFooter } from "./GuarianFooter";
+import { GuarianFooter } from "./Components/GuarianFooter/GuarianFooter";
 import GuarianMenuRef from "./GuarianMenuRef";
 import "./guarianRef.css";
 import GuarianTabRef from "./GuarianTabRef";
