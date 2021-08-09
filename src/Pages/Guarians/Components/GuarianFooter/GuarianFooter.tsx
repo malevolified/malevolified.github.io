@@ -11,10 +11,10 @@ export const GuarianFooter: React.FC<GuarianFooterProps> = ({}) => {
       <div className={styles.footer}>
         <div>© Malevolifed</div>
         <div style={{ cursor: "pointer" }} onClick={() => setViewingPatchNotes(true)}>
-          v1.0.0 - August 7th, 2021
+          v1.0.1 - August 8th, 2021
         </div>
         <div>
-          <a href="http://twitter.com/malevolified" target="_blank">
+          <a href="https://twitter.com/malevolified" target="_blank">
             <img width={30} height={30} src="/twitterLogo.png" />
           </a>
         </div>
@@ -27,6 +27,12 @@ export const GuarianFooter: React.FC<GuarianFooterProps> = ({}) => {
             </h3>
             <ul>
               <li>Initial release!</li>
+            </ul>
+            <h3>
+              v1.0.1 <span style={{ fontSize: 16 }}> - August 8th, 2021</span>
+            </h3>
+            <ul>
+              <li>Fixed broken link</li>
             </ul>
           </div>
         </div>

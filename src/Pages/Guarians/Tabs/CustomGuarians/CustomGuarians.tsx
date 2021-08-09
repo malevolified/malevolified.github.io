@@ -43,7 +43,7 @@ export const CustomGuarians: React.FC<CustomGuariansProps> = ({}) => {
         <li>
           Consider giving credit{" "}
           <a
-            href="https//twitter.com/malevolified"
+            href="https://twitter.com/malevolified"
             target="_blank"
             style={{ textDecoration: "underline dotted" }}
           >
