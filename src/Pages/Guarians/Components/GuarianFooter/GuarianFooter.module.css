@@ -17,25 +17,3 @@
 .footer a:hover {
   opacity: 1;
 }
-
-.patchNotesWrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(16, 13, 24, 0.628);
-  z-index: 4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.patchNotes {
-  width: 720px;
-  max-height: 90vh;
-  overflow-y: auto;
-  padding: 10px 30px;
-  background-color: var(--guarian-background-color);
-  border-radius: 20px;
-}
