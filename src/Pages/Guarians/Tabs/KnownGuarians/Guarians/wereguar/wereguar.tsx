@@ -6,6 +6,7 @@ import listEmblem from "./images/wereguarListEmblem.png";
 import listIcon from "./images/wereguarIcon.png";
 import ref from "./images/floffy.png";
 import inflatable from "./images/inflatable.png";
+import playdough from "./images/wereguarPlaydough.png";
 
 export const wereguar: GuarianInfo = {
   name: "Wereguar",
@@ -59,6 +60,10 @@ export const wereguar: GuarianInfo = {
       {
         material: GuarianMaterial.Inflatable,
         ref: inflatable,
+      },
+      {
+        material: GuarianMaterial.Playdough,
+        ref: playdough,
       },
     ],
     maxRefWidth: 803,

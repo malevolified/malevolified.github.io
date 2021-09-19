@@ -3,6 +3,7 @@ export enum GuarianMaterial {
   Rubber,
   Inflatable,
   Matte,
+  Playdough,
 }
 
 export interface GuarianMaterialRef {

@@ -29,6 +29,14 @@ export const patchNotes: MajorVersion[] = [
           },
         ],
       },
+      {
+        patches: [
+          {
+            date: new Date(2021, Months.Sep, 19),
+            notes: ["Added playdough Wereguar art and playdough material icon"],
+          },
+        ],
+      },
     ],
   },
 ];
