@@ -32,8 +32,12 @@ export const patchNotes: MajorVersion[] = [
       {
         patches: [
           {
-            date: new Date(2021, Months.Sep, 19),
-            notes: ["Added playdough Wereguar art and playdough material icon"],
+            date: new Date(2021, Months.Oct, 5),
+            notes: [
+              "Added playdough Wereguar art and playdough material icon",
+              "Added balloon Reguar art and balloon material icon",
+              "Added inflatable Owluar art",
+            ],
           },
         ],
       },
