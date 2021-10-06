@@ -1,8 +1,8 @@
 export enum GuarianMaterial {
   Fluffy,
-  Rubber,
+  Latex,
   Inflatable,
-  Matte,
+  Rubber,
   Playdough,
 }
 

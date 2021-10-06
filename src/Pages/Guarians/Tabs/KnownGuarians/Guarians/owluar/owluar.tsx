@@ -55,7 +55,7 @@ export const owluar: GuarianInfo = {
         ref,
       },
       {
-        material: GuarianMaterial.Rubber,
+        material: GuarianMaterial.Latex,
         ref: latex,
       },
       {

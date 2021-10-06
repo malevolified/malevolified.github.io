@@ -49,7 +49,7 @@ export const panthuar: GuarianInfo = {
     },
     refs: [
       {
-        material: GuarianMaterial.Matte,
+        material: GuarianMaterial.Rubber,
         ref: matteRef,
       },
       {

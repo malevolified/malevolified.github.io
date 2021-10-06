@@ -29,11 +29,11 @@ const GuarianMaterialSelector: React.FC<IProps> = ({
 
   function getIconForMaterial(material: GuarianMaterial) {
     switch (material) {
-      case GuarianMaterial.Rubber:
+      case GuarianMaterial.Latex:
         return rubberIcon;
       case GuarianMaterial.Inflatable:
         return inflatableIcon;
-      case GuarianMaterial.Matte:
+      case GuarianMaterial.Rubber:
         return matteIcon;
       case GuarianMaterial.Playdough:
         return playdoughIcon;
