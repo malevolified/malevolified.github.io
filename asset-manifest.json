@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.18497c92.chunk.css",
-    "main.js": "/static/js/main.6eb20ebb.chunk.js",
-    "main.js.map": "/static/js/main.6eb20ebb.chunk.js.map",
+    "main.js": "/static/js/main.728cc1c7.chunk.js",
+    "main.js.map": "/static/js/main.728cc1c7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.07835a28.js",
     "runtime-main.js.map": "/static/js/runtime-main.07835a28.js.map",
     "static/js/2.58bc9d1c.chunk.js": "/static/js/2.58bc9d1c.chunk.js",
@@ -29,7 +29,7 @@
     "static/media/emblemSide.797ebbbf.png": "/static/media/emblemSide.797ebbbf.png",
     "static/media/enduarFluffy.d33b8880.png": "/static/media/enduarFluffy.d33b8880.png",
     "static/media/facelessness.6ab48863.png": "/static/media/facelessness.6ab48863.png",
-    "static/media/featherRef.05d2e4a0.png": "/static/media/featherRef.05d2e4a0.png",
+    "static/media/featherRef.23c3dec9.png": "/static/media/featherRef.23c3dec9.png",
     "static/media/floffy.6d4d1fd8.png": "/static/media/floffy.6d4d1fd8.png",
     "static/media/fluffy.7333134b.png": "/static/media/fluffy.7333134b.png",
     "static/media/fluffyMe.8a4de9e0.png": "/static/media/fluffyMe.8a4de9e0.png",
@@ -48,12 +48,14 @@
     "static/media/notAGuarian.8e6892ac.png": "/static/media/notAGuarian.8e6892ac.png",
     "static/media/owluar.dd81d0c1.png": "/static/media/owluar.dd81d0c1.png",
     "static/media/owluarEmblem.33a140a3.png": "/static/media/owluarEmblem.33a140a3.png",
-    "static/media/owluarLatex.e0547878.png": "/static/media/owluarLatex.e0547878.png",
+    "static/media/owluarInflatable.73ba5ec6.png": "/static/media/owluarInflatable.73ba5ec6.png",
+    "static/media/owluarLatex.7bd8b376.png": "/static/media/owluarLatex.7bd8b376.png",
     "static/media/owluarListEmblem.18e1380e.png": "/static/media/owluarListEmblem.18e1380e.png",
     "static/media/paint.dd1b8780.png": "/static/media/paint.dd1b8780.png",
     "static/media/panthuar.457512be.png": "/static/media/panthuar.457512be.png",
     "static/media/panthuarMatte.db24ae2b.png": "/static/media/panthuarMatte.db24ae2b.png",
     "static/media/reguar.bf985078.png": "/static/media/reguar.bf985078.png",
+    "static/media/reguarBalloon.4d290a5f.png": "/static/media/reguarBalloon.4d290a5f.png",
     "static/media/reguarEmblem.5f31e273.png": "/static/media/reguarEmblem.5f31e273.png",
     "static/media/reguarFluffyRef.8e684170.png": "/static/media/reguarFluffyRef.8e684170.png",
     "static/media/reguarInflatableRef.9fde1c5f.png": "/static/media/reguarInflatableRef.9fde1c5f.png",
@@ -69,12 +71,13 @@
     "static/media/wereguarListEmblem.c1b0205f.png": "/static/media/wereguarListEmblem.c1b0205f.png",
     "static/media/wereguarMaterialsFluffy.1f630e45.png": "/static/media/wereguarMaterialsFluffy.1f630e45.png",
     "static/media/wereguarMaterialsPlush.1f248f50.png": "/static/media/wereguarMaterialsPlush.1f248f50.png",
-    "static/media/wereguarMaterialsRubber.0f43c1d4.png": "/static/media/wereguarMaterialsRubber.0f43c1d4.png"
+    "static/media/wereguarMaterialsRubber.0f43c1d4.png": "/static/media/wereguarMaterialsRubber.0f43c1d4.png",
+    "static/media/wereguarPlaydough.db65dd8b.png": "/static/media/wereguarPlaydough.db65dd8b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.07835a28.js",
     "static/js/2.58bc9d1c.chunk.js",
     "static/css/main.18497c92.chunk.css",
-    "static/js/main.6eb20ebb.chunk.js"
+    "static/js/main.728cc1c7.chunk.js"
   ]
 }
