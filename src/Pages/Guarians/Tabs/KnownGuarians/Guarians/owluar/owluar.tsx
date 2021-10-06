@@ -6,6 +6,7 @@ import listEmblem from "./images/owluarListEmblem.png";
 import listIcon from "./images/owluarIcon.png";
 import ref from "./images/featherRef.png";
 import latex from "./images/owluarLatex.png";
+import inflatable from "./images/owluarInflatable.png";
 
 export const owluar: GuarianInfo = {
   name: "Owluar",
@@ -57,7 +58,11 @@ export const owluar: GuarianInfo = {
         material: GuarianMaterial.Rubber,
         ref: latex,
       },
+      {
+        material: GuarianMaterial.Inflatable,
+        ref: inflatable,
+      },
     ],
-    maxRefWidth: 806,
+    maxRefWidth: 870,
   },
 };
