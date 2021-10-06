@@ -6,6 +6,7 @@ import rubberIcon from "./icons/rubberIcon.png";
 import inflatableIcon from "./icons/inflatableIcon.png";
 import matteIcon from "./icons/matteIcon.png";
 import playdoughIcon from "./icons/playdoughIcon.png";
+import balloonIcon from "./icons/balloonIcon.png";
 
 interface IProps {
   materials: GuarianMaterial[];
@@ -37,6 +38,8 @@ const GuarianMaterialSelector: React.FC<IProps> = ({
         return matteIcon;
       case GuarianMaterial.Playdough:
         return playdoughIcon;
+      case GuarianMaterial.Balloon:
+        return balloonIcon;
       default:
         return fluffyIcon;
     }

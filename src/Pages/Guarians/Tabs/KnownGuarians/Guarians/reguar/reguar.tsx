@@ -6,6 +6,7 @@ import listEmblem from "./images/listEmblem.png";
 import listIcon from "./images/listIcon.png";
 import fluffyRef from "./images/reguarFluffyRef.png";
 import inflatableRef from "./images/reguarInflatableRef.png";
+import balloon from "./images/reguarBalloon.png";
 
 export const reguar: GuarianInfo = {
   name: "Reguar",
@@ -64,6 +65,10 @@ export const reguar: GuarianInfo = {
       {
         material: GuarianMaterial.Inflatable,
         ref: inflatableRef,
+      },
+      {
+        material: GuarianMaterial.Balloon,
+        ref: balloon,
       },
     ],
     maxRefWidth: 900,
