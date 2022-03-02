@@ -41,6 +41,14 @@ export const patchNotes: MajorVersion[] = [
           },
         ],
       },
+      {
+        patches: [
+          {
+            date: new Date(2022, Months.Mar, 1),
+            notes: ["Enduar and Septuar are no longer secret"],
+          },
+        ],
+      },
     ],
   },
 ];

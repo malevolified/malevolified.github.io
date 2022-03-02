@@ -47,7 +47,6 @@ export const septuar: GuarianInfo = {
       <p>Well, they're definitely a guarian at least.</p>
     </>
   ),
-  secret: true,
   images: {
     emblems: {
       full: emblem,

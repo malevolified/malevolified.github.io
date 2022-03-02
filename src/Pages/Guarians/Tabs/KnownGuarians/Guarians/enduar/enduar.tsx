@@ -56,7 +56,6 @@ export const enduar: GuarianInfo = {
       <p style={{ height: 0, lineHeight: 1, transform: "rotate(4deg)" }}>{repeatedText}</p>
     </>
   ),
-  secret: true,
   images: {
     emblems: {
       full: emblem,

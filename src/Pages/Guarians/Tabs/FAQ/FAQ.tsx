@@ -1,11 +1,8 @@
 import React from "react";
-import { FadeText } from "../../../../Components/FadeText";
-import { useLocalStorage } from "../../../../Hooks/useLocalStorage";
 import { QuestionAnswer } from "./QuestionAnswer";
 import "./faq.css";
 import notAGuarian from "./notAGuarian.png";
 import { Link } from "react-router-dom";
-import { useSecret } from "../../Contexts/SecretContext";
 import { GuarianTooltip, TipIcon } from "../../Components/GuarianTooltip";
 
 const QA = QuestionAnswer;
@@ -14,8 +11,6 @@ const GT = GuarianTooltip;
 interface IProps {}
 
 const FAQ: React.FC<IProps> = ({}) => {
-  const { showSecret, setShowSecret } = useSecret();
-
   return (
     <div className="faq">
       <p style={{ fontSize: 13 }}>
@@ -74,13 +69,6 @@ const FAQ: React.FC<IProps> = ({}) => {
         pronouns are purely just based on whatever felt most appropriate for them! Each guarian
         might represent something completely different for each person, so really, you're free to
         gender them however you please!
-      </QA>
-      <QA question={<>Do you have any secret guarians?</>}>
-        <div className="secret" onClick={() => setShowSecret(true)}>
-          <FadeText
-            text={showSecret ? "Okay, maybe a few..." : "I have no idea what you're talking about!"}
-          />
-        </div>
       </QA>
     </div>
   );
