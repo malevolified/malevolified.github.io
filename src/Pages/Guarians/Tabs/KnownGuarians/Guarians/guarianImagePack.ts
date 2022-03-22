@@ -5,6 +5,7 @@ export enum GuarianMaterial {
   Rubber,
   Playdough,
   Balloon,
+  SqueakyMitosis,
 }
 
 export interface GuarianMaterialRef {

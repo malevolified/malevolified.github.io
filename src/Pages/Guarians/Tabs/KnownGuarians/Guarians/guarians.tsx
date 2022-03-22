@@ -1,5 +1,6 @@
 import React from "react";
 import { enduar } from "./enduar";
+import { geminuar } from "./geminuar";
 import { GuarianImagePack } from "./guarianImagePack";
 import { lavuar } from "./lavuar";
 import { malvuar } from "./malvuar";
@@ -31,6 +32,7 @@ const guarians: GuarianInfo[] = [
   panthuar,
   septuar,
   enduar,
+  geminuar,
 ];
 
 export { guarians };

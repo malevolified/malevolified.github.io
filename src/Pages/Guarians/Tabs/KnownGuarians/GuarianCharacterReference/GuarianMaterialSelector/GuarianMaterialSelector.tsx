@@ -7,6 +7,7 @@ import inflatableIcon from "./icons/inflatableIcon.png";
 import matteIcon from "./icons/matteIcon.png";
 import playdoughIcon from "./icons/playdoughIcon.png";
 import balloonIcon from "./icons/balloonIcon.png";
+import squeakyMitosis from "./icons/squeakyMitosis.png";
 
 interface IProps {
   materials: GuarianMaterial[];
@@ -40,6 +41,8 @@ const GuarianMaterialSelector: React.FC<IProps> = ({
         return playdoughIcon;
       case GuarianMaterial.Balloon:
         return balloonIcon;
+      case GuarianMaterial.SqueakyMitosis:
+        return squeakyMitosis;
       default:
         return fluffyIcon;
     }

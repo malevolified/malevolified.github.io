@@ -1,0 +1,1 @@
+export { geminuar } from "./geminuar";
