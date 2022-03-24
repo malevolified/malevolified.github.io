@@ -5,6 +5,7 @@ import emblem from "./images/emblem.png";
 import listEmblem from "./images/emblemSide.png";
 import listIcon from "./images/icon.png";
 import fluffyRef from "./images/fluffySeptuar.png";
+import squeaky from "./images/septsqueak.png";
 
 export const septuar: GuarianInfo = {
   name: "Septuar",
@@ -57,6 +58,10 @@ export const septuar: GuarianInfo = {
       {
         material: GuarianMaterial.Fluffy,
         ref: fluffyRef,
+      },
+      {
+        material: GuarianMaterial.Inflatable,
+        ref: squeaky,
       },
     ],
     maxRefWidth: 741,

@@ -5,6 +5,7 @@ import emblem from "./images/emblem.png";
 import listEmblem from "./images/emblemSide.png";
 import listIcon from "./images/icon.png";
 import ref from "./images/enduarFluffy.png";
+import squeaky from "./images/endsqueak.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
@@ -66,6 +67,10 @@ export const enduar: GuarianInfo = {
       {
         material: GuarianMaterial.Fluffy,
         ref,
+      },
+      {
+        material: GuarianMaterial.Latex,
+        ref: squeaky,
       },
     ],
     maxRefWidth: 852,

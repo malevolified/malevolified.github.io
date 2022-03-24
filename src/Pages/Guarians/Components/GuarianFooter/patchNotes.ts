@@ -57,6 +57,14 @@ export const patchNotes: MajorVersion[] = [
           },
         ],
       },
+      {
+        patches: [
+          {
+            date: new Date(2022, Months.Mar, 23),
+            notes: ["Added inflatable Septuar art", "Added squeaky Enduar art"],
+          },
+        ],
+      },
     ],
   },
 ];
