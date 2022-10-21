@@ -9,6 +9,7 @@ import { panthuar } from "./panthuar";
 import { reguar } from "./reguar";
 import { septuar } from "./septuar";
 import { serguar } from "./serguar";
+import { snowluar } from "./snowluar";
 import { wereguar } from "./wereguar";
 
 export interface GuarianInfo {
@@ -33,6 +34,7 @@ const guarians: GuarianInfo[] = [
   septuar,
   enduar,
   geminuar,
+  snowluar,
 ];
 
 export { guarians };
