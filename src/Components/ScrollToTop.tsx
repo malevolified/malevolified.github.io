@@ -1,19 +1,14 @@
 import React, { useEffect } from "react";
-import { useHistory } from "react-router";
+import { useLocation } from "react-router-dom";
 
 interface ScrollToTopProps {}
 
 export const ScrollToTop: React.FC<ScrollToTopProps> = ({}) => {
-  const { listen } = useHistory();
+  let location = useLocation();
 
-  useEffect(() => {
-    const unlisten = listen(() => {
-      window.scrollTo(0, 0);
-    });
-    return () => {
-      unlisten();
-    };
-  }, []);
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return null;
 };

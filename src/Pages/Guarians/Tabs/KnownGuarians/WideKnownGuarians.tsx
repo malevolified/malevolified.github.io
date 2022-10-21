@@ -1,6 +1,5 @@
 import React from "react";
 import { useResizeDetector } from "react-resize-detector";
-import { SmartMounter } from "../../../../Components/SmartMounter";
 import { useScreenWidthGreaterThan } from "../../../../Hooks/useScreenWidthGreaterThan";
 import { GuarianCharacterReference } from "./GuarianCharacterReference";
 import { GuarianLinks } from "./GuarianLinks";

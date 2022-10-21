@@ -2,10 +2,9 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
 import React, { useEffect, useRef, useState } from "react";
-import { generatePath, NavLink } from "react-router-dom";
+import { generatePath, NavLink, Outlet } from "react-router-dom";
 import { ScrollToTop } from "../../Components/ScrollToTop";
 import "./guarianRef.css";
-import { GuarianRoutes } from "./GuarianRoutes";
 import { RefSection, refSections, smallSections } from "./refSections";
 
 interface IProps {}
@@ -30,10 +29,8 @@ export const GuarianMenuRef: React.FC<IProps> = ({}) => {
     return (
       <NavLink
         key={s.route}
-        exact={s.exact}
         to={generatePath(s.route)}
-        className={classNames("option", { small })}
-        activeClassName="selected"
+        className={({ isActive }) => classNames("option", { small, selected: isActive })}
         onClick={() => setMenuVisible(false)}
       >
         {s.icon && <FontAwesomeIcon icon={s.icon} fixedWidth style={{ marginRight: 7 }} />}
@@ -72,7 +69,7 @@ export const GuarianMenuRef: React.FC<IProps> = ({}) => {
       </div>
       <div className="content">
         <ScrollToTop />
-        <GuarianRoutes />
+        <Outlet />
       </div>
     </div>
   );

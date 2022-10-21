@@ -3,6 +3,7 @@ import "./faq.css";
 
 interface QuestionAnswerProps {
   question: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 export const QuestionAnswer: React.FC<QuestionAnswerProps> = ({ question, children }) => {

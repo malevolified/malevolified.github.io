@@ -2,7 +2,6 @@ import React from "react";
 import { GuarianMaterialSelector } from "./GuarianMaterialSelector/GuarianMaterialSelector";
 import { GuarianInfo } from "../Guarians";
 import { GuarianMaterial } from "../Guarians/guarianImagePack";
-import { SmartMounter } from "../../../../../Components/SmartMounter";
 
 interface IProps {
   guarian: GuarianInfo;

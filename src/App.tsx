@@ -1,13 +1,10 @@
 import React from "react";
-import { HashRouter } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
 import GuarianRef from "./Pages/Guarians/GuarianRef";
+import { router } from "./router";
 
 function App() {
-  return (
-    <HashRouter>
-      <GuarianRef />
-    </HashRouter>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

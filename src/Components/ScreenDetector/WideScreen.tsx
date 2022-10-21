@@ -3,6 +3,7 @@ import "./screenDetector.css";
 
 interface IProps {
   style?: React.CSSProperties;
+  children?: React.ReactNode;
 }
 
 export const WideScreen: React.FC<IProps> = ({ style, children }) => {

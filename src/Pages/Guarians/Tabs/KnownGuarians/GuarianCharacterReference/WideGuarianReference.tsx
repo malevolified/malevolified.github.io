@@ -3,7 +3,6 @@ import { useScreenWidthGreaterThan } from "../../../../../Hooks/useScreenWidthGr
 import { GuarianMaterialSelector } from "./GuarianMaterialSelector/GuarianMaterialSelector";
 import { GuarianInfo, guarians } from "../Guarians";
 import { GuarianMaterial } from "../Guarians/guarianImagePack";
-import { SmartMounter } from "../../../../../Components/SmartMounter";
 import { GuarianEmblem } from "./GuarianEmblem";
 
 const HORIZONTAL_REF_ROOM = 1200;

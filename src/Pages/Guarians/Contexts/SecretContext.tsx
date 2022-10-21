@@ -10,7 +10,9 @@ const SHOW_SECRET_GUARIANS = "show_secret_guarians";
 
 const SecretContext = createContext<Secret>({ showSecret: false, setShowSecret: () => {} });
 
-export const SecretProvider: React.FC<{}> = ({ children }) => {
+export const SecretProvider: React.FC<{
+  children?: React.ReactNode;
+}> = ({ children }) => {
   const [showSecret, setShowSecret] = useLocalStorage<boolean>(SHOW_SECRET_GUARIANS, false);
 
   return (

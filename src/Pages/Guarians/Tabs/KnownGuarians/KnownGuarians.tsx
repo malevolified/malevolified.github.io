@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Redirect, useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { guarians } from "./Guarians";
 import { NarrowScreen, WideScreen } from "../../../../Components/ScreenDetector";
 import "./knownGuarians.css";
@@ -24,7 +24,7 @@ const KnownGuarians: React.FC<IProps> = ({}) => {
   const availableGuarians = guarians.filter((g) => !g.secret || showSecret);
 
   if (selectedGuarianName != null && selected == null) {
-    return <Redirect to="/guarians/list" />;
+    return <Navigate to="/guarians/list" />;
   }
 
   return (

@@ -12,6 +12,7 @@ export interface GuarianTooltipProps {
   anchor?: "element" | "mouse";
   offset?: number;
   wrapperStyle?: React.CSSProperties;
+  children?: React.ReactNode;
 }
 
 export const GuarianTooltip: React.FC<GuarianTooltipProps> = (props) => {

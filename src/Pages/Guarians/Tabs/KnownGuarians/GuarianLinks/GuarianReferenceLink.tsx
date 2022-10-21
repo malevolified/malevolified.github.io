@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { GuarianInfo } from "../Guarians";
@@ -19,8 +20,7 @@ const GuarianReferenceLink: React.FC<IProps> = ({ guarian, collapsed }) => {
     >
       <NavLink
         to={"/guarians/list/" + guarian.name.toLowerCase()}
-        className="nav-wrapper"
-        activeClassName="selected-guarian"
+        className={({ isActive }) => classNames("nav-wrapper", { ["selected-guarian"]: isActive })}
       >
         <div className="name">{collapsed ? null : guarian.name}</div>
       </NavLink>

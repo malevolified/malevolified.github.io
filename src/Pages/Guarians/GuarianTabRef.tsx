@@ -2,8 +2,7 @@ import { faInfoCircle, faPaintBrush, faQuestionCircle } from "@fortawesome/free-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
 import React from "react";
-import { generatePath, NavLink } from "react-router-dom";
-import { GuarianRoutes } from "./GuarianRoutes";
+import { generatePath, NavLink, Outlet } from "react-router-dom";
 import { RefSection, refSections, smallSections } from "./refSections";
 
 interface IProps {}
@@ -13,9 +12,7 @@ export const GuarianTabRef: React.FC<IProps> = ({}) => {
     return (
       <NavLink
         key={s.route}
-        exact={s.exact}
-        className={classNames("tab", { small })}
-        activeClassName="selected"
+        className={({ isActive }) => classNames("tab", { small, selected: isActive })}
         to={generatePath(s.route)}
       >
         {s.icon && <FontAwesomeIcon icon={s.icon} fixedWidth />} {s.title}
@@ -31,7 +28,7 @@ export const GuarianTabRef: React.FC<IProps> = ({}) => {
       </div>
 
       <div className="content flat-top">
-        <GuarianRoutes />
+        <Outlet />
       </div>
     </div>
   );
