@@ -1,15 +1,15 @@
 import React from "react";
 import { GuarianInfo } from "../guarians";
 import { GuarianMaterial } from "../guarianImagePack";
-import emblem from "./images/reguarEmblem.png";
-import listEmblem from "./images/listEmblem.png";
-import listIcon from "./images/listIcon.png";
+import emblem from "./images/snowluarEmblem.png";
+import listEmblem from "./images/snowluarListEmblem.png";
+import listIcon from "./images/snowluarIcon.png";
 import fluffyRef from "./images/reguarFluffyRef.png";
 import inflatableRef from "./images/reguarInflatableRef.png";
 import balloon from "./images/reguarBalloon.png";
 
 export const snowluar: GuarianInfo = {
-  name: "Reguar",
+  name: "Snowluar",
   notes: (
     <ul className="big-list">
       <li>Possibly the most average guarian you've ever encountered</li>
