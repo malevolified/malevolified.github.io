@@ -201,7 +201,7 @@ export const GuarianHoverTooltip: React.FC<GuarianTooltipProps> = ({
         }}
         onMouseEnter={() => setVisible(true)}
         onMouseLeave={() => setVisible(false)}
-        style={{ ...wrapperStyle, display: "inline-block" }}
+        style={{ ...wrapperStyle }}
       >
         {children}
       </span>

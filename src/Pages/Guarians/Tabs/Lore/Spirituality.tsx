@@ -24,21 +24,6 @@ export const Spirituality: React.FC<SpiritualityProps> = ({}) => {
         actually still have a number of strange traits not commonly found among the living and are
         capable of some fascinating feats while you aren't looking.
       </p>
-      <h3>Materialization</h3>
-      <p>
-        Acting with mysteriously perfect timing and awareness, the guarians only appear when you are
-        completely alone (with <Gt images={[TipIcon.Malvuar, TipIcon.Panthuar]}>few exceptions</Gt>
-        ). When choosing to make an appearance, the guarians appear somewhere out of view completely
-        instantaneously and silently, and the same is true when they decide to take their leave.
-      </p>
-      <p>
-        The frequency with which the guarians decide to make their visits is mostly dependent on the
-        guarian themselves. For some guarians, visits may be so rare that they're practically worth
-        celebrating and are typically very <Gt images={TipIcon.Serguar}>memorable experiences</Gt>.
-        In other cases, a guarian may appear with such frequency that you eventually form a rhythm
-        with them, their presence so assured that you could sit back knowing{" "}
-        <Gt images={TipIcon.Lavuar}>they've already appeared behind you</Gt>.
-      </p>
       <h3>Facial Features</h3>
       <p>
         One of the most notable and immediately apparent features of their guarians is their typical
@@ -49,6 +34,29 @@ export const Spirituality: React.FC<SpiritualityProps> = ({}) => {
         are far rarer, but can still be found on <Gt images={TipIcon.Serguar}>rare occasion</Gt>.
         Not a single guarian with eyes has been seen to date (not counting those who have had their
         eyes <Gt images={TipIcon.Wereguar}>drawn on after the fact</Gt>).
+      </p>
+      <h3>Materialization</h3>
+      <p>
+        Acting with mysteriously perfect timing and awareness, the guarians typically only appear
+        when convenient. When choosing to make an appearance, the guarians appear somewhere
+        completely out of view instantaneously and silently, and the same is true when they decide
+        to take their leave. It was previously thought that the guarians strictly prefered appearing
+        when their companion is alone, but over time, more guarians have been discovered which
+        contradict this notion. While most seem to prefer solitude, a{" "}
+        <Gt images={[TipIcon.Malvuar, TipIcon.Wereguar, TipIcon.Panthuar, TipIcon.Snowluar]}>
+          growing number of guarians
+        </Gt>{" "}
+        can be found in broad daylight. Despite this, there seems to be some unknown mechanism
+        preventing them from being acknowledged by the collective conscience. More investigation is
+        required.
+      </p>
+      <p>
+        The frequency with which the guarians decide to make their visits is mostly dependent on the
+        guarian themselves. For some guarians, visits may be so rare that they're practically worth
+        celebrating and are typically very <Gt images={TipIcon.Serguar}>memorable experiences</Gt>.
+        In other cases, a guarian may appear with such frequency that you eventually form a rhythm
+        with them, their presence so assured that you could sit back knowing{" "}
+        <Gt images={TipIcon.Lavuar}>they've already appeared behind you</Gt>.
       </p>
       <div
         style={{

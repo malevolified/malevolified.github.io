@@ -14,6 +14,7 @@ export const GuarianTabRef: React.FC<IProps> = ({}) => {
         key={s.route}
         className={({ isActive }) => classNames("tab", { small, selected: isActive })}
         to={generatePath(s.route)}
+        end
       >
         {s.icon && <FontAwesomeIcon icon={s.icon} fixedWidth />} {s.title}
       </NavLink>

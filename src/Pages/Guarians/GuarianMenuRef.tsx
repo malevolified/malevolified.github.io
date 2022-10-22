@@ -30,6 +30,7 @@ export const GuarianMenuRef: React.FC<IProps> = ({}) => {
       <NavLink
         key={s.route}
         to={generatePath(s.route)}
+        end
         className={({ isActive }) => classNames("option", { small, selected: isActive })}
         onClick={() => setMenuVisible(false)}
       >

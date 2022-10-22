@@ -5,6 +5,7 @@ import lavuar from "./lavuar.png";
 import malvuar from "./malvuar.png";
 import panthuar from "./panthuar.png";
 import serguar from "./serguar.png";
+import snowluar from "./snowluar.png";
 
 export enum TipIcon {
   Reguar,
@@ -14,6 +15,7 @@ export enum TipIcon {
   Malvuar,
   Serguar,
   Panthuar,
+  Snowluar,
 }
 
 const tooltipMap: { [guarian: number]: string } = {};
@@ -25,5 +27,6 @@ tooltipMap[TipIcon.Lavuar] = lavuar;
 tooltipMap[TipIcon.Malvuar] = malvuar;
 tooltipMap[TipIcon.Serguar] = serguar;
 tooltipMap[TipIcon.Panthuar] = panthuar;
+tooltipMap[TipIcon.Snowluar] = snowluar;
 
 export { tooltipMap };

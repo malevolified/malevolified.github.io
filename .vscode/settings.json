@@ -1,7 +1,5 @@
 {
-    "prettier.printWidth": 100,
-    "workbench.colorTheme": "Abyss",
-    "cSpell.words": [
-        "Guarian"
-    ]
+  "prettier.printWidth": 100,
+  "workbench.colorTheme": "Dracula",
+  "cSpell.words": ["Guarian"]
 }

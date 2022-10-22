@@ -72,6 +72,11 @@ a {
   font-size: 20px;
 }
 
+.guarian-ref .big-list li > ul.small-sublist > li {
+  font-size: 18px;
+  margin: 18px 0px;
+}
+
 /*~*~*~*~*~*~*~*~*~*~*~*~*
   Menu ref
 ~*~*~*~*~*~*~*~*~*~*~*~*~*/
