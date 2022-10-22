@@ -65,6 +65,19 @@ export const patchNotes: MajorVersion[] = [
           },
         ],
       },
+      {
+        patches: [
+          {
+            date: new Date(2022, Months.Oct, 22),
+            notes: [
+              "Added Snowlaur",
+              "Updated Materialization lore",
+              "Fixed tootlip text formatting",
+              "Upgraded site infrastructure",
+            ],
+          },
+        ],
+      },
     ],
   },
 ];
