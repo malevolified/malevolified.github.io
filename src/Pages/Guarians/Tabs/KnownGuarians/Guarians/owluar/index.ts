@@ -1,1 +1,0 @@
-export { owluar } from "./owluar";

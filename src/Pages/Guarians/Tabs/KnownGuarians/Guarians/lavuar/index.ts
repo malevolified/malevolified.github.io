@@ -1,1 +1,0 @@
-export { lavuar } from "./lavuar";

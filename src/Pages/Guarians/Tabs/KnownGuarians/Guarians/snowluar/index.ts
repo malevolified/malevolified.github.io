@@ -1,1 +1,0 @@
-export { snowluar } from "./snowluar";

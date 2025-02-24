@@ -1,1 +1,0 @@
-export { MaterialDisplay } from "./MaterialDisplay";

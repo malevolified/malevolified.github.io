@@ -1,1 +1,0 @@
-export { GuarianFooter } from "./GuarianFooter";

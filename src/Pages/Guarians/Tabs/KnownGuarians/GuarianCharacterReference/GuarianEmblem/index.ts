@@ -1,1 +1,0 @@
-export { GuarianEmblem } from "./GuarianEmblem";

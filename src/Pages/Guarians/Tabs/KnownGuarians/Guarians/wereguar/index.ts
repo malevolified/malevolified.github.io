@@ -1,1 +1,0 @@
-export { wereguar } from "./wereguar";
